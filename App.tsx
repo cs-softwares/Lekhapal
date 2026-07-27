@@ -1,43 +1,56 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React from 'react';
 import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+  StatusBar,
+  StyleSheet,
+} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+import {AuthSessionProvider} from './src/context/AuthSessionContext';
+import {LanguageProvider} from './src/context/LanguageContext';
+import {
+  ThemeProvider,
+  useAppTheme,
+} from './src/context/ThemeContext';
+import RootNavigator from './src/navigation/RootNavigator';
+
+function AppShell() {
+  const {colors, isDarkTheme} = useAppTheme();
+  const statusBarBackground = isDarkTheme
+    ? '#1E3A8A'
+    : colors.primary;
 
   return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
+    <>
+      <StatusBar
+        backgroundColor={statusBarBackground}
+        barStyle={
+          isDarkTheme ? 'light-content' : 'light-content'
+        }
+      />
+      <RootNavigator />
+    </>
   );
 }
 
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
+function App() {
   return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
+    <GestureHandlerRootView style={styles.root}>
+      <SafeAreaProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <AuthSessionProvider>
+              <AppShell />
+            </AuthSessionProvider>
+          </LanguageProvider>
+        </ThemeProvider>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  root: {
     flex: 1,
   },
 });

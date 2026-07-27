@@ -1,0 +1,16 @@
+export type UpBhulekhLaunchAction =
+  | 'khatoni-login'
+  | 'real-time-khatoni-login'
+  | 'varasat-login'
+  | 'khasra-portal'
+  | 'khatoni-copy'
+  | 'khatoni-online-payment'
+  | 'bhukhand-sale-status'
+  | 'bhukhand-grast-status'
+  | 'rajasva-gram-code'
+  | 'district-directory'
+  | 'tehsil-directory'
+  | 'pargana-directory'
+  | 'bhumi-prakar'
+  | 'sarkari-bhumi'
+  | 'cyber-guidelines';

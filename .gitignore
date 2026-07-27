@@ -73,3 +73,18 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Local Codex / build temp
+.gradle-home/
+.gradle-local/
+.gradle-smartcalculator/
+.gradle-user/
+android/.gradle-user/
+.tmp/
+.tmp*
+profile-*.png
+
+# Generated Android bundle/build assets
+android/app/src/main/assets/
+android/app/src/main/res/raw/keep.xml
+android/app/src/main/res/drawable-*/node_modules_*.png
