@@ -1,3 +1,45 @@
+## Session handoff 14 October 2026
+
+Today's work is saved on `sneha_dev`. The next session should begin with the internal-testing bundle and the outstanding verification below. No further feature work or Play rollout is requested tonight.
+
+### Completed today
+
+- Reorganized the UP dashboard into four bilingual tabs: Land records, Feeding, Fieldwork, and Documents. Land records starts with Khatauni/Bhulekh, Khasra, RC-9, Varasat and corrections. Existing services remain reachable; measurement and calculator tools are available in Fieldwork. The bottom navigation and other states' dashboard flows are retained.
+- Added coverage for tab grouping, every UP portal remaining reachable, Hindi selection, and existing government/tool destinations. Visually checked all four tabs on emulator-5556. See `outputs/qa/work-tabs-2026-10-14/`.
+- Committed the complete app source, tests, assets and documentation as `ba4da4b`, then pushed through HTTPS to `https://github.com/cs-softwares/Lekhapal.git`. SSH authentication as `sneha-shankhwar` was denied; the configured origin now uses HTTPS.
+- Increased Android `versionCode` from 4 to 5 for internal testing; `versionName` remains `1.1.0`. Commit `4341cf3` is pushed to `sneha_dev`.
+- GitHub has two distinct branch names: `sneha_dev` (underscore, current work) and `sneha-dev` (hyphen, older code). Continue on `sneha_dev`. Neither `main` nor the hyphen branch was changed by this work; both were last verified at `a159141`.
+
+### Internal testing AAB
+
+The user ultimately requested **only an AAB**, superseding the earlier APK request. Deliverable: `outputs/releases/1.1.0-5/lekhpal-1.1.0-5-internal.aab`.
+
+- Package `com.lekhpal`; version `1.1.0` (5); 43,196,755 bytes; ARM64; minimum Android API 24, target API 36.
+- SHA-256: `e46370b584188f4fc070ccbeaf13494237e9a224d13be8d745346e5616e0b773`.
+- Signed with the existing release certificate, confirmed identical to build 4. Bundletool 1.18.3 validation and JAR signature verification passed. JavaScript is bundled, so the release runs without Metro.
+- Built using `:app:bundleRelease -PinternalTestAds --offline --max-workers=2`. Test ads are enabled; Premium remains disabled. Official government portal URLs are retained.
+- The AAB was provided locally; it has **not** been uploaded or rolled out in Play Console by this session. Generated packages and QA outputs are ignored by Git and remain on this computer.
+- Verification details, checksums, build/test logs and screenshots are in `outputs/releases/1.1.0-5/verification.json` and the same directory.
+
+### Verification and limits
+
+- Full Jest: **652 tests across 79 suites passed**. TypeScript passed. Approved Bhulekh regression tests are included.
+- An AAB-derived release package was installed over `com.lekhpal` on **emulator-5556**, using the existing emulator debug certificate solely for this smoke test. App data was preserved. The deliverable AAB retains its release certificate. The emulator now runs release code at build 5; do not assume it is still a Metro/debug build or uninstall it to switch builds.
+- Release smoke checks passed: cold startup, updated dashboard, measurement screen, calculator `12+3=15`, Khasra menu, and official eKhasra login-selection entry in the supported Custom Tab. The last browser action returned to the app. No government credentials were entered or official records changed in these checks.
+- **Full Android lint is incomplete.** After fetching the initially missing Robolectric dependency, `:react-native-worklets:lintAnalyzeRelease` crashed with `Cannot find a KaModule for the VirtualFile`. Retrying with `-Dlint.use.fir.uast=false` and requesting app lint analysis separately did not resolve it. See `lint-blocker.log`; do not describe lint as passed or disable checks just to make it green.
+- Authenticated government saves/approvals, physical-device GPS accuracy, and all-state portal automation have not been established by these checks. Community/voice backend integration remains outstanding. Earlier implementation and fixture-test details below remain applicable; full FastWork parity is not claimed.
+
+### Resume next session
+
+1. Read `AGENTS.md` and preserve `docs/approved-bhulekh-baseline.md`. Keep Khasra Login in `openPortalBrowser`; do not move it to an embedded WebView.
+2. Confirm `sneha_dev` and current working-tree state. Keep changes off `main` and do not rename/delete either similarly named development branch without a request.
+3. Start with the user's Play internal-testing upload or device feedback. Build 5 is prepared; verify available Play version codes before preparing any later upload. Do not upload or roll out a release merely because the AAB exists.
+4. Resolve the Worklets/Kotlin lint-tool crash without weakening app checks. The existing signed AAB and runtime smoke results remain available while investigating.
+5. With the user's own government login, validate one small, reviewed workflow at a time: correct village/year/season, plot/crop/area/irrigation values, confirmed official save, next-record progression, stop/resume and completion reports. Then cover Ansh/removal, Prapatra-5, approvals, Farmer Registry, Census and ERO downloads according to the user's access. Government writes require the user's authorized test scope; a successful login screen is not end-to-end automation proof.
+6. Leave broader state automation, voice integration and proposed measurement-to-worksheet enhancements as separate work. New automation additions still follow the user's request for a proposal and approval first.
+
+Use emulator-5556 for Lekhpal QA; do not disturb the DSA emulator. Preserve saved records, local conversion standards, login sessions, and the approved portal presentation.
+
 > Result presentation and date update, 13 October 2026: removed the on-screen all-area-units grid. Field/irregular plots, area conversion, map-area conversion and GPS results now offer a single unit dropdown inside their result card. The chosen unit is retained in each state-scoped tool draft and saved record; clearing field measurements preserves the output unit and local conversion standards. Area-converter result selection updates its To selector. Reports retain the selected result plus conversion details. Missing local standards never produce an invented result. Calendar popups (month navigation, direct year entry, leap-day validation) now accompany both date-difference dates and the irrigation date; date differences also include explicitly approximate months using days / 30.4375, matching the reference. These supersede the date-picker/approximate-month gaps reported earlier. Full suite: **649 tests / 78 suites passed**; TypeScript passed; targeted lint has no errors (six existing inline-style warnings). The calendar and the single-result layout were visually checked in emulator-5556; no government writes were involved. See `outputs/qa/tools-2026-10-13/calendar-popup.png` and `single-area-result.png`.
 
 > Calculator and measurement update, 13 October 2026: added 12 offline calculators, bringing the calculator list to 19; expanded area conversion to 14 units. A conventional scientific keypad replaces the initial worksheet-style keypad. Length and area conversion now use two compact From/To boxes, a swap button and a unit-selection popup. Full Jest: **646 tests / 78 suites passed**; TypeScript passed. Targeted lint has no errors. Existing inline-style warnings remain. This does not establish complete UP government-automation parity.
