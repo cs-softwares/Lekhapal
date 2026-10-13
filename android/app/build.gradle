@@ -26,7 +26,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         testInstrumentationRunner "com.lekhpal.ero.EroPdfInstrumentation"
-        versionCode 4
+        versionCode 5
         versionName "1.1.0"
         // Internal testing uses Google's sample app as well as sample ad units.
         // Otherwise UMP rejects the unpublished production consent configuration.
