@@ -1,0 +1,15 @@
+{
+  "environment": "Pixel 7a Android 15 emulator; debug build",
+  "measurement": "adb shell am start -W -n com.lekhpal/.MainActivity",
+  "before": {
+    "host": "10.0.2.2:8082",
+    "totalTimeMs": 11353,
+    "waitTimeMs": 11362
+  },
+  "after": {
+    "host": "127.0.0.1:8082 with adb reverse",
+    "totalTimeMs": 1592,
+    "waitTimeMs": 1596
+  },
+  "note": "One observed cold activity launch per configuration, not a production benchmark."
+}

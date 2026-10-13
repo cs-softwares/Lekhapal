@@ -1,39 +1,25 @@
-﻿import React, {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
-import {
-  Alert,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import ViewShot, {
-  ViewShotRef,
-} from 'react-native-view-shot';
+﻿import { useSelectedState } from '../../context/SelectedStateContext';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+import ViewShot, { ViewShotRef } from 'react-native-view-shot';
 
-import {useLanguage} from '../../context/LanguageContext';
-import {COLORS} from '../../theme/colors';
-import {useSavedWorkspaceRecords} from '../../hooks/useSavedWorkspaceRecords';
-import {WorkspaceRecord} from '../../types/workspace';
+import { useLanguage } from '../../context/LanguageContext';
+import { COLORS } from '../../theme/colors';
+import { useSavedWorkspaceRecords } from '../../hooks/useSavedWorkspaceRecords';
+import { WorkspaceRecord } from '../../types/workspace';
 import {
   exportRefAsImage,
   exportSummaryAsPdf,
   shareTextSummary,
 } from '../../utils/workspaceExport';
-import {
-  formatFixed,
-  sanitizeFileName,
-} from '../../utils/workspaceFormatters';
+import { formatFixed, sanitizeFileName } from '../../utils/workspaceFormatters';
 import AppSectionTitle from '../AppSectionTitle';
 import SavedRecordsPanel from './SavedRecordsPanel';
 import WorkspaceActionRow from './WorkspaceActionRow';
 import WorkspaceDropdownSelector from './WorkspaceDropdownSelector';
 import WorkspaceField from './WorkspaceField';
 import WorkspaceMetricTile from './WorkspaceMetricTile';
-import {workspaceStyles} from './workspaceStyles';
+import { workspaceStyles } from './workspaceStyles';
 
 type AreaUnit =
   | 'upbigha'
@@ -89,33 +75,32 @@ const AreaConverterWorkspace = ({
   onExternalRecordApplied,
   showSavedRecords = true,
 }: AreaConverterWorkspaceProps) => {
-  const {language} = useLanguage();
+  const { language } = useLanguage();
+  const { stateCode } = useSelectedState();
+  const unitOptions = UNIT_OPTIONS.filter(
+    unit => stateCode === 'UP' || !unit.startsWith('up'),
+  );
   const reportRef = useRef<ViewShotRef>(null);
   const [value, setValue] = useState('1');
-  const [fromUnit, setFromUnit] =
-    useState<AreaUnit>('upbigha');
+  const [fromUnit, setFromUnit] = useState<AreaUnit>('sqm');
   const [toUnit, setToUnit] = useState<AreaUnit>('sqm');
-  const {deleteRecord, records, saveRecord} =
+  const { deleteRecord, records, saveRecord } =
     useSavedWorkspaceRecords('area-converter');
 
   const copy = useMemo(
     () => ({
       intro:
         language === 'hi'
-          ? 'Real field measurement ke baad area ko UP Bigha, Biswa, Sq M, Acre, Hectare aur doosri units mein turant badal sakte hain.'
-          : 'After real field measurement, convert area instantly into UP Bigha, Biswa, Sq M, Acre, Hectare, and other useful units.',
+          ? 'Convert area using the available units. Local units vary by survey convention.'
+          : 'Convert measured area between square metres, acres, hectares and other available units. Local units vary; use the convention for your survey.',
       currentReport:
-        language === 'hi'
-          ? 'Conversion summary'
-          : 'Conversion summary',
+        language === 'hi' ? 'Conversion summary' : 'Conversion summary',
       save: language === 'hi' ? 'सेव करें' : 'Save',
       share: language === 'hi' ? 'शेयर' : 'Share',
       pdf: 'PDF',
       image: 'Image',
       savedReports:
-        language === 'hi'
-          ? 'Saved area conversions'
-          : 'Saved area conversions',
+        language === 'hi' ? 'Saved area conversions' : 'Saved area conversions',
       load: language === 'hi' ? 'लोड करें' : 'Load',
       emptyTitle:
         language === 'hi'
@@ -126,29 +111,18 @@ const AreaConverterWorkspace = ({
           ? 'Saved conversions yaha quick reuse ke liye dikhengi.'
           : 'Saved conversions will appear here for quick reuse.',
       valueLabel:
-        language === 'hi'
-          ? 'Measured area value'
-          : 'Measured area value',
-      fromLabel:
-        language === 'hi' ? 'From unit' : 'From unit',
-      toLabel:
-        language === 'hi' ? 'To unit' : 'To unit',
-      allUnits:
-        language === 'hi'
-          ? 'All area results'
-          : 'All area results',
+        language === 'hi' ? 'Measured area value' : 'Measured area value',
+      fromLabel: language === 'hi' ? 'From unit' : 'From unit',
+      toLabel: language === 'hi' ? 'To unit' : 'To unit',
+      allUnits: language === 'hi' ? 'All area results' : 'All area results',
       saveBlocked:
-        language === 'hi'
-          ? 'Area value bharein'
-          : 'Enter an area value',
+        language === 'hi' ? 'Area value bharein' : 'Enter an area value',
       saveBlockedBody:
         language === 'hi'
           ? 'Save ya export se pehle measured value bharein.'
           : 'Add a measured value before saving or exporting.',
       saveDoneTitle:
-        language === 'hi'
-          ? 'Area conversion saved'
-          : 'Conversion note saved',
+        language === 'hi' ? 'Area conversion saved' : 'Conversion note saved',
       saveDoneBody:
         language === 'hi'
           ? 'Yeh conversion ab saved list mein hai.'
@@ -164,12 +138,11 @@ const AreaConverterWorkspace = ({
   const numericValue = Number(value) || 0;
   const baseSqm = numericValue * UNIT_TO_SQM[fromUnit];
   const convertedValue = baseSqm / UNIT_TO_SQM[toUnit];
-  const allResults = UNIT_OPTIONS.map(unit => ({
+  const allResults = unitOptions.map(unit => ({
     label: UNIT_LABELS[unit],
-    value: `${formatFixed(
-      baseSqm / UNIT_TO_SQM[unit],
-      4,
-    )} ${UNIT_LABELS[unit]}`,
+    value: `${formatFixed(baseSqm / UNIT_TO_SQM[unit], 4)} ${
+      UNIT_LABELS[unit]
+    }`,
   }));
   const reportSections = [
     {
@@ -195,51 +168,40 @@ const AreaConverterWorkspace = ({
       rows: [
         {
           label: 'UP Bigha view',
-          value: `${formatFixed(
-            baseSqm / UNIT_TO_SQM.upbigha,
-            4,
-          )} UP Bigha`,
+          value: `${formatFixed(baseSqm / UNIT_TO_SQM.upbigha, 4)} UP Bigha`,
         },
         {
           label: 'UP Biswa view',
-          value: `${formatFixed(
-            baseSqm / UNIT_TO_SQM.upbiswa,
-            4,
-          )} UP Biswa`,
+          value: `${formatFixed(baseSqm / UNIT_TO_SQM.upbiswa, 4)} UP Biswa`,
         },
         {
           label: 'Acre view',
-          value: `${formatFixed(
-            baseSqm / UNIT_TO_SQM.acre,
-            4,
-          )} Acre`,
+          value: `${formatFixed(baseSqm / UNIT_TO_SQM.acre, 4)} Acre`,
         },
       ],
       title: 'Quick reference',
     },
-  ];
+  ].map(section => ({
+    ...section,
+    rows: section.rows.filter(
+      row => stateCode === 'UP' || !row.label.startsWith('UP '),
+    ),
+  }));
 
   const summaryLines = [
     `Input: ${formatFixed(numericValue, 4)} ${UNIT_LABELS[fromUnit]}`,
     `Primary result: ${formatFixed(convertedValue, 4)} ${UNIT_LABELS[toUnit]}`,
     `Base area in Sq M: ${formatFixed(baseSqm, 4)} Sq M`,
-    `UP Bigha view: ${formatFixed(
-      baseSqm / UNIT_TO_SQM.upbigha,
-      4,
-    )} UP Bigha`,
-    `UP Biswa view: ${formatFixed(
-      baseSqm / UNIT_TO_SQM.upbiswa,
-      4,
-    )} UP Biswa`,
-    `Acre view: ${formatFixed(
-      baseSqm / UNIT_TO_SQM.acre,
-      4,
-    )} Acre`,
+    `UP Bigha view: ${formatFixed(baseSqm / UNIT_TO_SQM.upbigha, 4)} UP Bigha`,
+    `UP Biswa view: ${formatFixed(baseSqm / UNIT_TO_SQM.upbiswa, 4)} UP Biswa`,
+    `Acre view: ${formatFixed(baseSqm / UNIT_TO_SQM.acre, 4)} Acre`,
   ];
-  const recordTitle = `${formatFixed(
-    numericValue,
-    2,
-  )} ${UNIT_LABELS[fromUnit]}`;
+  const stateSummaryLines = summaryLines.filter(
+    line => stateCode === 'UP' || !line.startsWith('UP '),
+  );
+  const recordTitle = `${formatFixed(numericValue, 2)} ${
+    UNIT_LABELS[fromUnit]
+  }`;
   const recordSubtitle = `To ${UNIT_LABELS[toUnit]}`;
 
   const ensureValue = () => {
@@ -258,7 +220,7 @@ const AreaConverterWorkspace = ({
 
     await saveRecord({
       subtitle: recordSubtitle,
-      summaryLines,
+      summaryLines: stateSummaryLines,
       title: recordTitle,
       values: {
         fromUnit,
@@ -272,9 +234,7 @@ const AreaConverterWorkspace = ({
 
   const handleLoad = (record: WorkspaceRecord) => {
     setValue(record.values.value ?? '1');
-    setFromUnit(
-      (record.values.fromUnit as AreaUnit) ?? 'upbigha',
-    );
+    setFromUnit((record.values.fromUnit as AreaUnit) ?? 'upbigha');
     setToUnit((record.values.toUnit as AreaUnit) ?? 'sqm');
   };
 
@@ -315,10 +275,8 @@ const AreaConverterWorkspace = ({
               compact
               iconSurfaceColor="#EEF4FF"
               label={copy.fromLabel}
-              onSelect={nextValue =>
-                setFromUnit(nextValue as AreaUnit)
-              }
-              options={UNIT_OPTIONS.map(unit => ({
+              onSelect={nextValue => setFromUnit(nextValue as AreaUnit)}
+              options={unitOptions.map(unit => ({
                 label: UNIT_LABELS[unit],
                 value: unit,
               }))}
@@ -334,10 +292,8 @@ const AreaConverterWorkspace = ({
               compact
               iconSurfaceColor="#FFF4EA"
               label={copy.toLabel}
-              onSelect={nextValue =>
-                setToUnit(nextValue as AreaUnit)
-              }
-              options={UNIT_OPTIONS.map(unit => ({
+              onSelect={nextValue => setToUnit(nextValue as AreaUnit)}
+              options={unitOptions.map(unit => ({
                 label: UNIT_LABELS[unit],
                 value: unit,
               }))}
@@ -369,18 +325,12 @@ const AreaConverterWorkspace = ({
           <View style={styles.summarySheet}>
             <View style={styles.summaryHeader}>
               <View style={styles.summaryHeaderCopy}>
-                <Text style={styles.summaryTitle}>
-                  {recordTitle}
-                </Text>
-                <Text style={styles.summarySubtitle}>
-                  {recordSubtitle}
-                </Text>
+                <Text style={styles.summaryTitle}>{recordTitle}</Text>
+                <Text style={styles.summarySubtitle}>{recordSubtitle}</Text>
               </View>
 
               <View style={styles.resultPill}>
-                <Text style={styles.resultPillLabel}>
-                  Result
-                </Text>
+                <Text style={styles.resultPillLabel}>Result</Text>
                 <Text style={styles.resultPillValue}>
                   {formatFixed(convertedValue, 4)}
                 </Text>
@@ -388,14 +338,13 @@ const AreaConverterWorkspace = ({
             </View>
 
             {reportSections.map(section => (
-              <View
-                key={section.title}
-                style={styles.detailSection}>
+              <View key={section.title} style={styles.detailSection}>
                 <Text
                   style={[
                     styles.detailSectionTitle,
-                    {color: section.accentColor},
-                  ]}>
+                    { color: section.accentColor },
+                  ]}
+                >
                   {section.title}
                 </Text>
 
@@ -403,13 +352,10 @@ const AreaConverterWorkspace = ({
                   {section.rows.map(row => (
                     <View
                       key={`${section.title}-${row.label}`}
-                      style={styles.detailRow}>
-                      <Text style={styles.detailLabel}>
-                        {row.label}
-                      </Text>
-                      <Text style={styles.detailValue}>
-                        {row.value}
-                      </Text>
+                      style={styles.detailRow}
+                    >
+                      <Text style={styles.detailLabel}>{row.label}</Text>
+                      <Text style={styles.detailValue}>{row.value}</Text>
                     </View>
                   ))}
                 </View>
@@ -424,9 +370,7 @@ const AreaConverterWorkspace = ({
         onExportImage={() =>
           ensureValue() &&
           exportRefAsImage({
-            fileName: sanitizeFileName(
-              `area-${recordTitle}`,
-            ),
+            fileName: sanitizeFileName(`area-${recordTitle}`),
             ref: reportRef,
             title: `Area Converter - ${recordTitle}`,
           }).catch(() => {
@@ -436,10 +380,8 @@ const AreaConverterWorkspace = ({
         onExportPdf={() =>
           ensureValue() &&
           exportSummaryAsPdf({
-            fileName: sanitizeFileName(
-              `area-${recordTitle}`,
-            ),
-            summaryLines,
+            fileName: sanitizeFileName(`area-${recordTitle}`),
+            summaryLines: stateSummaryLines,
             title: `Area Converter - ${recordTitle}`,
           }).catch(() => {
             Alert.alert(copy.exportError);
@@ -448,10 +390,7 @@ const AreaConverterWorkspace = ({
         onSave={handleSave}
         onShare={() =>
           ensureValue() &&
-          handleShare(
-            `Area Converter - ${recordTitle}`,
-            summaryLines,
-          )
+          handleShare(`Area Converter - ${recordTitle}`, stateSummaryLines)
         }
       />
 
@@ -462,9 +401,7 @@ const AreaConverterWorkspace = ({
           loadLabel={copy.load}
           onDelete={deleteRecord}
           onLoad={handleLoad}
-          onShare={record =>
-            handleShare(record.title, record.summaryLines)
-          }
+          onShare={record => handleShare(record.title, record.summaryLines)}
           records={records}
           shareLabel={copy.share}
           title={copy.savedReports}
@@ -570,4 +507,3 @@ const styles = StyleSheet.create({
 });
 
 export default AreaConverterWorkspace;
-

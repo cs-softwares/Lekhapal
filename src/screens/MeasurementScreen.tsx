@@ -1,363 +1,242 @@
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { cancelCompletedWorkAd } from '../services/interstitialAds';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { usePremiumFeatures } from '../hooks/usePremiumFeatures';
+import { RELEASE_FEATURES } from '../config/releaseFeatures';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
-  useFocusEffect,
-  useNavigation,
-  useRoute,
-} from '@react-navigation/native';
-import {
+  Animated,
+  Keyboard,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
-
+import {
+  useFocusEffect,
+  useIsFocused,
+  useNavigation,
+  useRoute,
+} from '@react-navigation/native';
 import AppHeader from '../components/AppHeader';
-import AppPressable from '../components/AppPressable';
 import AppScreen from '../components/AppScreen';
-import AreaConverterWorkspace from '../components/workspaces/AreaConverterWorkspace';
-import FieldAreaWorkspace from '../components/workspaces/FieldAreaWorkspace';
+import AppPressable from '../components/AppPressable';
 import GpsLandMeasureWorkspace from '../components/workspaces/GpsLandMeasureWorkspace';
-import MapScaleWorkspace from '../components/workspaces/MapScaleWorkspace';
-import PlotBoundaryWorkspace from '../components/workspaces/PlotBoundaryWorkspace';
-import {useAppTheme} from '../context/ThemeContext';
-import {useLanguage} from '../context/LanguageContext';
-import {useResponsiveMetrics} from '../hooks/useResponsiveMetrics';
-import {WorkspaceRecord} from '../types/workspace';
-import {consumePendingMeasurementRecordSelection} from '../utils/measurementRecordBridge';
+import MeasurementCalculator from '../components/measurement/MeasurementCalculator';
+import {
+  MEASUREMENT_TOOLS,
+  MeasurementModuleId,
+  isMeasurementModule,
+} from '../components/measurement/measurementCatalog';
+import { useMeasurementMotion } from '../components/measurement/MeasurementUI';
+import { useSelectedState } from '../context/SelectedStateContext';
+import { useLanguage } from '../context/LanguageContext';
+import { useAppTheme } from '../context/ThemeContext';
+import { WorkspaceRecord } from '../types/workspace';
+import { consumePendingMeasurementRecordSelection } from '../utils/measurementRecordBridge';
 
-type MeasurementModuleId =
-  | 'gps-land-measure'
-  | 'field-area'
-  | 'plot-boundary-guide'
-  | 'area-converter'
-  | 'map-scale-helper';
-
-type MeasurementModule = {
-  id: MeasurementModuleId;
-  storageToolId: string;
-  title: string;
-};
-
-const DEFAULT_MODULE_ID: MeasurementModuleId =
-  'gps-land-measure';
-
-const MeasurementScreen = () => {
+export default function MeasurementScreen() {
+  const premium = usePremiumFeatures();
   const navigation = useNavigation<any>();
   const route = useRoute<any>();
-  const {language, strings} = useLanguage();
-  const {colors} = useAppTheme();
-  const metrics = useResponsiveMetrics();
-  const styles = useMemo(
-    () =>
-      StyleSheet.create({
-        content: {},
-        tabChip: {
-          backgroundColor: colors.surface,
-          borderColor: colors.border,
-          borderWidth: 1,
-        },
-        tabChipActive: {
-          backgroundColor: colors.primary,
-          borderColor: colors.primary,
-        },
-        tabChipText: {
-          color: colors.textMuted,
-          fontWeight: '800',
-        },
-        tabChipTextActive: {
-          color: colors.white,
-        },
-        tabScrollContent: {
-          alignItems: 'center',
-        },
-      }),
-    [colors],
-  );
-  const [activeModuleId, setActiveModuleId] =
-    useState<MeasurementModuleId>(DEFAULT_MODULE_ID);
-  const [pendingRecordSelection, setPendingRecordSelection] =
-    useState<{
-      moduleId: MeasurementModuleId;
-      record: WorkspaceRecord;
-    } | null>(null);
-
-  const modules = useMemo<MeasurementModule[]>(
-    () => [
-      {
-        id: 'gps-land-measure',
-        storageToolId: 'gps-land-measure',
-        title:
-          language === 'hi'
-            ? 'Live GPS'
-            : 'Live GPS',
-      },
-      {
-        id: 'field-area',
-        storageToolId: 'field-area-workspace',
-        title:
-          language === 'hi'
-            ? 'Manual field'
-            : 'Manual field',
-      },
-      {
-        id: 'plot-boundary-guide',
-        storageToolId: 'plot-boundary-guide',
-        title:
-          language === 'hi'
-            ? '4-side plot'
-            : '4-side plot',
-      },
-      {
-        id: 'area-converter',
-        storageToolId: 'area-converter',
-        title:
-          language === 'hi'
-            ? 'Area convert'
-            : 'Area convert',
-      },
-      {
-        id: 'map-scale-helper',
-        storageToolId: 'map-scale-helper',
-        title:
-          language === 'hi'
-            ? 'Map scale'
-            : 'Map scale',
-      },
-    ],
-    [language],
-  );
-
+  const { stateCode } = useSelectedState();
+  const { language } = useLanguage();
+  const { colors } = useAppTheme();
+  const hi = language === 'hi';
+  const t = (en: string, hindi: string) => (hi ? hindi : en);
+  const [moduleId, setModuleId] = useState<MeasurementModuleId>('field-area');
+  const [pending, setPending] = useState<{
+    moduleId: string;
+    record: WorkspaceRecord;
+  } | null>(null);
+  const focused = useIsFocused();
   useEffect(() => {
-    const nextModuleId = route.params?.focusToolId;
-
-    if (
-      nextModuleId === 'gps-land-measure' ||
-      nextModuleId === 'field-area' ||
-      nextModuleId === 'plot-boundary-guide' ||
-      nextModuleId === 'area-converter' ||
-      nextModuleId === 'map-scale-helper'
-    ) {
-      setActiveModuleId(nextModuleId);
-      return;
-    }
-
-    setActiveModuleId(DEFAULT_MODULE_ID);
-  }, [route.params?.focusToolId]);
-
+    if (moduleId === 'gps-land-measure') cancelCompletedWorkAd();
+  }, [moduleId, focused]);
+  const motion = useMeasurementMotion();
+  const scroll = useRef<ScrollView>(null);
+  const workspaceY = useRef(0);
+  const reveal = useRef(new Animated.Value(1)).current;
+  const active = MEASUREMENT_TOOLS.find(tool => tool.id === moduleId)!;
   useFocusEffect(
     useCallback(() => {
-      const nextSelection =
-        consumePendingMeasurementRecordSelection();
-
-      if (
-        nextSelection &&
-        (nextSelection.moduleId === 'gps-land-measure' ||
-          nextSelection.moduleId === 'field-area' ||
-          nextSelection.moduleId === 'plot-boundary-guide' ||
-          nextSelection.moduleId === 'area-converter' ||
-          nextSelection.moduleId === 'map-scale-helper')
-      ) {
-        setActiveModuleId(nextSelection.moduleId);
-        setPendingRecordSelection({
-          moduleId: nextSelection.moduleId,
-          record: nextSelection.record,
-        });
+      StatusBar.setBarStyle('light-content');
+      const selection = consumePendingMeasurementRecordSelection();
+      if (selection && isMeasurementModule(selection.moduleId)) {
+        setModuleId(selection.moduleId);
+        setPending(selection);
+        requestAnimationFrame(() =>
+          scroll.current?.scrollTo({ y: workspaceY.current, animated: false }),
+        );
       }
+      return () => StatusBar.setBarStyle('dark-content');
     }, []),
   );
-
-  const activeModule = useMemo(
-    () =>
-      modules.find(module => module.id === activeModuleId) ??
-      modules[0],
-    [activeModuleId, modules],
-  );
-
-  const handleExternalRecordApplied = () => {
-    setPendingRecordSelection(currentSelection =>
-      currentSelection?.moduleId === activeModuleId
-        ? null
-        : currentSelection,
-    );
+  useEffect(() => {
+    if (isMeasurementModule(route.params?.focusToolId)) {
+      setModuleId(route.params.focusToolId);
+      // Consume the shortcut so choosing it again also works after switching tools.
+      navigation.setParams({ focusToolId: undefined });
+    }
+  }, [navigation, route.params?.focusToolId]);
+  useEffect(() => {
+    if (!motion) {
+      reveal.setValue(1);
+      return;
+    }
+    reveal.setValue(0);
+    Animated.timing(reveal, {
+      toValue: 1,
+      duration: 260,
+      useNativeDriver: true,
+      isInteraction: false,
+    }).start();
+  }, [moduleId, motion, reveal]);
+  const openSaved = () =>
+    navigation.navigate('MeasurementSavedRecords', {
+      moduleId,
+      storageToolId: active.storageToolId,
+      title: `${active.title[hi ? 1 : 0]} · ${t('Saved notes', 'सेव किए नोट')}`,
+    });
+  const choose = (next: MeasurementModuleId) => {
+    Keyboard.dismiss();
+    setModuleId(next);
+    scroll.current?.scrollTo({ y: 0, animated: motion });
   };
-
-  const activeExternalRecord =
-    pendingRecordSelection?.moduleId === activeModuleId
-      ? pendingRecordSelection.record
-      : null;
-
-  const renderWorkspace = () => {
-    if (activeModuleId === 'gps-land-measure') {
-      return (
-        <GpsLandMeasureWorkspace
-          externalRecord={activeExternalRecord}
-          onExternalRecordApplied={
-            handleExternalRecordApplied
-          }
-          showSavedRecords={false}
-        />
-      );
-    }
-
-    if (activeModuleId === 'field-area') {
-      return (
-        <FieldAreaWorkspace
-          externalRecord={activeExternalRecord}
-          onExternalRecordApplied={
-            handleExternalRecordApplied
-          }
-          showSavedRecords={false}
-        />
-      );
-    }
-
-    if (activeModuleId === 'plot-boundary-guide') {
-      return (
-        <PlotBoundaryWorkspace
-          externalRecord={activeExternalRecord}
-          onExternalRecordApplied={
-            handleExternalRecordApplied
-          }
-          showSavedRecords={false}
-        />
-      );
-    }
-
-    if (activeModuleId === 'map-scale-helper') {
-      return (
-        <MapScaleWorkspace
-          externalRecord={activeExternalRecord}
-          onExternalRecordApplied={
-            handleExternalRecordApplied
-          }
-          showSavedRecords={false}
-        />
-      );
-    }
-
-    return (
-      <AreaConverterWorkspace
-        externalRecord={activeExternalRecord}
-        onExternalRecordApplied={
-          handleExternalRecordApplied
-        }
-        showSavedRecords={false}
-      />
-    );
-  };
-
+  const applied = useCallback(() => setPending(null), []);
+  const externalRecord = pending?.moduleId === moduleId ? pending.record : null;
   return (
-    <AppScreen>
+    <AppScreen scroll={false}>
       <AppHeader
+        title={active.title[hi ? 1 : 0]}
         leftIconName="arrow-left"
         onLeftPress={() => navigation.navigate('Home')}
-        rightIcons={[
-          {
-            iconName: 'file-document-multiple-outline',
-            onPress: () =>
-              navigation.navigate(
-                'MeasurementSavedRecords',
-                {
-                  moduleId: activeModule.id,
-                  storageToolId:
-                    activeModule.storageToolId,
-                  title: activeModule.title,
-                },
-              ),
-          },
-        ]}
-        title={strings.measurement}
+        rightIconName="notebook-outline"
+        rightAccessibilityLabel={t('Saved notes', 'सेव किए नोट')}
+        onRightPress={openSaved}
       />
-
-      <View
-        style={[
-          styles.content,
-          {
-            paddingHorizontal: metrics.contentPadding,
-            paddingTop: metrics.verticalScale(14, {
-              maxFactor: 1.08,
-              minFactor: 0.9,
-            }),
-          },
-        ]}>
-        <ScrollView
-          contentContainerStyle={[
-            styles.tabScrollContent,
-            {
-              paddingRight: metrics.scale(4, {
-                maxFactor: 1.05,
-                minFactor: 0.92,
-              }),
-            },
-          ]}
-          horizontal
-          showsHorizontalScrollIndicator={false}>
-          {modules.map(module => {
-            const selected = module.id === activeModuleId;
-
+      <ScrollView
+        ref={scroll}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.content}
+      >
+        <View style={styles.toolStrip}>
+          {MEASUREMENT_TOOLS.map((tool, index) => {
+            const selected = tool.id === moduleId;
             return (
               <AppPressable
-                key={module.id}
-                onPress={() => setActiveModuleId(module.id)}
-                pressEffect="none"
-                pressedOpacity={0.88}
+                key={tool.id}
+                accessibilityRole="button"
+                accessibilityState={{ selected }}
+                accessibilityLabel={
+                  tool.title[hi ? 1 : 0] +
+                  (tool.id === 'gps-land-measure' && !premium
+                    ? t(' · Locked · Premium', ' · लॉक · प्रीमियम')
+                    : '')
+                }
+                onPress={() => choose(tool.id)}
+                containerStyle={styles.toolTabContainer}
                 style={[
-                  styles.tabChip,
+                  styles.toolTab,
                   {
-                    borderRadius: metrics.scale(999, {
-                      maxFactor: 1.06,
-                      minFactor: 0.92,
-                    }),
-                    marginRight: metrics.scale(10, {
-                      maxFactor: 1.05,
-                      minFactor: 0.92,
-                    }),
-                    paddingHorizontal: metrics.scale(14, {
-                      maxFactor: 1.06,
-                      minFactor: 0.92,
-                    }),
-                    paddingVertical: metrics.verticalScale(10, {
-                      maxFactor: 1.08,
-                      minFactor: 0.9,
-                    }),
+                    borderBottomColor: selected
+                      ? colors.primary
+                      : 'transparent',
                   },
-                  selected && styles.tabChipActive,
-                ]}>
+                ]}
+              >
+                {RELEASE_FEATURES.premium && tool.id === 'gps-land-measure' && (
+                  <Icon
+                    name={premium ? 'crown' : 'lock'}
+                    size={20}
+                    color={colors.primary}
+                  />
+                )}
                 <Text
                   style={[
-                    styles.tabChipText,
-                    {
-                      fontSize: metrics.responsiveFont(12.8, {
-                        maxFactor: 1.05,
-                        minFactor: 0.92,
-                      }),
-                    },
-                    selected && styles.tabChipTextActive,
-                  ]}>
-                  {module.title}
+                    styles.toolTabText,
+                    { color: selected ? colors.primary : colors.textMuted },
+                  ]}
+                >
+                  {
+                    (hi
+                      ? ['क्षेत्रफल', 'अनियमित', 'इकाइयाँ', 'पैमाना', 'GPS']
+                      : ['Area', 'Irregular', 'Units', 'Scale', 'GPS'])[index]
+                  }
                 </Text>
               </AppPressable>
             );
           })}
-        </ScrollView>
-
-        <View
-          style={{
-            marginTop: metrics.verticalScale(14, {
-              maxFactor: 1.08,
-              minFactor: 0.9,
-            }),
-          }}>
-          {renderWorkspace()}
         </View>
-      </View>
+        {moduleId === 'area-converter' && (
+          <AppPressable
+            accessibilityRole="button"
+            accessibilityLabel={t('Convert length', 'लंबाई बदलें')}
+            onPress={() =>
+              navigation.navigate('Calculator', {
+                focusToolId: 'length-converter',
+              })
+            }
+            style={styles.lengthLink}
+          >
+            <Text style={{ color: colors.primary }}>
+              {t(
+                'Convert length: metre, feet, yard, inch…',
+                'लंबाई बदलें: मीटर, फुट, गज, इंच…',
+              )}
+            </Text>
+          </AppPressable>
+        )}
+        <View
+          onLayout={event => {
+            workspaceY.current = event.nativeEvent.layout.y;
+          }}
+        >
+          <Animated.View
+            style={{
+              opacity: reveal,
+              transform: [
+                {
+                  translateY: reveal.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [12, 0],
+                  }),
+                },
+              ],
+            }}
+          >
+            {moduleId === 'gps-land-measure' ? (
+              focused && (
+                <GpsLandMeasureWorkspace
+                  externalRecord={externalRecord}
+                  onExternalRecordApplied={applied}
+                  showSavedRecords={false}
+                  onOpenSaved={openSaved}
+                />
+              )
+            ) : (
+              <MeasurementCalculator
+                key={`${stateCode}-${moduleId}`}
+                moduleId={moduleId}
+                externalRecord={externalRecord}
+                onRecordApplied={applied}
+                onOpenSaved={openSaved}
+              />
+            )}
+          </Animated.View>
+        </View>
+      </ScrollView>
     </AppScreen>
   );
-};
+}
 
-export default MeasurementScreen;
+const styles = StyleSheet.create({
+  lengthLink: { minHeight: 44, justifyContent: 'center', marginBottom: 10 },
+  content: { paddingHorizontal: 18, paddingBottom: 24 },
+  toolStrip: { flexDirection: 'row', gap: 4, marginBottom: 10 },
+  toolTabContainer: { flex: 1 },
+  toolTab: { minHeight: 44, justifyContent: 'center', borderBottomWidth: 2 },
+  toolTabText: { fontSize: 12, fontWeight: '600' },
+});

@@ -5,8 +5,10 @@ import {
 import {LocalizedText} from '../types/tool';
 import {UpBhulekhLaunchAction} from '../types/upBhulekh';
 
-export const STATE_SELECTION_STORAGE_KEY =
+export const LEGACY_STATE_SELECTION_STORAGE_KEY =
   'smart-work-selected-state';
+// Do not silently reactivate a choice left over from before the UP-only release.
+export const STATE_SELECTION_STORAGE_KEY = 'smart-work-selected-state-v2';
 
 export type HomeTabRoute =
   | 'Services'

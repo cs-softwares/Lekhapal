@@ -1,16 +1,2 @@
-module.exports = {
-  dependencies: {
-    'react-native-reanimated': {
-      platforms: {
-        android: null,
-        ios: null,
-      },
-    },
-    'react-native-worklets': {
-      platforms: {
-        android: null,
-        ios: null,
-      },
-    },
-  },
-};
+// React Navigation's drawer uses Reanimated and Worklets on both platforms.
+module.exports = { dependencies: {} };

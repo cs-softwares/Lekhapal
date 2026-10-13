@@ -1,4 +1,9 @@
 {
   "name": "Lekhpal",
-  "displayName": "Lekhpal : Smart Work"
+  "displayName": "Lekhpal : Smart Work",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-4794037209316760~2855952918",
+    "ios_app_id": "ca-app-pub-3940256099942544~1458002511",
+    "delay_app_measurement_init": true
+  }
 }

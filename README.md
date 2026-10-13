@@ -1,3 +1,5 @@
+Approved portal behavior is recorded in [the Bhulekh baseline](docs/approved-bhulekh-baseline.md); preserve it during future fixes.
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -95,3 +97,16 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+## Revenue officer field suite
+
+The landing workspace now includes revenue search, boundary surveys, mutation review, crop relief, certificate verification, encroachment cases, persistent drafts and local mock sync. Government websites remain embedded in the app and are directly available from the dashboard and drawer.
+
+See [FIELD_DESK.md](docs/FIELD_DESK.md) for architecture, supported workflows, validation commands, and the distinction between live government websites and the local demonstration records.
+
+### Temporary UP-first rollout
+
+State selection is **hidden, not removed**. `RELEASE_FEATURES.multiState` in
+`src/config/releaseFeatures.ts` currently selects the UP workspace without a picker.
+Keep all state options, picker routes and per-state data for the later rollout.
+See [the restoration note](docs/MULTI_STATE_ROLLOUT.md) before changing this behaviour.

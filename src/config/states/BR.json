@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "2026-10-09.1",
+  "stateCode": "BR",
+  "name": {
+    "en": "Bihar",
+    "hi": "बिहार"
+  },
+  "languages": ["hi", "en"],
+  "stage": "pilot",
+  "catalog": "configured",
+  "dashboardServiceIds": [
+    "BR-records",
+    "br-jamabandi",
+    "BR-map",
+    "BR-certificates"
+  ],
+  "services": [
+    {
+      "id": "BR-records",
+      "title": {
+        "en": "BiharBhumi · Land services",
+        "hi": "बिहारभूमि · भूमि सेवाएं"
+      },
+      "subtitle": {
+        "en": "Official Bihar land records, mutation and citizen services.",
+        "hi": "बिहार के आधिकारिक भूमि अभिलेख, दाखिल-खारिज और नागरिक सेवाएं।"
+      },
+      "category": "Land records",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Land records",
+        "BiharBhumi · Land services",
+        "बिहारभूमि · भूमि सेवाएं"
+      ],
+      "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "br-jamabandi",
+      "title": {
+        "en": "View Jamabandi register",
+        "hi": "जमाबंदी पंजी देखें"
+      },
+      "subtitle": {
+        "en": "Open the official Bihar Jamabandi search.",
+        "hi": "बिहार की आधिकारिक जमाबंदी खोज खोलें।"
+      },
+      "category": "Land records",
+      "icon": "file-search-outline",
+      "searchTerms": ["jamabandi", "register", "जमाबंदी", "पंजी"],
+      "url": "https://emutation.bihar.gov.in/biharBhumireport/ViewJamabandi.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Linked by BiharBhumi. Destination research fetch timed out; Android and workflow checks are pending."
+      }
+    },
+    {
+      "id": "bihar-officer-dakhil-kharij",
+      "title": {
+        "en": "Dakhil Kharij Login",
+        "hi": "दाखिल-खारिज लॉगिन"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Dakhil Kharij Login",
+        "दाखिल-खारिज लॉगिन"
+      ],
+      "url": "https://biharbhumi.bihar.gov.in/BiharEmutationNew/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "bihar-officer-register-two",
+      "title": {
+        "en": "Register-II Update Login",
+        "hi": "रजिस्टर-II अद्यतन लॉगिन"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Register-II Update Login",
+        "रजिस्टर-II अद्यतन लॉगिन"
+      ],
+      "url": "https://biharbhumi.bihar.gov.in/Bashudha/NewLogin.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "bihar-officer-register-two-new",
+      "title": {
+        "en": "Register-II Update Login (New)",
+        "hi": "रजिस्टर-II अद्यतन लॉगिन (नया)"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Register-II Update Login (New)",
+        "रजिस्टर-II अद्यतन लॉगिन (नया)"
+      ],
+      "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/NewLogin.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "bihar-officer-government-land",
+      "title": {
+        "en": "Government Land Dakhil Kharij Login",
+        "hi": "सरकारी भूमि दाखिल-खारिज लॉगिन"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Government Land Dakhil Kharij Login",
+        "सरकारी भूमि दाखिल-खारिज लॉगिन"
+      ],
+      "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/Authority/GovLandLogin.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "bihar-officer-complaint",
+      "title": {
+        "en": "Raise Complaint",
+        "hi": "शिकायत दर्ज करें"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Raise Complaint",
+        "शिकायत दर्ज करें"
+      ],
+      "url": "https://parimarjanplus.bihar.gov.in/RaiseATicket/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "bihar-officer-kaithi",
+      "title": {
+        "en": "Kaithi Translation Service",
+        "hi": "कैथी दस्तावेज़ अनुवाद सेवा"
+      },
+      "subtitle": {
+        "en": "BiharBhumi · Official service",
+        "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+      },
+      "category": "Revenue services",
+      "icon": "office-building-outline",
+      "searchTerms": [
+        "Revenue services",
+        "Kaithi Translation Service",
+        "कैथी दस्तावेज़ अनुवाद सेवा"
+      ],
+      "url": "https://biharbhumiplus.bihar.gov.in/kaithitranslator/AdminLogin.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "br-bhulagan",
+      "title": {
+        "en": "Bhu Lagan",
+        "hi": "भू-लगान"
+      },
+      "subtitle": {
+        "en": "Official Bihar lagan payment portal.",
+        "hi": "आधिकारिक बिहार भू-लगान भुगतान पोर्टल।"
+      },
+      "category": "Revenue services",
+      "icon": "cash-check",
+      "searchTerms": ["Revenue services", "Bhu Lagan", "भू-लगान"],
+      "url": "https://www.bhulagan.bihar.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "br-bhuabhilekh",
+      "title": {
+        "en": "Bhu Abhilekh",
+        "hi": "भू-अभिलेख"
+      },
+      "subtitle": {
+        "en": "Official Bihar digital land document portal.",
+        "hi": "आधिकारिक बिहार डिजिटल भू-अभिलेख पोर्टल।"
+      },
+      "category": "Revenue services",
+      "icon": "file-document-outline",
+      "searchTerms": ["Revenue services", "Bhu Abhilekh", "भू-अभिलेख"],
+      "url": "https://bhuabhilekh.bihar.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "BR-map",
+      "title": {
+        "en": "BhuNaksha Bihar",
+        "hi": "भू-नक्शा बिहार"
+      },
+      "subtitle": {
+        "en": "View the official Bihar cadastral map service.",
+        "hi": "बिहार की आधिकारिक भू-नक्शा सेवा खोलें।"
+      },
+      "category": "Maps & survey",
+      "icon": "map-outline",
+      "searchTerms": ["Maps & survey", "BhuNaksha Bihar", "भू-नक्शा बिहार"],
+      "url": "https://bhunaksha.bihar.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "BR-certificates",
+      "title": {
+        "en": "Bihar RTPS · Certificates",
+        "hi": "बिहार RTPS · प्रमाणपत्र"
+      },
+      "subtitle": {
+        "en": "Certificates and applications on the Bihar service portal.",
+        "hi": "बिहार सेवा पोर्टल पर प्रमाणपत्र और आवेदन।"
+      },
+      "category": "Certificates",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Certificates",
+        "Bihar RTPS · Certificates",
+        "बिहार RTPS · प्रमाणपत्र"
+      ],
+      "url": "https://serviceonline.bihar.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://serviceonline.bihar.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "BR-registration",
+      "title": {
+        "en": "Bihar Registration",
+        "hi": "बिहार निबंधन"
+      },
+      "subtitle": {
+        "en": "Official Bihar registration department portal.",
+        "hi": "बिहार के आधिकारिक निबंधन विभाग का पोर्टल।"
+      },
+      "category": "Registration",
+      "icon": "file-sign",
+      "searchTerms": ["Registration", "Bihar Registration", "बिहार निबंधन"],
+      "url": "https://nibandhan.bihar.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://nibandhan.bihar.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    }
+  ]
+}

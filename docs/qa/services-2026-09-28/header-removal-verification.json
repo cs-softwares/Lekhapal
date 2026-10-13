@@ -1,0 +1,268 @@
+[
+  {
+    "service": "copy",
+    "openingMs": 1809,
+    "entry": "#/selection",
+    "chosen": [
+      "Amroha (अमरोहा)",
+      "Amroha (अमरोहा)",
+      "Akbarpur Sakinya (अकबरपुर सकैनिया)-117944 (अमरोहा)"
+    ],
+    "fingerprint": {
+      "url": "#/khatauni_rtk",
+      "tag": "KHATAUNI_RTK",
+      "labels": [
+        "जनपद चुनें",
+        "तहसील चुनें",
+        "ग्राम चुनें",
+        "वर्तमान खतौनी/पुरानी फसली वर्ष",
+        "Back",
+        "खसरा/गाटा संख्या द्वारा खोजें",
+        "खाता संख्या द्वारा खोजें",
+        "खातेदार के नाम द्वारा खोजें",
+        "भूमि श्रेंणी द्वारा खोजें",
+        "नामांतरण दिनांक से खोजें"
+      ],
+      "inputs": [
+        {
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "खसरा/गाटा संख्या द्वारा खोजें..."
+        },
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "खाता संख्या द्वारा खोजें..."
+        },
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": ""
+        },
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया भूमि प्रकार चुनें.."
+        },
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "date",
+          "placeholder": "दिनांक चुनें.."
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया दर्शायी गयी संख्या भरें "
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया दर्शायी गयी संख्या भरें "
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया दर्शायी गयी संख्या भरें "
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया दर्शायी गयी संख्या भरें "
+        },
+        {
+          "type": "text",
+          "placeholder": "कृपया दर्शायी गयी संख्या भरें "
+        }
+      ],
+      "buttons": [
+        "Back",
+        "खोजें",
+        "उद्धरण देखें",
+        "खोजें",
+        "उद्धरण देखें",
+        "खोजें",
+        "उद्धरण देखें",
+        "खोजें",
+        "उद्धरण देखें",
+        "",
+        "",
+        "Submit",
+        "",
+        "",
+        "Submit",
+        "",
+        "",
+        "Submit",
+        "",
+        "",
+        "Submit",
+        "",
+        "",
+        "Submit"
+      ]
+    },
+    "unmodified": true,
+    "matched": true,
+    "headerHidden": true,
+    "ready": {
+      "requestId": "14:false",
+      "url": "#/selection",
+      "tag": "SELECTION"
+    }
+  },
+  {
+    "service": "certified",
+    "openingMs": 1113,
+    "entry": "#/index-login",
+    "chosen": [],
+    "fingerprint": {
+      "url": "#/index-login",
+      "tag": "INDEX-LOGIN",
+      "labels": [
+        "Mobile Number",
+        "O.T.P.",
+        "Captcha"
+      ],
+      "inputs": [
+        {
+          "type": "hidden",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "Enter Mobile No..."
+        },
+        {
+          "type": "password",
+          "placeholder": "Enter O.T.P"
+        },
+        {
+          "type": "text",
+          "placeholder": "Enter captcha"
+        }
+      ],
+      "buttons": [
+        "Send OTP",
+        "",
+        "Login"
+      ]
+    },
+    "unmodified": true,
+    "matched": true,
+    "headerHidden": true,
+    "ready": {
+      "requestId": "15:false",
+      "url": "#/index-login",
+      "tag": "INDEX-LOGIN"
+    }
+  },
+  {
+    "service": "sale",
+    "openingMs": 558,
+    "entry": "#/selection",
+    "chosen": [
+      "Amroha (अमरोहा)",
+      "Amroha (अमरोहा)",
+      "Akbarpur Sakinya (अकबरपुर सकैनिया)-117944 (अमरोहा)"
+    ],
+    "fingerprint": {
+      "url": "#/gata_wise",
+      "tag": "GATA_WISE",
+      "labels": [
+        "जनपद : अमरोहा",
+        "तहसील : अमरोहा",
+        "ग्राम : अकबरपुर सकैनिया",
+        "खसरा/गाटा संख्या द्वारा खोजें"
+      ],
+      "inputs": [
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "खसरा/गाटा संख्या द्वारा खोजें..."
+        }
+      ],
+      "buttons": [
+        "Back",
+        "खोजें",
+        "विक्रय प्रस्थिति"
+      ]
+    },
+    "unmodified": true,
+    "matched": true,
+    "headerHidden": true,
+    "ready": {
+      "requestId": "16:false",
+      "url": "#/selection",
+      "tag": "SELECTION"
+    }
+  },
+  {
+    "service": "dispute",
+    "openingMs": 577,
+    "entry": "#/selection",
+    "chosen": [
+      "Amroha (अमरोहा)",
+      "Amroha (अमरोहा)",
+      "Akbarpur Sakinya (अकबरपुर सकैनिया)-117944 (अमरोहा)"
+    ],
+    "fingerprint": {
+      "url": "#/vaad_grasht",
+      "tag": "VAAD_GRASHT",
+      "labels": [
+        "जनपद : अमरोहा",
+        "तहसील : अमरोहा",
+        "ग्राम : अकबरपुर सकैनिया",
+        "खसरा/गाटा संख्या द्वारा खोजें"
+      ],
+      "inputs": [
+        {
+          "type": "radio",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "खसरा/गाटा संख्या द्वारा खोजें..."
+        }
+      ],
+      "buttons": [
+        "Back",
+        "खोजें",
+        "गाटा प्रस्थिति"
+      ]
+    },
+    "unmodified": true,
+    "matched": true,
+    "headerHidden": true,
+    "ready": {
+      "requestId": "17:false",
+      "url": "#/selection",
+      "tag": "SELECTION"
+    }
+  }
+]

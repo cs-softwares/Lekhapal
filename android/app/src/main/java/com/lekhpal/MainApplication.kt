@@ -1,6 +1,12 @@
 package com.lekhpal
 
 import android.app.Application
+import com.lekhpal.workfiles.WorkFilesPackage
+import com.lekhpal.census.CensusPortalPackage
+import com.lekhpal.ero.EroPortalPackage
+import com.lekhpal.about.AppDetailsPackage
+import com.lekhpal.updates.AppUpdatesPackage
+import com.lekhpal.browser.PortalBrowserPackage
 import com.lekhpal.notifications.SmartWorkNotificationPackage
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -16,6 +22,12 @@ class MainApplication : Application(), ReactApplication {
       packageList =
         PackageList(this).packages.apply {
           add(SmartWorkNotificationPackage())
+          add(PortalBrowserPackage())
+          add(AppDetailsPackage())
+          add(WorkFilesPackage())
+          add(CensusPortalPackage())
+          add(EroPortalPackage())
+          add(AppUpdatesPackage())
         },
     )
   }

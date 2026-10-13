@@ -1,0 +1,67 @@
+[
+  {
+    "name": "district",
+    "request": "2:false",
+    "ready": {
+      "message": {
+        "type": "bhulekh-directory-ready",
+        "requestId": "2:false"
+      },
+      "url": "https://upbhulekh.gov.in/#/districts_list",
+      "component": "DISTRICTS_LIST"
+    },
+    "text": "Uttar Pradesh District List\n Back\nकुल जनपदों की संख्या :- 75\nSerial No.\tDistrict Name (English)\tDistrict Code\tDistrict Name (Hindi)\n1\tAmroha\t137\tअमरोहा\n2\tAmethi"
+  },
+  {
+    "name": "tehsil",
+    "request": "3:false",
+    "ready": {
+      "message": {
+        "type": "bhulekh-directory-ready",
+        "requestId": "3:false"
+      },
+      "url": "https://upbhulekh.gov.in/#/tehsils_list",
+      "component": "TEHSILS_LIST"
+    },
+    "text": "Uttar Pradesh Tehsil List\n Back\nSerial No\tDistrict Name (English)\tTehsil Name (English)\tTehsil Name (Hindi)"
+  },
+  {
+    "name": "pargana",
+    "request": "4:false",
+    "ready": {
+      "message": {
+        "type": "bhulekh-directory-ready",
+        "requestId": "4:false"
+      },
+      "url": "https://upbhulekh.gov.in/#/parganaReport",
+      "component": "PARGANAREPORT"
+    },
+    "text": "Uttar Pradesh Pargana List\n Back\nSerial No\tDistrict Name\tTehsil Name\tPargana Name"
+  },
+  {
+    "name": "land",
+    "request": "5:false",
+    "ready": {
+      "message": {
+        "type": "bhulekh-directory-ready",
+        "requestId": "5:false"
+      },
+      "url": "https://upbhulekh.gov.in/#/landTypeReports",
+      "component": "LANDTYPEREPORTS"
+    },
+    "text": "उत्तर प्रदेश - भूमि प्रकार सूची\n Back\n Print\nक्रम स.\tभूमि प्रकार\tभूमि प्रकार का विवरण\tभूमि प्रकार का कोड\n( गाटा यूनिक कोड का 15-16 अंक )"
+  },
+  {
+    "name": "government",
+    "request": "6:false",
+    "ready": {
+      "message": {
+        "type": "bhulekh-directory-ready",
+        "requestId": "6:false"
+      },
+      "url": "https://upbhulekh.gov.in/#/login",
+      "component": "LOGIN"
+    },
+    "text": "सरकारी भूमि यूजर लागिन\nPassword\ncaptcha\nLogin"
+  }
+]

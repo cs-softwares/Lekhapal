@@ -1,31 +1,17 @@
-﻿import React, {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
-import {
-  Alert,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import ViewShot, {
-  ViewShotRef,
-} from 'react-native-view-shot';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, StyleSheet, Text, View } from 'react-native';
+import ViewShot, { ViewShotRef } from 'react-native-view-shot';
 
-import {useLanguage} from '../../context/LanguageContext';
-import {useSavedWorkspaceRecords} from '../../hooks/useSavedWorkspaceRecords';
-import {WorkspaceRecord} from '../../types/workspace';
+import { useSelectedState } from '../../context/SelectedStateContext';
+import { useLanguage } from '../../context/LanguageContext';
+import { useSavedWorkspaceRecords } from '../../hooks/useSavedWorkspaceRecords';
+import { WorkspaceRecord } from '../../types/workspace';
 import {
   exportRefAsImage,
   exportSummaryAsPdf,
   shareTextSummary,
 } from '../../utils/workspaceExport';
-import {
-  formatFixed,
-  sanitizeFileName,
-} from '../../utils/workspaceFormatters';
+import { formatFixed, sanitizeFileName } from '../../utils/workspaceFormatters';
 import AppSectionTitle from '../AppSectionTitle';
 import FieldPlanPreview from './FieldPlanPreview';
 import SavedRecordsPanel from './SavedRecordsPanel';
@@ -33,7 +19,7 @@ import WorkspaceActionRow from './WorkspaceActionRow';
 import WorkspaceChipSelector from './WorkspaceChipSelector';
 import WorkspaceField from './WorkspaceField';
 import WorkspaceMetricTile from './WorkspaceMetricTile';
-import {workspaceStyles} from './workspaceStyles';
+import { workspaceStyles } from './workspaceStyles';
 
 type LengthUnit = 'feet' | 'meter';
 
@@ -57,7 +43,9 @@ const FieldAreaWorkspace = ({
   onExternalRecordApplied,
   showSavedRecords = true,
 }: FieldAreaWorkspaceProps) => {
-  const {language} = useLanguage();
+  const { language } = useLanguage();
+  const { stateCode } = useSelectedState();
+  const isUp = stateCode === 'UP';
   const reportRef = useRef<ViewShotRef>(null);
   const [plotLabel, setPlotLabel] = useState('');
   const [villageName, setVillageName] = useState('');
@@ -65,27 +53,23 @@ const FieldAreaWorkspace = ({
   const [width, setWidth] = useState('');
   const [unit, setUnit] = useState<LengthUnit>('meter');
   const [notes, setNotes] = useState('');
-  const {deleteRecord, records, saveRecord} =
-    useSavedWorkspaceRecords('field-area-workspace');
+  const { deleteRecord, records, saveRecord } = useSavedWorkspaceRecords(
+    'field-area-workspace',
+  );
 
   const copy = useMemo(
     () => ({
       intro:
         language === 'hi'
-          ? 'Khet, plot या खाली जगह की simple माप के लिए length और width भरें. रिज़ल्ट तुरंत square meter, UP bigha, biswa और acre में मिलेगा।'
-          : 'For a simple field, khet, or plot measurement, enter length and width. The result is shown instantly in square meter, UP bigha, biswa, and acre.',
-      currentReport:
-        language === 'hi'
-          ? 'अभी की field report'
-          : 'Plot note',
+          ? 'Khet, plot या खाली जगह की simple माप के लिए length और width भरें. रिज़ल्ट तुरंत square meter, hectare और acre में मिलेगा।'
+          : 'For a simple field, khet, or plot measurement, enter length and width. The result is shown instantly in square meter, hectare, and acre.',
+      currentReport: language === 'hi' ? 'अभी की field report' : 'Plot note',
       save: language === 'hi' ? 'सेव करें' : 'Save',
       share: language === 'hi' ? 'शेयर' : 'Share',
       pdf: 'PDF',
       image: 'Image',
       savedReports:
-        language === 'hi'
-          ? 'सेव्ड field reports'
-          : 'Saved plot notes',
+        language === 'hi' ? 'सेव्ड field reports' : 'Saved plot notes',
       load: language === 'hi' ? 'लोड करें' : 'Load',
       emptyTitle:
         language === 'hi'
@@ -96,43 +80,21 @@ const FieldAreaWorkspace = ({
           ? 'जब आप कोई field measurement सेव करेंगे तो वह यहाँ फिर से खुलेगा।'
           : 'Saved field measurements will appear here for quick reuse.',
       plotLabel:
-        language === 'hi'
-          ? 'Plot / Khasra / Gata'
-          : 'Plot / Khasra / Gata',
-      villageLabel:
-        language === 'hi' ? 'Village' : 'Village',
-      lengthLabel:
-        language === 'hi'
-          ? 'Length'
-          : 'Length',
-      widthLabel:
-        language === 'hi'
-          ? 'Width'
-          : 'Width',
-      unitLabel:
-        language === 'hi'
-          ? 'Measurement unit'
-          : 'Measurement unit',
-      notesLabel:
-        language === 'hi'
-          ? 'Notes'
-          : 'Notes',
-      resultTitle:
-        language === 'hi'
-          ? 'Measurement result'
-          : 'Area summary',
+        language === 'hi' ? 'Plot / Khasra / Gata' : 'Plot / Khasra / Gata',
+      villageLabel: language === 'hi' ? 'Village' : 'Village',
+      lengthLabel: language === 'hi' ? 'Length' : 'Length',
+      widthLabel: language === 'hi' ? 'Width' : 'Width',
+      unitLabel: language === 'hi' ? 'Measurement unit' : 'Measurement unit',
+      notesLabel: language === 'hi' ? 'Notes' : 'Notes',
+      resultTitle: language === 'hi' ? 'Measurement result' : 'Area summary',
       saveBlocked:
-        language === 'hi'
-          ? 'Length और width भरें'
-          : 'Enter length and width',
+        language === 'hi' ? 'Length और width भरें' : 'Enter length and width',
       saveBlockedBody:
         language === 'hi'
           ? 'सेव या एक्सपोर्ट से पहले length और width दर्ज करें।'
           : 'Add both length and width before saving or exporting.',
       saveDoneTitle:
-        language === 'hi'
-          ? 'Field report सेव हो गई'
-          : 'Plot note saved',
+        language === 'hi' ? 'Field report सेव हो गई' : 'Plot note saved',
       saveDoneBody:
         language === 'hi'
           ? 'यह field report अब सेव्ड लिस्ट में है।'
@@ -148,16 +110,11 @@ const FieldAreaWorkspace = ({
   const lengthValue = toNumber(length);
   const widthValue = toNumber(width);
   const lengthMeters =
-    unit === 'meter'
-      ? lengthValue
-      : lengthValue * FEET_TO_METER;
+    unit === 'meter' ? lengthValue : lengthValue * FEET_TO_METER;
   const widthMeters =
-    unit === 'meter'
-      ? widthValue
-      : widthValue * FEET_TO_METER;
+    unit === 'meter' ? widthValue : widthValue * FEET_TO_METER;
   const areaSqm = lengthMeters * widthMeters;
-  const perimeterMeters =
-    lengthMeters * 2 + widthMeters * 2;
+  const perimeterMeters = lengthMeters * 2 + widthMeters * 2;
   const areaSqft = areaSqm / SQM_PER_SQFT;
   const areaAcre = areaSqm / SQM_PER_ACRE;
   const areaHectare = areaSqm / SQM_PER_HECTARE;
@@ -167,15 +124,10 @@ const FieldAreaWorkspace = ({
 
   const recordTitle =
     plotLabel.trim() ||
-    (language === 'hi'
-      ? 'Field measurement'
-      : 'Manual plot note');
+    (language === 'hi' ? 'Field measurement' : 'Manual plot note');
   const recordSubtitle =
     villageName.trim() ||
-    `${formatFixed(lengthValue, 2)} x ${formatFixed(
-      widthValue,
-      2,
-    )} ${unit}`;
+    `${formatFixed(lengthValue, 2)} x ${formatFixed(widthValue, 2)} ${unit}`;
   const reportMetaItems = [
     {
       iconName: 'ruler-square',
@@ -207,7 +159,10 @@ const FieldAreaWorkspace = ({
         },
         {
           label: 'Field size',
-          value: `${formatFixed(lengthValue, 2)} x ${formatFixed(widthValue, 2)} ${unitDisplay}`,
+          value: `${formatFixed(lengthValue, 2)} x ${formatFixed(
+            widthValue,
+            2,
+          )} ${unitDisplay}`,
         },
         {
           label: 'Unit',
@@ -226,8 +181,12 @@ const FieldAreaWorkspace = ({
       2,
     )} ${unit}`,
     `Area: ${formatFixed(areaSqm, 2)} Sq M`,
-    `Area: ${formatFixed(areaUpBigha, 4)} UP Bigha`,
-    `Area: ${formatFixed(areaUpBiswa, 4)} UP Biswa`,
+    ...(isUp
+      ? [
+          `Area: ${formatFixed(areaUpBigha, 4)} UP Bigha`,
+          `Area: ${formatFixed(areaUpBiswa, 4)} UP Biswa`,
+        ]
+      : []),
     `Area: ${formatFixed(areaAcre, 4)} Acre`,
   ];
 
@@ -296,12 +255,10 @@ const FieldAreaWorkspace = ({
       <View style={workspaceStyles.formCard}>
         <WorkspaceChipSelector
           label={copy.unitLabel}
-          onSelect={nextValue =>
-            setUnit(nextValue as LengthUnit)
-          }
+          onSelect={nextValue => setUnit(nextValue as LengthUnit)}
           options={[
-            {label: 'Meter', value: 'meter'},
-            {label: 'Feet', value: 'feet'},
+            { label: 'Meter', value: 'meter' },
+            { label: 'Feet', value: 'feet' },
           ]}
           selectedValue={unit}
         />
@@ -347,59 +304,45 @@ const FieldAreaWorkspace = ({
         <AppSectionTitle title={copy.resultTitle} />
         <ViewShot ref={reportRef}>
           <View style={styles.summarySheet}>
-          <View style={styles.noteHeader}>
-            <View style={styles.noteHeaderAccent} />
-            <View style={styles.noteHeaderCopy}>
-              <Text style={styles.noteTitle}>
-                {recordTitle}
-              </Text>
-              <Text style={styles.noteSubtitle}>
-                {recordSubtitle}
-              </Text>
-            </View>
-          </View>
-
-          <View style={styles.noteMetaRow}>
-            {reportMetaItems.map(item => (
-              <View
-                key={item.label}
-                style={styles.noteMetaItem}>
-                <Text style={styles.noteMetaLabel}>
-                  {item.label}
-                </Text>
-                <Text style={styles.noteMetaValue}>
-                  {item.value}
-                </Text>
+            <View style={styles.noteHeader}>
+              <View style={styles.noteHeaderAccent} />
+              <View style={styles.noteHeaderCopy}>
+                <Text style={styles.noteTitle}>{recordTitle}</Text>
+                <Text style={styles.noteSubtitle}>{recordSubtitle}</Text>
               </View>
-            ))}
-          </View>
+            </View>
 
-          {reportSections.map(section => (
-            <View
-              key={section.title}
-              style={styles.noteSection}>
-              <Text
-                style={[
-                  styles.noteSectionTitle,
-                  {color: section.accentColor},
-                ]}>
-                {section.title}
-              </Text>
+            <View style={styles.noteMetaRow}>
+              {reportMetaItems.map(item => (
+                <View key={item.label} style={styles.noteMetaItem}>
+                  <Text style={styles.noteMetaLabel}>{item.label}</Text>
+                  <Text style={styles.noteMetaValue}>{item.value}</Text>
+                </View>
+              ))}
+            </View>
+
+            {reportSections.map(section => (
+              <View key={section.title} style={styles.noteSection}>
+                <Text
+                  style={[
+                    styles.noteSectionTitle,
+                    { color: section.accentColor },
+                  ]}
+                >
+                  {section.title}
+                </Text>
 
                 <View style={styles.noteRows}>
                   {section.rows.map(row => (
                     <View
                       key={`${section.title}-${row.label}`}
-                      style={styles.noteRow}>
+                      style={styles.noteRow}
+                    >
                       <View style={styles.noteRowLeft}>
-                        <Text style={styles.noteRowLabel}>
-                          {row.label}
-                        </Text>
+                        <Text style={styles.noteRowLabel}>{row.label}</Text>
                       </View>
 
-                      <Text style={styles.noteRowValue}>
-                        {row.value}
-                      </Text>
+                      <Text style={styles.noteRowValue}>{row.value}</Text>
                     </View>
                   ))}
                 </View>
@@ -407,9 +350,7 @@ const FieldAreaWorkspace = ({
             ))}
 
             <View style={styles.noteSection}>
-              <Text style={styles.noteSectionTitle}>
-                Measured output
-              </Text>
+              <Text style={styles.noteSectionTitle}>Measured output</Text>
               <View style={workspaceStyles.metricsRow}>
                 <WorkspaceMetricTile
                   accentColor="#1E40AF"
@@ -421,16 +362,20 @@ const FieldAreaWorkspace = ({
                   label="Area in Sq M"
                   value={`${formatFixed(areaSqm, 2)} Sq M`}
                 />
-                <WorkspaceMetricTile
-                  accentColor="#0F766E"
-                  label="Area in UP Bigha"
-                  value={formatFixed(areaUpBigha, 4)}
-                />
-                <WorkspaceMetricTile
-                  accentColor="#10B981"
-                  label="Area in UP Biswa"
-                  value={formatFixed(areaUpBiswa, 4)}
-                />
+                {isUp && (
+                  <WorkspaceMetricTile
+                    accentColor="#0F766E"
+                    label="Area in UP Bigha"
+                    value={formatFixed(areaUpBigha, 4)}
+                  />
+                )}
+                {isUp && (
+                  <WorkspaceMetricTile
+                    accentColor="#10B981"
+                    label="Area in UP Biswa"
+                    value={formatFixed(areaUpBiswa, 4)}
+                  />
+                )}
                 <WorkspaceMetricTile
                   accentColor="#EA580C"
                   label="Area in Acre"
@@ -451,14 +396,10 @@ const FieldAreaWorkspace = ({
 
             {notes.trim() ? (
               <View style={styles.noteSection}>
-                <Text style={styles.noteSectionTitle}>
-                  Notes
-                </Text>
-              <Text style={styles.notePlainText}>
-                {notes.trim()}
-              </Text>
-            </View>
-          ) : null}
+                <Text style={styles.noteSectionTitle}>Notes</Text>
+                <Text style={styles.notePlainText}>{notes.trim()}</Text>
+              </View>
+            ) : null}
           </View>
         </ViewShot>
       </View>
@@ -468,9 +409,7 @@ const FieldAreaWorkspace = ({
         onExportImage={() =>
           ensureData() &&
           exportRefAsImage({
-            fileName: sanitizeFileName(
-              `field-${recordTitle}`,
-            ),
+            fileName: sanitizeFileName(`field-${recordTitle}`),
             ref: reportRef,
             title: `Field Measurement - ${recordTitle}`,
           }).catch(() => {
@@ -480,14 +419,9 @@ const FieldAreaWorkspace = ({
         onExportPdf={() =>
           ensureData() &&
           exportSummaryAsPdf({
-            fileName: sanitizeFileName(
-              `field-${recordTitle}`,
-            ),
+            fileName: sanitizeFileName(`field-${recordTitle}`),
             summaryLines: notes.trim()
-              ? [
-                  ...summaryLines,
-                  `Notes: ${notes.trim()}`,
-                ]
+              ? [...summaryLines, `Notes: ${notes.trim()}`]
               : summaryLines,
             title: `Field Measurement - ${recordTitle}`,
           }).catch(() => {
@@ -500,10 +434,7 @@ const FieldAreaWorkspace = ({
           handleShare(
             `Field Measurement - ${recordTitle}`,
             notes.trim()
-              ? [
-                  ...summaryLines,
-                  `Notes: ${notes.trim()}`,
-                ]
+              ? [...summaryLines, `Notes: ${notes.trim()}`]
               : summaryLines,
           )
         }
@@ -516,9 +447,7 @@ const FieldAreaWorkspace = ({
           loadLabel={copy.load}
           onDelete={deleteRecord}
           onLoad={handleLoad}
-          onShare={record =>
-            handleShare(record.title, record.summaryLines)
-          }
+          onShare={record => handleShare(record.title, record.summaryLines)}
           records={records}
           shareLabel={copy.share}
           title={copy.savedReports}
@@ -637,4 +566,3 @@ const styles = StyleSheet.create({
 });
 
 export default FieldAreaWorkspace;
-

@@ -1,0 +1,4521 @@
+[
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "AP",
+    "name": {
+      "en": "Andhra Pradesh",
+      "hi": "आंध्र प्रदेश"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "AP-fw-mebhoomi",
+      "AP-fw-bhunksha"
+    ],
+    "services": [
+      {
+        "id": "AP-fw-mebhoomi",
+        "title": {
+          "en": "Meebhumi",
+          "hi": "मीभूमि"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Meebhumi",
+          "मीभूमि",
+          "Meebhumi"
+        ],
+        "url": "https://meebhoomi.ap.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://meebhoomi.ap.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AP-fw-bhunksha",
+        "title": {
+          "en": "Bhunksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunaksha.ap.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.ap.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "AS",
+    "name": {
+      "en": "Assam",
+      "hi": "असम"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "AS-fw-jamabandicopy",
+      "AS-fw-assambhunaksha",
+      "AS-fw-jamabanditranslition",
+      "AS-fw-noc",
+      "AS-fw-objection",
+      "AS-fw-propertyrecord"
+    ],
+    "services": [
+      {
+        "id": "AS-fw-jamabandicopy",
+        "title": {
+          "en": "Jamabandi copy",
+          "hi": "जमाबंदी नकल"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Jamabandi copy",
+          "जमाबंदी नकल",
+          "Jamabandi copy"
+        ],
+        "url": "https://ilrms.assam.gov.in/dhar/index.php/Welcome/SelectLOC",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://ilrms.assam.gov.in/dhar/index.php/Welcome/SelectLOC",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AS-fw-assambhunaksha",
+        "title": {
+          "en": "Bhunksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunaksha.assam.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.assam.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AS-fw-jamabanditranslition",
+        "title": {
+          "en": "Jamabandi transliteration",
+          "hi": "जमाबंदी अन्य भाषाओं में"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Jamabandi transliteration",
+          "जमाबंदी अन्य भाषाओं में",
+          "Jamabandi transliteration"
+        ],
+        "url": "https://landhub.assam.gov.in/jamabandiLanguage/index.php/Welcome/SelectLOC",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://landhub.assam.gov.in/jamabandiLanguage/index.php/Welcome/SelectLOC",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AS-fw-noc",
+        "title": {
+          "en": "Extension of NOC",
+          "hi": "अनापत्ति प्रमाण पत्र अवधि विस्तार"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Extension of NOC",
+          "अनापत्ति प्रमाण पत्र अवधि विस्तार",
+          "Extension of NOC"
+        ],
+        "url": "https://noconline.assam.gov.in/nocexobj/index.php/usercontrol/nocselection/5",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://noconline.assam.gov.in/nocexobj/index.php/usercontrol/nocselection/5",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AS-fw-objection",
+        "title": {
+          "en": "Objection petition",
+          "hi": "अनापत्ति प्रमाण पत्र आपत्ति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Objection petition",
+          "अनापत्ति प्रमाण पत्र आपत्ति",
+          "Objection petition"
+        ],
+        "url": "https://noconline.assam.gov.in/nocexobj/index.php/usercontrol/objectpetition",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://noconline.assam.gov.in/nocexobj/index.php/usercontrol/objectpetition",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "AS-fw-propertyrecord",
+        "title": {
+          "en": "Property record",
+          "hi": "संपत्ति अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Property record",
+          "संपत्ति अभिलेख",
+          "Property record"
+        ],
+        "url": "https://basundhara.assam.gov.in/ilrmsdash/index.php/Welcome/deed_list",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://basundhara.assam.gov.in/ilrmsdash/index.php/Welcome/deed_list",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "BR",
+    "name": {
+      "en": "Bihar",
+      "hi": "बिहार"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "bihar-officer-dakhil-kharij",
+      "bihar-officer-register-two",
+      "bihar-officer-register-two-new",
+      "bihar-officer-government-land",
+      "br-jamabandi",
+      "BR-fw-jamabandilangua"
+    ],
+    "services": [
+      {
+        "id": "bihar-officer-dakhil-kharij",
+        "title": {
+          "en": "Mutation login",
+          "hi": "दाखिल खारिज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation login",
+          "दाखिल खारिज",
+          "दाखिल खारिज"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/BiharEmutationNew/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/BiharEmutationNew/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "bihar-officer-register-two",
+        "title": {
+          "en": "Register 2",
+          "hi": "रजिस्टर 2"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Register 2",
+          "रजिस्टर 2",
+          "रजिस्टर 2"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Bashudha/NewLogin.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Bashudha/NewLogin.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "bihar-officer-register-two-new",
+        "title": {
+          "en": "Register 2 · New",
+          "hi": "रजिस्टर 2 New"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Register 2 · New",
+          "रजिस्टर 2 New",
+          "रजिस्टर 2 New"
+        ],
+        "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/NewLogin.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://parimarjanplus.bihar.gov.in/ejamabandi/NewLogin.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "bihar-officer-government-land",
+        "title": {
+          "en": "Government land mutation",
+          "hi": "सरकारी भूमि दाखिल खारिज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Government land mutation",
+          "सरकारी भूमि दाखिल खारिज",
+          "सरकारी भूमि दाखिल खारिज"
+        ],
+        "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/Authority/GovLandLogin.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://parimarjanplus.bihar.gov.in/ejamabandi/Authority/GovLandLogin.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "br-jamabandi",
+        "title": {
+          "en": "View Jamabandi register",
+          "hi": "जमाबन्दी पंजी देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Jamabandi register",
+          "जमाबन्दी पंजी देखें",
+          "जमाबन्दी पंजी देखें"
+        ],
+        "url": "https://emutation.bihar.gov.in/biharBhumireport/ViewJamabandi.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-11",
+          "note": "Replaced obsolete 404 reference link using the current Bihar Bhumi homepage. Authenticated workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-jamabandilangua",
+        "title": {
+          "en": "Jamabandi in other languages",
+          "hi": "जमाबंदी अन्य भाषाओं में"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Jamabandi in other languages",
+          "जमाबंदी अन्य भाषाओं में",
+          "जमाबंदी अन्य भाषाओं में"
+        ],
+        "url": "https://emutation.bihar.gov.in/LRCRoRGistDemo/TransViewJamabandi.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://emutation.bihar.gov.in/LRCRoRGistDemo/TransViewJamabandi.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-bhumijanakari",
+        "title": {
+          "en": "Land information",
+          "hi": "भूमि जानकारी"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land information",
+          "भूमि जानकारी",
+          "भूमि जानकारी"
+        ],
+        "url": "https://bhumijankari.bihar.gov.in/Admin/AdvSearch/AdvSearch.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhumijankari.bihar.gov.in/Admin/AdvSearch/AdvSearch.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-map",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू नक्शा",
+          "भू नक्शा"
+        ],
+        "url": "https://bhunaksha.bihar.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.bihar.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-manchitra",
+        "title": {
+          "en": "Land maps and documents",
+          "hi": "भू मानचित्र"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Land maps and documents",
+          "भू मानचित्र",
+          "भू मानचित्र"
+        ],
+        "url": "https://bhuabhilekh.bihar.gov.in/login?ref=aW5kZXgucGhw",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhuabhilekh.bihar.gov.in/login?ref=aW5kZXgucGhw",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-lagan",
+        "title": {
+          "en": "Land revenue receipts",
+          "hi": "भू लगान"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Land revenue receipts",
+          "भू लगान",
+          "भू लगान"
+        ],
+        "url": "https://www.bhulagan.bihar.gov.in/dv_pending_receipt.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://www.bhulagan.bihar.gov.in/dv_pending_receipt.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-dakhilavedan",
+        "title": {
+          "en": "Apply for mutation",
+          "hi": "दाखिल खारिज आवेदन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Apply for mutation",
+          "दाखिल खारिज आवेदन",
+          "दाखिल खारिज आवेदन"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/UserLogin",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/UserLogin",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-dakhilavedanstithi",
+        "title": {
+          "en": "Mutation application status",
+          "hi": "दाखिल खारिज आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation application status",
+          "दाखिल खारिज आवेदन स्थिति",
+          "दाखिल खारिज आवेदन स्थिति"
+        ],
+        "url": "https://emutation.bihar.gov.in/biharBhumireport/MutationStatusNew.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-11",
+          "note": "Replaced obsolete 404 reference link using the current Bihar Bhumi homepage. Authenticated workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-lpcavedan",
+        "title": {
+          "en": "Apply for LPC",
+          "hi": "LPC आवेदन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Apply for LPC",
+          "LPC आवेदन",
+          "LPC आवेदन"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/UserLogin",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/UserLogin",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-lpcavedanstithi",
+        "title": {
+          "en": "LPC application status",
+          "hi": "LPC आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "LPC application status",
+          "LPC आवेदन स्थिति",
+          "LPC आवेदन स्थिति"
+        ],
+        "url": "https://emutation.bihar.gov.in/biharBhumireport/frm_LPC_StatusNew.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-11",
+          "note": "Replaced obsolete 404 reference link using the current Bihar Bhumi homepage. Authenticated workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-biharbhumi",
+        "title": {
+          "en": "Bihar Bhumi",
+          "hi": "बिहार भूमि"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Bihar Bhumi",
+          "बिहार भूमि",
+          "बिहार भूमि"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-adhikjankari",
+        "title": {
+          "en": "Citizen information",
+          "hi": "अधिक जानकारी"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Citizen information",
+          "अधिक जानकारी",
+          "अधिक जानकारी"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/CitizenInfo",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/CitizenInfo",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-parimarjanstithi",
+        "title": {
+          "en": "Parimarjan Plus application status",
+          "hi": "परिमार्जन प्लस आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Parimarjan Plus application status",
+          "परिमार्जन प्लस आवेदन स्थिति",
+          "परिमार्जन प्लस आवेदन स्थिति"
+        ],
+        "url": "https://parimarjanplus.bihar.gov.in/ParimarjanNew/trackapplication.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://parimarjanplus.bihar.gov.in/ParimarjanNew/trackapplication.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-fw-dakhiltruti",
+        "title": {
+          "en": "Mutation error check",
+          "hi": "दाखिल खारिज त्रुटि जाँच"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation error check",
+          "दाखिल खारिज त्रुटि जाँच",
+          "दाखिल खारिज त्रुटि जाँच"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/trackapplication",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/trackapplication",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "BR-records",
+        "title": {
+          "en": "BiharBhumi · Land services",
+          "hi": "बिहारभूमि · भूमि सेवाएं"
+        },
+        "subtitle": {
+          "en": "Official Bihar land records, mutation and citizen services.",
+          "hi": "बिहार के आधिकारिक भूमि अभिलेख, दाखिल-खारिज और नागरिक सेवाएं।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land records",
+          "BiharBhumi · Land services",
+          "बिहारभूमि · भूमि सेवाएं"
+        ],
+        "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-09",
+          "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+        }
+      },
+      {
+        "id": "bihar-officer-complaint",
+        "title": {
+          "en": "Raise Complaint",
+          "hi": "शिकायत दर्ज करें"
+        },
+        "subtitle": {
+          "en": "BiharBhumi · Official service",
+          "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+        },
+        "category": "Revenue services",
+        "icon": "office-building-outline",
+        "searchTerms": [
+          "Revenue services",
+          "Raise Complaint",
+          "शिकायत दर्ज करें"
+        ],
+        "url": "https://parimarjanplus.bihar.gov.in/RaiseATicket/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-09",
+          "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+        }
+      },
+      {
+        "id": "bihar-officer-kaithi",
+        "title": {
+          "en": "Kaithi Translation Service",
+          "hi": "कैथी दस्तावेज़ अनुवाद सेवा"
+        },
+        "subtitle": {
+          "en": "BiharBhumi · Official service",
+          "hi": "बिहारभूमि की आधिकारिक सेवा। आवश्यक होने पर अपने निर्धारित लॉगिन का उपयोग करें।"
+        },
+        "category": "Revenue services",
+        "icon": "office-building-outline",
+        "searchTerms": [
+          "Revenue services",
+          "Kaithi Translation Service",
+          "कैथी दस्तावेज़ अनुवाद सेवा"
+        ],
+        "url": "https://biharbhumiplus.bihar.gov.in/kaithitranslator/AdminLogin.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-09",
+          "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+        }
+      },
+      {
+        "id": "br-bhulagan",
+        "title": {
+          "en": "Bhu Lagan",
+          "hi": "भू-लगान"
+        },
+        "subtitle": {
+          "en": "Official Bihar lagan payment portal.",
+          "hi": "आधिकारिक बिहार भू-लगान भुगतान पोर्टल।"
+        },
+        "category": "Revenue services",
+        "icon": "cash-check",
+        "searchTerms": [
+          "Revenue services",
+          "Bhu Lagan",
+          "भू-लगान"
+        ],
+        "url": "https://www.bhulagan.bihar.gov.in",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-09",
+          "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+        }
+      },
+      {
+        "id": "br-bhuabhilekh",
+        "title": {
+          "en": "Bhu Abhilekh",
+          "hi": "भू-अभिलेख"
+        },
+        "subtitle": {
+          "en": "Official Bihar digital land document portal.",
+          "hi": "आधिकारिक बिहार डिजिटल भू-अभिलेख पोर्टल।"
+        },
+        "category": "Revenue services",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Revenue services",
+          "Bhu Abhilekh",
+          "भू-अभिलेख"
+        ],
+        "url": "https://bhuabhilekh.bihar.gov.in",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+          "checkedOn": "2026-10-09",
+          "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+        }
+      },
+      {
+        "id": "BR-certificates",
+        "title": {
+          "en": "Bihar RTPS · Certificates",
+          "hi": "बिहार RTPS · प्रमाणपत्र"
+        },
+        "subtitle": {
+          "en": "Certificates and applications on the Bihar service portal.",
+          "hi": "बिहार सेवा पोर्टल पर प्रमाणपत्र और आवेदन।"
+        },
+        "category": "Certificates",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Certificates",
+          "Bihar RTPS · Certificates",
+          "बिहार RTPS · प्रमाणपत्र"
+        ],
+        "url": "https://serviceonline.bihar.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://serviceonline.bihar.gov.in/",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      },
+      {
+        "id": "BR-registration",
+        "title": {
+          "en": "Bihar Registration",
+          "hi": "बिहार निबंधन"
+        },
+        "subtitle": {
+          "en": "Official Bihar registration department portal.",
+          "hi": "बिहार के आधिकारिक निबंधन विभाग का पोर्टल।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Registration",
+          "Bihar Registration",
+          "बिहार निबंधन"
+        ],
+        "url": "https://nibandhan.bihar.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://nibandhan.bihar.gov.in/",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "CG",
+    "name": {
+      "en": "Chhattisgarh",
+      "hi": "छत्तीसगढ़"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "CG-fw-bhuiyalogin",
+      "CG-fw-bhunakshalogin",
+      "CG-fw-rajasvalogin",
+      "CG-fw-girdavarilogin",
+      "CG-fw-kasara",
+      "CG-fw-bhunksha"
+    ],
+    "services": [
+      {
+        "id": "CG-fw-bhuiyalogin",
+        "title": {
+          "en": "Bhuiyan login",
+          "hi": "भुइया लॉगिन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Bhuiyan login",
+          "भुइया लॉगिन",
+          "भुइया लॉगिन"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/loginPage.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/loginPage.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bhunakshalogin",
+        "title": {
+          "en": "Bhunaksha login",
+          "hi": "भू नक्शा लॉगिन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha login",
+          "भू नक्शा लॉगिन",
+          "भू नक्शा लॉगिन"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/loginPage.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/loginPage.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-rajasvalogin",
+        "title": {
+          "en": "Revenue court login",
+          "hi": "राजस्व न्यायालय लॉगिन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Revenue court login",
+          "राजस्व न्यायालय लॉगिन",
+          "राजस्व न्यायालय लॉगिन"
+        ],
+        "url": "https://revenue.cg.nic.in/revcase/LoginNew.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/revcase/LoginNew.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-girdavarilogin",
+        "title": {
+          "en": "Girdawari login",
+          "hi": "गिरदवारी लॉगिन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Girdawari login",
+          "गिरदवारी लॉगिन",
+          "गिरदवारी लॉगिन"
+        ],
+        "url": "https://revenue.cg.nic.in/gj/GirdwariLogin.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/gj/GirdwariLogin.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-kasara",
+        "title": {
+          "en": "Khasra details",
+          "hi": "खसरा विवरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khasra details",
+          "खसरा विवरण",
+          "खसरा विवरण"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanuser/User/Selection_Report_For_KhasraDetail.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanuser/User/Selection_Report_For_KhasraDetail.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bhunksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू नक्शा",
+          "भू नक्शा"
+        ],
+        "url": "https://bhunaksha.cg.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.cg.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bone",
+        "title": {
+          "en": "B1/PII records",
+          "hi": "B1/PII प्राप्त करें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "B1/PII records",
+          "B1/PII प्राप्त करें",
+          "B1/PII प्राप्त करें"
+        ],
+        "url": "https://revenue.cg.nic.in/citizenui/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/citizenui/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-saskiyakhasra",
+        "title": {
+          "en": "Government Khasra",
+          "hi": "शासकीय खसरा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Government Khasra",
+          "शासकीय खसरा",
+          "शासकीय खसरा"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanuser/User/ctz_SaskiyaReport_forall.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanuser/User/ctz_SaskiyaReport_forall.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bonedacument",
+        "title": {
+          "en": "B1/PII by document ID",
+          "hi": "B1/PII डॉक्यूमेंट आईडी से प्राप्त करें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "B1/PII by document ID",
+          "B1/PII डॉक्यूमेंट आईडी से प्राप्त करें",
+          "B1/PII डॉक्यूमेंट आईडी से प्राप्त करें"
+        ],
+        "url": "https://bhuiyan.cg.nic.in/User/dsc_dwnload_report_foruser.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhuiyan.cg.nic.in/User/dsc_dwnload_report_foruser.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bhumijanakari",
+        "title": {
+          "en": "Land information in other languages",
+          "hi": "भूमि जानकारी अन्य भाषा में"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land information in other languages",
+          "भूमि जानकारी अन्य भाषा में",
+          "भूमि जानकारी अन्य भाषा में"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanuser/User/Selection_Report_For_KhasraDetail_withLanguage.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanuser/User/Selection_Report_For_KhasraDetail_withLanguage.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-namantraranstithi",
+        "title": {
+          "en": "Mutation status",
+          "hi": "नामांतरण स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation status",
+          "नामांतरण स्थिति",
+          "नामांतरण स्थिति"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/User/PropertyRegistration_Status_Citizen.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/User/PropertyRegistration_Status_Citizen.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-namantrannakal",
+        "title": {
+          "en": "Mutation copy",
+          "hi": "नामांतरण नकल"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation copy",
+          "नामांतरण नकल",
+          "नामांतरण नकल"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/administrator/NamantranPanjiPrint_Citizen.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/administrator/NamantranPanjiPrint_Citizen.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-case",
+        "title": {
+          "en": "Court cases",
+          "hi": "केस देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Court cases",
+          "केस देखें",
+          "केस देखें"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanuser/GetNPIX_CourtDetails.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanuser/GetNPIX_CourtDetails.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-official",
+        "title": {
+          "en": "Revenue department",
+          "hi": "आधिकारिक वेबसाइट"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Revenue department",
+          "आधिकारिक वेबसाइट",
+          "आधिकारिक वेबसाइट"
+        ],
+        "url": "https://revenue.cg.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-report",
+        "title": {
+          "en": "Crop area report",
+          "hi": "फ़सलावार क्षेत्राच्छदन रिपोर्ट"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Crop area report",
+          "फ़सलावार क्षेत्राच्छदन रिपोर्ट",
+          "फ़सलावार क्षेत्राच्छदन रिपोर्ट"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/administrator/cropWiseKhasraCountWithTotalArea_Citizen.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/administrator/cropWiseKhasraCountWithTotalArea_Citizen.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-bhuswamireport",
+        "title": {
+          "en": "Landowner area report",
+          "hi": "भूस्वामीवार क्षेत्राच्छदन रिपोर्ट"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Landowner area report",
+          "भूस्वामीवार क्षेत्राच्छदन रिपोर्ट",
+          "भूस्वामीवार क्षेत्राच्छदन रिपोर्ट"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/administrator/villageWiseCropDetailReport_Citizen.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/administrator/villageWiseCropDetailReport_Citizen.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-kasaravivaran",
+        "title": {
+          "en": "Khasra particulars",
+          "hi": "खसरों का ब्यौरा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khasra particulars",
+          "खसरों का ब्यौरा",
+          "खसरों का ब्यौरा"
+        ],
+        "url": "https://bhuiyan.cg.nic.in/administrator/view_mutationdetails.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhuiyan.cg.nic.in/administrator/view_mutationdetails.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "CG-fw-nagarik",
+        "title": {
+          "en": "Citizen application dashboard",
+          "hi": "नागरिक आवेदन डैशबोर्ड"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Citizen application dashboard",
+          "नागरिक आवेदन डैशबोर्ड",
+          "नागरिक आवेदन डैशबोर्ड"
+        ],
+        "url": "https://revenue.cg.nic.in/bhuiyanreport/administrator/PublicReportCTseries.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://revenue.cg.nic.in/bhuiyanreport/administrator/PublicReportCTseries.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "GA",
+    "name": {
+      "en": "Goa",
+      "hi": "गोवा"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "GA-fw-landrecord",
+      "GA-fw-maps",
+      "GA-fw-bhunksha",
+      "GA-fw-mutationstatus",
+      "GA-fw-niticep",
+      "GA-fw-noticem"
+    ],
+    "services": [
+      {
+        "id": "GA-fw-landrecord",
+        "title": {
+          "en": "Land record",
+          "hi": "भूमि अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land record",
+          "भूमि अभिलेख",
+          "Land record"
+        ],
+        "url": "https://dslr.goa.gov.in/f114new.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/f114new.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-maps",
+        "title": {
+          "en": "Maps",
+          "hi": "मानचित्र"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Maps",
+          "मानचित्र",
+          "Maps"
+        ],
+        "url": "https://dslr.goa.gov.in/Bhunaksha.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/Bhunaksha.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-bhunksha",
+        "title": {
+          "en": "Bhunksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunaksha.goa.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.goa.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-mutationstatus",
+        "title": {
+          "en": "Mutation status",
+          "hi": "नामांतरण स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation status",
+          "नामांतरण स्थिति",
+          "Mutation status"
+        ],
+        "url": "https://dslr.goa.gov.in/mutstatf114.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/mutstatf114.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-niticep",
+        "title": {
+          "en": "Notice partition",
+          "hi": "बंटवारा सूचना"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Notice partition",
+          "बंटवारा सूचना",
+          "Notice partition"
+        ],
+        "url": "https://dslr.goa.gov.in/PublicNotice.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/PublicNotice.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-noticem",
+        "title": {
+          "en": "Notice mutation",
+          "hi": "नामांतरण सूचना"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Notice mutation",
+          "नामांतरण सूचना",
+          "Notice mutation"
+        ],
+        "url": "https://dslr.goa.gov.in/PublicNotice_Mutation.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/PublicNotice_Mutation.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-pnotice",
+        "title": {
+          "en": "Public notice",
+          "hi": "सार्वजनिक सूचना"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Public notice",
+          "सार्वजनिक सूचना",
+          "Public notice"
+        ],
+        "url": "https://dslr.goa.gov.in/PublicSubNotice_Mutation.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dslr.goa.gov.in/PublicSubNotice_Mutation.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GA-fw-goa",
+        "title": {
+          "en": "Goa online",
+          "hi": "गोवा ऑनलाइन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Goa online",
+          "गोवा ऑनलाइन",
+          "Goa online"
+        ],
+        "url": "https://goaonline.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://goaonline.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "GJ",
+    "name": {
+      "en": "Gujarat",
+      "hi": "गुजरात"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "GJ-fw-anyror",
+      "GJ-fw-echavadi",
+      "GJ-fw-landrural",
+      "GJ-fw-landurban",
+      "GJ-fw-psearch",
+      "GJ-fw-dsror"
+    ],
+    "services": [
+      {
+        "id": "GJ-fw-anyror",
+        "title": {
+          "en": "AnyRoR",
+          "hi": "एनी आरओआर"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "AnyRoR",
+          "एनी आरओआर",
+          "AnyRoR"
+        ],
+        "url": "https://anyror.gujarat.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://anyror.gujarat.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GJ-fw-echavadi",
+        "title": {
+          "en": "e-CHAVDI",
+          "hi": "ई-चावड़ी"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "e-CHAVDI",
+          "ई-चावड़ी",
+          "e-CHAVDI"
+        ],
+        "url": "https://anyror.gujarat.gov.in/LandRecordRural.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://anyror.gujarat.gov.in/LandRecordRural.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GJ-fw-landrural",
+        "title": {
+          "en": "LAND RECORD RURAL",
+          "hi": "ग्रामीण भूमि अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "LAND RECORD RURAL",
+          "ग्रामीण भूमि अभिलेख",
+          "LAND RECORD RURAL"
+        ],
+        "url": "https://anyror.gujarat.gov.in/LandRecordRural.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://anyror.gujarat.gov.in/LandRecordRural.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GJ-fw-landurban",
+        "title": {
+          "en": "LAND RECORD URBAN",
+          "hi": "शहरी भूमि अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "LAND RECORD URBAN",
+          "शहरी भूमि अभिलेख",
+          "LAND RECORD URBAN"
+        ],
+        "url": "https://e-milkat.gujarat.gov.in/emilkatror/GeneralReport_IDB.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://e-milkat.gujarat.gov.in/emilkatror/GeneralReport_IDB.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GJ-fw-psearch",
+        "title": {
+          "en": "PROPERTY SEARCH",
+          "hi": "संपत्ति खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "PROPERTY SEARCH",
+          "संपत्ति खोज",
+          "PROPERTY SEARCH"
+        ],
+        "url": "https://e-milkat.gujarat.gov.in/ioraonlinepcard/ioraonlinepcard.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://e-milkat.gujarat.gov.in/ioraonlinepcard/ioraonlinepcard.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "GJ-fw-dsror",
+        "title": {
+          "en": "DIGITAL SIGNED ROR",
+          "hi": "डिजिटल हस्ताक्षरित आरओआर"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "DIGITAL SIGNED ROR",
+          "डिजिटल हस्ताक्षरित आरओआर",
+          "DIGITAL SIGNED ROR"
+        ],
+        "url": "https://iora.gujarat.gov.in/ror_online.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://iora.gujarat.gov.in/ror_online.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "HP",
+    "name": {
+      "en": "Himachal Pradesh",
+      "hi": "हिमाचल प्रदेश"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "HP-fw-jamabandi",
+      "HP-fw-bhunksha",
+      "HP-fw-areaconv",
+      "HP-fw-revenue"
+    ],
+    "services": [
+      {
+        "id": "HP-fw-jamabandi",
+        "title": {
+          "en": "View Jamabandi",
+          "hi": "जमाबंदी देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Jamabandi",
+          "जमाबंदी देखें",
+          "जमाबंदी देखें"
+        ],
+        "url": "https://himbhoomilmk.nic.in/viewlandrecords.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://himbhoomilmk.nic.in/viewlandrecords.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HP-fw-bhunksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunakshahp.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunakshahp.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HP-fw-areaconv",
+        "title": {
+          "en": "Area conversion tool",
+          "hi": "क्षेत्रफल रूपांतरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Area conversion tool",
+          "क्षेत्रफल रूपांतरण",
+          "Area convergence tool"
+        ],
+        "url": "https://himbhoomilmk.nic.in/AreaConvTool.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://himbhoomilmk.nic.in/AreaConvTool.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HP-fw-revenue",
+        "title": {
+          "en": "Revenue department",
+          "hi": "राजस्व विभाग"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Revenue department",
+          "राजस्व विभाग",
+          "Revenue department"
+        ],
+        "url": "https://himachal.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://himachal.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "MP",
+    "name": {
+      "en": "Madhya Pradesh",
+      "hi": "मध्य प्रदेश"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "MP-fw-abhilekh",
+      "MP-fw-bhunksha",
+      "MP-fw-abadiabhilekh",
+      "MP-fw-dastavej",
+      "MP-fw-rccms",
+      "MP-fw-tranjection"
+    ],
+    "services": [
+      {
+        "id": "MP-fw-abhilekh",
+        "title": {
+          "en": "Land records",
+          "hi": "भू अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land records",
+          "भू अभिलेख",
+          "भू अभिलेख"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/bhu-abhilekh",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/bhu-abhilekh",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-bhunksha",
+        "title": {
+          "en": "Land parcel map",
+          "hi": "भू नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Land parcel map",
+          "भू नक्शा",
+          "भू नक्शा"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/land-parcel-map",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/land-parcel-map",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-abadiabhilekh",
+        "title": {
+          "en": "Abadi rights records",
+          "hi": "आबादी अधिकार अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Abadi rights records",
+          "आबादी अधिकार अभिलेख",
+          "आबादी अधिकार अभिलेख"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/aabadi-adhikar-abhilekh",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/aabadi-adhikar-abhilekh",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-dastavej",
+        "title": {
+          "en": "Record room documents",
+          "hi": "अभिलेखागार दस्तावेज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Record room documents",
+          "अभिलेखागार दस्तावेज",
+          "अभिलेखागार दस्तावेज"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/record-room",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/record-room",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-rccms",
+        "title": {
+          "en": "RCMS orders",
+          "hi": "RCMS आर्डर"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "RCMS orders",
+          "RCMS आर्डर",
+          "RCMS आर्डर"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/rcms",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/rcms",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-tranjection",
+        "title": {
+          "en": "Transaction details",
+          "hi": "ट्रांजैक्शन विवरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Transaction details",
+          "ट्रांजैक्शन विवरण",
+          "ट्रांजैक्शन विवरण"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/home/transaction-details",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/home/transaction-details",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-pundikaran",
+        "title": {
+          "en": "Reassessment",
+          "hi": "पुनर्निर्धारण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Reassessment",
+          "पुनर्निर्धारण",
+          "पुनर्निर्धारण"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/#/user-management/signin",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/#/user-management/signin",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-fw-official",
+        "title": {
+          "en": "MP Bhulekh",
+          "hi": "आधिकारिक वेबसाइट"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "MP Bhulekh",
+          "आधिकारिक वेबसाइट",
+          "आधिकारिक वेबसाइट"
+        ],
+        "url": "https://webgis2.mpbhulekh.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgis2.mpbhulekh.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MP-records",
+        "title": {
+          "en": "MP Bhulekh · Khasra & Khatauni",
+          "hi": "MP भूलेख · खसरा और खतौनी"
+        },
+        "subtitle": {
+          "en": "Land records and map services on the official MP portal.",
+          "hi": "मध्य प्रदेश के आधिकारिक पोर्टल पर भू-अभिलेख और नक्शा सेवाएं।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Land records",
+          "MP Bhulekh · Khasra & Khatauni",
+          "MP भूलेख · खसरा और खतौनी"
+        ],
+        "url": "https://mpbhulekh.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://sidhi.nic.in/en/service/land-records/",
+          "checkedOn": "2026-10-09",
+          "note": "Official district directory confirms this portal. Research fetch timed out; Android and workflow checks are pending."
+        }
+      },
+      {
+        "id": "MP-certificates",
+        "title": {
+          "en": "MPOnline · Citizen services",
+          "hi": "MPOnline · नागरिक सेवाएं"
+        },
+        "subtitle": {
+          "en": "Select the relevant service on MPOnline.",
+          "hi": "MPOnline पर संबंधित सेवा चुनें।"
+        },
+        "category": "Certificates",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Certificates",
+          "MPOnline · Citizen services",
+          "MPOnline · नागरिक सेवाएं"
+        ],
+        "url": "https://mponline.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://mponline.gov.in/",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      },
+      {
+        "id": "MP-registration",
+        "title": {
+          "en": "MP Registration & Stamps",
+          "hi": "MP पंजीयन और मुद्रांक"
+        },
+        "subtitle": {
+          "en": "Official registration and stamp department portal.",
+          "hi": "आधिकारिक पंजीयन और मुद्रांक विभाग का पोर्टल।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Registration",
+          "MP Registration & Stamps",
+          "MP पंजीयन और मुद्रांक"
+        ],
+        "url": "https://www.mpigr.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://www.mpigr.gov.in/",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "MH",
+    "name": {
+      "en": "Maharashtra",
+      "hi": "महाराष्ट्र"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "MH-fw-bhulekh",
+      "MH-fw-satabara",
+      "MH-fw-bhunksha",
+      "MH-fw-chavali",
+      "MH-fw-abhilekh",
+      "MH-fw-property"
+    ],
+    "services": [
+      {
+        "id": "MH-fw-bhulekh",
+        "title": {
+          "en": "Bhulekh Mahabhumi",
+          "hi": "भूलेख महाभूमि"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Bhulekh Mahabhumi",
+          "भूलेख महाभूमि",
+          "Bhulekh Mahabhumi"
+        ],
+        "url": "https://bhulekh.mahabhumi.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.mahabhumi.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MH-fw-satabara",
+        "title": {
+          "en": "Digital Satbara",
+          "hi": "डिजिटल सातबारा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Digital Satbara",
+          "डिजिटल सातबारा",
+          "Digital Satbara"
+        ],
+        "url": "https://digitalsatbara.mahabhumi.gov.in/dslr",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://digitalsatbara.mahabhumi.gov.in/dslr",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MH-fw-bhunksha",
+        "title": {
+          "en": "Maha Bhunksha",
+          "hi": "महा भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Maha Bhunksha",
+          "महा भू-नक्शा",
+          "Maha Bhunksha"
+        ],
+        "url": "https://mahabhunakasha.mahabhumi.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://mahabhunakasha.mahabhumi.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MH-fw-chavali",
+        "title": {
+          "en": "Aapli Chavdi",
+          "hi": "आपली चावड़ी"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Aapli Chavdi",
+          "आपली चावड़ी",
+          "Aapli Chavdi"
+        ],
+        "url": "https://digitalsatbara.mahabhumi.gov.in/aaplichawdi",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://digitalsatbara.mahabhumi.gov.in/aaplichawdi",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MH-fw-abhilekh",
+        "title": {
+          "en": "Aaple Abhilekh",
+          "hi": "आपले अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Aaple Abhilekh",
+          "आपले अभिलेख",
+          "Aaple Abhilekh"
+        ],
+        "url": "https://aapleabhilekh.mahabhumi.gov.in/erecords",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://aapleabhilekh.mahabhumi.gov.in/erecords",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MH-fw-property",
+        "title": {
+          "en": "Property Card",
+          "hi": "संपत्ति कार्ड"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Property Card",
+          "संपत्ति कार्ड",
+          "Property Card"
+        ],
+        "url": "https://bhulekh.mahabhumi.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.mahabhumi.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "MN",
+    "name": {
+      "en": "Manipur",
+      "hi": "मणिपुर"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "MN-fw-jamabandi",
+      "MN-fw-bhunksha",
+      "MN-fw-rorst",
+      "MN-fw-landvalue",
+      "MN-fw-government",
+      "MN-fw-tax"
+    ],
+    "services": [
+      {
+        "id": "MN-fw-jamabandi",
+        "title": {
+          "en": "View Jamabandi",
+          "hi": "जमाबंदी देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Jamabandi",
+          "जमाबंदी देखें",
+          "View Jamabandi"
+        ],
+        "url": "https://louchapathap.nic.in/MIS/frmROR45?AspxAutoDetectCookieSupport=1",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://louchapathap.nic.in/MIS/frmROR45?AspxAutoDetectCookieSupport=1",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MN-fw-bhunksha",
+        "title": {
+          "en": "Map digitisation status",
+          "hi": "मानचित्र डिजिटलीकरण स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Map digitisation status",
+          "मानचित्र डिजिटलीकरण स्थिति",
+          "Bhunksha"
+        ],
+        "url": "https://dilrmp.gov.in/dilrmpold/PhyscialComponent/mapDigitization/district-level/14",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dilrmp.gov.in/dilrmpold/PhyscialComponent/mapDigitization/district-level/14",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MN-fw-rorst",
+        "title": {
+          "en": "RoR status",
+          "hi": "आरओआर स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "RoR status",
+          "आरओआर स्थिति",
+          "RoR status"
+        ],
+        "url": "https://louchapathap.nic.in/MIS/frmCheckRecordStatus.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://louchapathap.nic.in/MIS/frmCheckRecordStatus.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MN-fw-landvalue",
+        "title": {
+          "en": "Check land Value",
+          "hi": "भूमि मूल्य देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Check land Value",
+          "भूमि मूल्य देखें",
+          "Check land Value"
+        ],
+        "url": "https://louchapathap.nic.in/MIS/frmMGV.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://louchapathap.nic.in/MIS/frmMGV.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MN-fw-government",
+        "title": {
+          "en": "Government notification",
+          "hi": "सरकारी अधिसूचना"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Government notification",
+          "सरकारी अधिसूचना",
+          "Government notification"
+        ],
+        "url": "https://manipurrev.nic.in/notification.htm",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://manipurrev.nic.in/notification.htm",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "MN-fw-tax",
+        "title": {
+          "en": "Land Tax",
+          "hi": "भूमि कर"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Land Tax",
+          "भूमि कर",
+          "Land Tax"
+        ],
+        "url": "https://louchapathap.nic.in/egras/frmPayTax.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://louchapathap.nic.in/egras/frmPayTax.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "OD",
+    "name": {
+      "en": "Odisha",
+      "hi": "ओडिशा"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "OD-fw-ror",
+      "OD-fw-bhunksha",
+      "OD-fw-tahasil",
+      "OD-fw-rccms",
+      "OD-fw-prevenu",
+      "OD-fw-detail"
+    ],
+    "services": [
+      {
+        "id": "OD-fw-ror",
+        "title": {
+          "en": "RoR View",
+          "hi": "आरओआर देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "RoR View",
+          "आरओआर देखें",
+          "RoR View"
+        ],
+        "url": "https://bhulekh.ori.nic.in/RoRView.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.ori.nic.in/RoRView.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "OD-fw-bhunksha",
+        "title": {
+          "en": "Bhunksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunakshaodisha.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunakshaodisha.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "OD-fw-tahasil",
+        "title": {
+          "en": "Tahsil info",
+          "hi": "तहसील जानकारी"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Tahsil info",
+          "तहसील जानकारी",
+          "Tahsil info"
+        ],
+        "url": "https://dwistodisha.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://dwistodisha.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "OD-fw-rccms",
+        "title": {
+          "en": "RCCMS",
+          "hi": "राजस्व न्यायालय"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "RCCMS",
+          "राजस्व न्यायालय",
+          "RCCMS"
+        ],
+        "url": "https://bhulekh.ori.nic.in/rccms/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.ori.nic.in/rccms/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "OD-fw-prevenu",
+        "title": {
+          "en": "Payment of land revenue",
+          "hi": "भू-राजस्व भुगतान"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Payment of land revenue",
+          "भू-राजस्व भुगतान",
+          "Payment of land revenue"
+        ],
+        "url": "https://odishalandrevenue.nic.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://odishalandrevenue.nic.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "OD-fw-detail",
+        "title": {
+          "en": "View details by unique id",
+          "hi": "विशिष्ट आईडी से भूखंड विवरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View details by unique id",
+          "विशिष्ट आईडी से भूखंड विवरण",
+          "View details by unique id"
+        ],
+        "url": "https://bhulekh.ori.nic.in/SearchYourPlot.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.ori.nic.in/SearchYourPlot.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "TR",
+    "name": {
+      "en": "Tripura",
+      "hi": "त्रिपुरा"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "TR-fw-map",
+      "TR-fw-ror",
+      "TR-fw-plotsearch",
+      "TR-fw-report",
+      "TR-fw-mstatus",
+      "TR-fw-ptransaction"
+    ],
+    "services": [
+      {
+        "id": "TR-fw-map",
+        "title": {
+          "en": "Land Map (জমির মানচিত্র)",
+          "hi": "भूमि मानचित्र"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Land Map (জমির মানচিত্র)",
+          "भूमि मानचित्र",
+          "Land Map (জমির মানচিত্র)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/map_view.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/map_view.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-ror",
+        "title": {
+          "en": "Khatian RoR (খতিয়ান RoR)",
+          "hi": "खतियान आरओआर"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khatian RoR (খতিয়ান RoR)",
+          "खतियान आरओआर",
+          "Khatian RoR (খতিয়ান RoR)"
+        ],
+        "url": "https://jami.tripura.gov.in/EODB/citizen_search.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/EODB/citizen_search.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-plotsearch",
+        "title": {
+          "en": "Khatian/Plot Search (খতিয়ান/প্লট অনুসন্ধান)",
+          "hi": "खतियान / भूखंड खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khatian/Plot Search (খতিয়ান/প্লট অনুসন্ধান)",
+          "खतियान / भूखंड खोज",
+          "Khatian/Plot Search (খতিয়ান/প্লট অনুসন্ধান)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/citiz_ror.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/citiz_ror.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-report",
+        "title": {
+          "en": "Mutation Reports (মিউটেশন রিপোর্ট)",
+          "hi": "नामांतरण रिपोर्ट"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation Reports (মিউটেশন রিপোর্ট)",
+          "नामांतरण रिपोर्ट",
+          "Mutation Reports (মিউটেশন রিপোর্ট)"
+        ],
+        "url": "https://jami.tripura.gov.in/EODB/MutationReport.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/EODB/MutationReport.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-mstatus",
+        "title": {
+          "en": "Mutation Status (মিউটেশন স্ট্যাটাস)",
+          "hi": "नामांतरण स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation Status (মিউটেশন স্ট্যাটাস)",
+          "नामांतरण स्थिति",
+          "Mutation Status (মিউটেশন স্ট্যাটাস)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/mutation_status.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/mutation_status.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-ptransaction",
+        "title": {
+          "en": "Plot Transaction (প্লট লেনদেন)",
+          "hi": "भूखंड लेनदेन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Plot Transaction (প্লট লেনদেন)",
+          "भूखंड लेनदेन",
+          "Plot Transaction (প্লট লেনদেন)"
+        ],
+        "url": "https://registration.tripura.gov.in/plotKhatianBasedSearch.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://registration.tripura.gov.in/plotKhatianBasedSearch.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-puconversion",
+        "title": {
+          "en": "Plot Unit Conversion (প্লট ইউনিট রূপান্তর)",
+          "hi": "भूखंड इकाई रूपांतरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Plot Unit Conversion (প্লট ইউনিট রূপান্তর)",
+          "भूखंड इकाई रूपांतरण",
+          "Plot Unit Conversion (প্লট ইউনিট রূপান্তর)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/plotunit_conversion.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/plotunit_conversion.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-phistory",
+        "title": {
+          "en": "Plot History (প্লট ইতিহাস)",
+          "hi": "भूखंड इतिहास"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Plot History (প্লট ইতিহাস)",
+          "भूखंड इतिहास",
+          "Plot History (প্লট ইতিহাস)"
+        ],
+        "url": "https://jami.tripura.gov.in/EODB/Searchbyplot.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/EODB/Searchbyplot.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-tahasillist",
+        "title": {
+          "en": "Tahasil List (তাহসিল তালিকা)",
+          "hi": "तहसील सूची"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Tahasil List (তাহসিল তালিকা)",
+          "तहसील सूची",
+          "Tahasil List (তাহসিল তালিকা)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/tehsil_list.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/tehsil_list.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TR-fw-moujalist",
+        "title": {
+          "en": "Mouja List (মৌজার তালিকা)",
+          "hi": "मौजा सूची"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Mouja List (মৌজার তালিকা)",
+          "मौजा सूची",
+          "Mouja List (মৌজার তালিকা)"
+        ],
+        "url": "https://jami.tripura.gov.in/Citizen_Service/mouja_list.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jami.tripura.gov.in/Citizen_Service/mouja_list.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "UK",
+    "name": {
+      "en": "Uttarakhand",
+      "hi": "उत्तराखंड"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "UK-fw-bhulekh",
+      "UK-fw-bhunksha",
+      "UK-fw-khasra",
+      "UK-fw-khatauni",
+      "UK-fw-khewet",
+      "UK-fw-flate"
+    ],
+    "services": [
+      {
+        "id": "UK-fw-bhulekh",
+        "title": {
+          "en": "Bhulekh",
+          "hi": "भूलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Bhulekh",
+          "भूलेख",
+          "Bhulekh"
+        ],
+        "url": "https://bhulekh.uk.gov.in/public/public_ror/Public_ROR.jsp",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhulekh.uk.gov.in/public/public_ror/Public_ROR.jsp",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "UK-fw-bhunksha",
+        "title": {
+          "en": "Bhunksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://bhunaksha.uk.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.uk.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "UK-fw-khasra",
+        "title": {
+          "en": "Khasra No.",
+          "hi": "खसरा संख्या से पंजीकरण खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Khasra No.",
+          "खसरा संख्या से पंजीकरण खोज",
+          "Khasra No."
+        ],
+        "url": "https://online.eregistrationukgov.in/e_search/frm_index_khasra.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://ngdrs.gov.in/NGDRS_Website/state_ut_links.php",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "UK-fw-khatauni",
+        "title": {
+          "en": "Khatoni No.",
+          "hi": "खतौनी संख्या से पंजीकरण खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Khatoni No.",
+          "खतौनी संख्या से पंजीकरण खोज",
+          "Khatoni No."
+        ],
+        "url": "https://online.eregistrationukgov.in/e_search/frm_index_khatoni.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://ngdrs.gov.in/NGDRS_Website/state_ut_links.php",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "UK-fw-khewet",
+        "title": {
+          "en": "Khewat No.",
+          "hi": "खेवट संख्या से पंजीकरण खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "Khewat No.",
+          "खेवट संख्या से पंजीकरण खोज",
+          "Khewat No."
+        ],
+        "url": "https://online.eregistrationukgov.in/e_search/frm_index_khewat.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://ngdrs.gov.in/NGDRS_Website/state_ut_links.php",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "UK-fw-flate",
+        "title": {
+          "en": "House/Flat No.",
+          "hi": "मकान / फ्लैट संख्या से खोज"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "House/Flat No.",
+          "मकान / फ्लैट संख्या से खोज",
+          "House/Flat No."
+        ],
+        "url": "https://online.eregistrationukgov.in/e_search/frm_index_house.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://ngdrs.gov.in/NGDRS_Website/state_ut_links.php",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "HR",
+    "name": {
+      "en": "Haryana",
+      "hi": "हरियाणा"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "HR-fw-jamabandi",
+      "HR-fw-ruralland",
+      "HR-fw-urbanland",
+      "HR-fw-bhunksha",
+      "HR-fw-mutationstatus",
+      "HR-fw-plogin"
+    ],
+    "services": [
+      {
+        "id": "HR-fw-jamabandi",
+        "title": {
+          "en": "View Jamabandi copy",
+          "hi": "जमाबंदी नकल देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Jamabandi copy",
+          "जमाबंदी नकल देखें",
+          "जमाबंदी नकल देखें"
+        ],
+        "url": "https://jamabandi.nic.in/land%20records/NakalRecord",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.nic.in/land%20records/NakalRecord",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HR-fw-ruralland",
+        "title": {
+          "en": "Rural land records",
+          "hi": "ग्रामीण भूमि अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Rural land records",
+          "ग्रामीण भूमि अभिलेख",
+          "Rural land records"
+        ],
+        "url": "https://jamabandi.nic.in/IGLR/SearchRural",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.nic.in/IGLR/SearchRural",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HR-fw-urbanland",
+        "title": {
+          "en": "Urban land records",
+          "hi": "शहरी भूमि अभिलेख"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Urban land records",
+          "शहरी भूमि अभिलेख",
+          "Urban land records"
+        ],
+        "url": "https://jamabandi.nic.in/IGLR/SearchRural",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.nic.in/IGLR/SearchRural",
+          "checkedOn": "2026-10-11",
+          "note": "Reference uses the same search entry for rural and urban records. Choose the appropriate option on the official portal; no independent urban deep link verified."
+        }
+      },
+      {
+        "id": "HR-fw-bhunksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू-नक्शा",
+          "Bhunksha"
+        ],
+        "url": "https://hsac.org.in/eodb/login",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://hsac.org.in/eodb/login",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HR-fw-mutationstatus",
+        "title": {
+          "en": "Mutation status",
+          "hi": "नामांतरण स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Mutation status",
+          "नामांतरण स्थिति",
+          "Check mutation status"
+        ],
+        "url": "https://jamabandi.nic.in/DSNakal/CheckMutStatus",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.nic.in/DSNakal/CheckMutStatus",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "HR-fw-plogin",
+        "title": {
+          "en": "Public login",
+          "hi": "नागरिक लॉगिन"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Public login",
+          "नागरिक लॉगिन",
+          "Public login"
+        ],
+        "url": "https://jamabandi.nic.in/PublicNakal/login",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.nic.in/PublicNakal/login",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "JH",
+    "name": {
+      "en": "Jharkhand",
+      "hi": "झारखंड"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "JH-fw-jharbhumi",
+      "JH-fw-jharbhunksha",
+      "JH-fw-jharkhata",
+      "JH-fw-jharregisterteo",
+      "JH-fw-jharkeshara",
+      "JH-fw-jharavedan"
+    ],
+    "services": [
+      {
+        "id": "JH-fw-jharbhumi",
+        "title": {
+          "en": "Jharbhoomi",
+          "hi": "झारखंड भूमि"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Jharbhoomi",
+          "झारखंड भूमि",
+          "झारखंड भूमि"
+        ],
+        "url": "https://jharbhoomi.jharkhand.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhoomi.jharkhand.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "JH-fw-jharbhunksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू नक्शा",
+          "भू नक्शा"
+        ],
+        "url": "https://jharbhunaksha.jharkhand.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhunaksha.jharkhand.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "JH-fw-jharkhata",
+        "title": {
+          "en": "View Khata",
+          "hi": "खाता देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Khata",
+          "खाता देखें",
+          "खाता देखें"
+        ],
+        "url": "https://jharbhoomi.jharkhand.gov.in/MISROR/DistrictMap",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhoomi.jharkhand.gov.in/MISROR/DistrictMap",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "JH-fw-jharregisterteo",
+        "title": {
+          "en": "View Register 2",
+          "hi": "रजिस्टर 2 देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Register 2",
+          "रजिस्टर 2 देखें",
+          "रजिस्टर 2 देखें"
+        ],
+        "url": "https://jharbhoomi.jharkhand.gov.in/MISRegister2/DistrictMap",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhoomi.jharkhand.gov.in/MISRegister2/DistrictMap",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "JH-fw-jharkeshara",
+        "title": {
+          "en": "Khesra details",
+          "hi": "खेसरा विवरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khesra details",
+          "खेसरा विवरण",
+          "खेसरा विवरण"
+        ],
+        "url": "https://jharbhoomi.jharkhand.gov.in/MISKhatianRegister2/DistrictMap",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhoomi.jharkhand.gov.in/MISKhatianRegister2/DistrictMap",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "JH-fw-jharavedan",
+        "title": {
+          "en": "Application status",
+          "hi": "आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Application status",
+          "आवेदन स्थिति",
+          "आवेदन स्थिति"
+        ],
+        "url": "https://jharbhoomi.jharkhand.gov.in/ApplicationStatus/DistrictMap",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jharbhoomi.jharkhand.gov.in/ApplicationStatus/DistrictMap",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "PB",
+    "name": {
+      "en": "Punjab",
+      "hi": "पंजाब"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "PB-fw-namew",
+      "PB-fw-khewetw",
+      "PB-fw-khasraw",
+      "PB-fw-khatuniw",
+      "PB-fw-reportnw",
+      "PB-fw-waquitw"
+    ],
+    "services": [
+      {
+        "id": "PB-fw-namew",
+        "title": {
+          "en": "Owner Name Wise",
+          "hi": "मालिक के नाम से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Owner Name Wise",
+          "मालिक के नाम से",
+          "Owner Name Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Owner-Name-Wise&itemID=7&itemPID=3",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Owner-Name-Wise&itemID=7&itemPID=3",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-khewetw",
+        "title": {
+          "en": "Khewat No. Wise",
+          "hi": "खेवट संख्या से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khewat No. Wise",
+          "खेवट संख्या से",
+          "Khewat No. Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khewat-Number-Wise&itemID=8&itemPID=3",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khewat-Number-Wise&itemID=8&itemPID=3",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-khasraw",
+        "title": {
+          "en": "Khasra No. Wise",
+          "hi": "खसरा संख्या से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khasra No. Wise",
+          "खसरा संख्या से",
+          "Khasra No. Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khasra-Number-Wise&itemID=9&itemPID=3",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khasra-Number-Wise&itemID=9&itemPID=3",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-khatuniw",
+        "title": {
+          "en": "Khatouni No. Wise",
+          "hi": "खतौनी संख्या से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Khatouni No. Wise",
+          "खतौनी संख्या से",
+          "Khatouni No. Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khatouni-Number-Wise&itemID=10&itemPID=3",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Jamabandi.aspx?section=Khatouni-Number-Wise&itemID=10&itemPID=3",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-reportnw",
+        "title": {
+          "en": "Report No. Wise",
+          "hi": "रपट संख्या से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Report No. Wise",
+          "रपट संख्या से",
+          "Report No. Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Roznamcha.aspx?section=Rapat-Number-Wise&itemID=11&itemPID=5",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Roznamcha.aspx?section=Rapat-Number-Wise&itemID=11&itemPID=5",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-waquitw",
+        "title": {
+          "en": "Waqiati No. Wise",
+          "hi": "वाकियाती संख्या से"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Waqiati No. Wise",
+          "वाकियाती संख्या से",
+          "Waqiati No. Wise"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Roznamcha.aspx?section=Waqiati-Number-Wise&itemID=12&itemPID=5",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Roznamcha.aspx?section=Waqiati-Number-Wise&itemID=12&itemPID=5",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-deed",
+        "title": {
+          "en": "View register deed",
+          "hi": "पंजीकृत विलेख देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Registration",
+        "icon": "file-sign",
+        "searchTerms": [
+          "View register deed",
+          "पंजीकृत विलेख देखें",
+          "View register deed"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/RegistryDeed.aspx?itemPID=21",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/RegistryDeed.aspx?itemPID=21",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-mutation",
+        "title": {
+          "en": "View Mutation",
+          "hi": "नामांतरण देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "View Mutation",
+          "नामांतरण देखें",
+          "View Mutation"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/Mutation.aspx?section=Mutation-Number-Wise&itemID=13&itemPID=4",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/Mutation.aspx?section=Mutation-Number-Wise&itemID=13&itemPID=4",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-track",
+        "title": {
+          "en": "Track application",
+          "hi": "आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Track application",
+          "आवेदन स्थिति",
+          "Track application"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/OnlineRequestStatus.aspx?itemPID=77",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/OnlineRequestStatus.aspx?itemPID=77",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-bhunksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू-नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू-नक्शा",
+          "Bhunaksha"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/CadastralMap.aspx?itemPID=19",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/CadastralMap.aspx?itemPID=19",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-tgavensenc",
+        "title": {
+          "en": "Track grievance",
+          "hi": "शिकायत स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Track grievance",
+          "शिकायत स्थिति",
+          "Track grievance"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/GrievanceTrack.aspx?RefNo=2&itemID=84&itemPID=82",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/GrievanceTrack.aspx?RefNo=2&itemID=84&itemPID=82",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "PB-fw-fredstatus",
+        "title": {
+          "en": "Fard status",
+          "hi": "फर्द स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Fard status",
+          "फर्द स्थिति",
+          "Fard status"
+        ],
+        "url": "https://jamabandi.punjab.gov.in/FardStatus.aspx?itemPID=29",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://jamabandi.punjab.gov.in/FardStatus.aspx?itemPID=29",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "RJ",
+    "name": {
+      "en": "Rajasthan",
+      "hi": "राजस्थान"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "RJ-fw-jamabandi",
+      "rj-bhunaksha",
+      "RJ-fw-avedanstithi",
+      "RJ-fw-giradarivivaran",
+      "rj-edharti",
+      "RJ-records"
+    ],
+    "services": [
+      {
+        "id": "RJ-fw-jamabandi",
+        "title": {
+          "en": "View Jamabandi",
+          "hi": "जमाबंदी देखें"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Jamabandi",
+          "जमाबंदी देखें",
+          "जमाबंदी देखें"
+        ],
+        "url": "https://apnakhata.rajasthan.gov.in/Owner_wise/VillSelAll3.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://apnakhata.rajasthan.gov.in/Owner_wise/VillSelAll3.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "rj-bhunaksha",
+        "title": {
+          "en": "Bhunaksha",
+          "hi": "भू नक्शा"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "Bhunaksha",
+          "भू नक्शा",
+          "भू नक्शा"
+        ],
+        "url": "https://bhunaksha.rajasthan.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://bhunaksha.rajasthan.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "RJ-fw-avedanstithi",
+        "title": {
+          "en": "Application status",
+          "hi": "आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Application status",
+          "आवेदन स्थिति",
+          "आवेदन स्थिति"
+        ],
+        "url": "https://apnakhata.rajasthan.gov.in/TrackMutationAvantan.aspx",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://apnakhata.rajasthan.gov.in/TrackMutationAvantan.aspx",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "RJ-fw-giradarivivaran",
+        "title": {
+          "en": "Girdawari details",
+          "hi": "गिरदावरी विवरण"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Girdawari details",
+          "गिरदावरी विवरण",
+          "गिरदावरी विवरण"
+        ],
+        "url": "https://webgirdawari.rajasthan.gov.in/Web/GirdawariDoc",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://webgirdawari.rajasthan.gov.in/Web/GirdawariDoc",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "rj-edharti",
+        "title": {
+          "en": "eDharti",
+          "hi": "ई धरती"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "eDharti",
+          "ई धरती",
+          "ई धरती"
+        ],
+        "url": "https://edharti.rajasthan.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://edharti.rajasthan.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "RJ-records",
+        "title": {
+          "en": "Apna Khata",
+          "hi": "अपना राजस्थान"
+        },
+        "subtitle": {
+          "en": "Open the official state service.",
+          "hi": "राज्य की आधिकारिक सेवा खोलें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Apna Khata",
+          "अपना राजस्थान",
+          "अपना राजस्थान"
+        ],
+        "url": "https://apnakhata.rajasthan.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://apnakhata.rajasthan.gov.in/",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "rj-girdawari",
+        "title": {
+          "en": "Girdawari",
+          "hi": "गिरदावरी"
+        },
+        "subtitle": {
+          "en": "Official Rajasthan girdawari portal.",
+          "hi": "आधिकारिक राजस्थान गिरदावरी पोर्टल।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-list-outline",
+        "searchTerms": [
+          "Revenue services",
+          "Girdawari",
+          "गिरदावरी"
+        ],
+        "url": "https://webgirdawari.rajasthan.gov.in",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://webgirdawari.rajasthan.gov.in",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      },
+      {
+        "id": "rj-epanjiyan",
+        "title": {
+          "en": "ePanjiyan",
+          "hi": "ई-पंजीयन"
+        },
+        "subtitle": {
+          "en": "Official Rajasthan registration portal.",
+          "hi": "आधिकारिक राजस्थान ई-पंजीयन पोर्टल।"
+        },
+        "category": "Revenue services",
+        "icon": "file-certificate-outline",
+        "searchTerms": [
+          "Revenue services",
+          "ePanjiyan",
+          "ई-पंजीयन"
+        ],
+        "url": "https://epanjiyan.rajasthan.gov.in",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://epanjiyan.rajasthan.gov.in",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      },
+      {
+        "id": "RJ-certificates",
+        "title": {
+          "en": "eMitra · Citizen services",
+          "hi": "ई-मित्र · नागरिक सेवाएं"
+        },
+        "subtitle": {
+          "en": "Select the relevant service on Rajasthan eMitra.",
+          "hi": "राजस्थान ई-मित्र पर संबंधित सेवा चुनें।"
+        },
+        "category": "Certificates",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Certificates",
+          "eMitra · Citizen services",
+          "ई-मित्र · नागरिक सेवाएं"
+        ],
+        "url": "https://emitra.rajasthan.gov.in/",
+        "browserMode": "webview",
+        "review": {
+          "status": "pending",
+          "sourceUrl": "https://emitra.rajasthan.gov.in/",
+          "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "configVersion": "2026-10-11.1",
+    "stateCode": "TN",
+    "name": {
+      "en": "Tamil Nadu",
+      "hi": "तमिलनाडु"
+    },
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "stage": "pilot",
+    "catalog": "configured",
+    "dashboardServiceIds": [
+      "TN-fw-patta",
+      "TN-fw-pattaa",
+      "TN-fw-pattaaa",
+      "TN-fw-pattaaaa",
+      "TN-fw-pattaaaaa",
+      "TN-fw-pattaaaaaa"
+    ],
+    "services": [
+      {
+        "id": "TN-fw-patta",
+        "title": {
+          "en": "View Patta/Chitta",
+          "hi": "पट्टा / चिट्टा देखें"
+        },
+        "subtitle": {
+          "en": "Choose View Patta/Chitta on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Patta/Chitta",
+          "पट्टा / चिट्टा देखें",
+          "View Patta/Chitta"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattaa",
+        "title": {
+          "en": "Verify Patta/Chitta",
+          "hi": "पट्टा / चिट्टा सत्यापन"
+        },
+        "subtitle": {
+          "en": "Choose Verify Patta/Chitta on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Verify Patta/Chitta",
+          "पट्टा / चिट्टा सत्यापन",
+          "Verify Patta/Chitta"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattaaa",
+        "title": {
+          "en": "View Patta Copy",
+          "hi": "पट्टा प्रति"
+        },
+        "subtitle": {
+          "en": "Choose View Patta Copy on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View Patta Copy",
+          "पट्टा प्रति",
+          "View Patta Copy"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattaaaa",
+        "title": {
+          "en": "View A-Register",
+          "hi": "ए-रजिस्टर देखें"
+        },
+        "subtitle": {
+          "en": "Choose View A-Register on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "View A-Register",
+          "ए-रजिस्टर देखें",
+          "View A-Register"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattaaaaa",
+        "title": {
+          "en": "Verify Land",
+          "hi": "भूमि सत्यापन"
+        },
+        "subtitle": {
+          "en": "Choose Verify Land on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "Verify Land",
+          "भूमि सत्यापन",
+          "Verify Land"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattaaaaaa",
+        "title": {
+          "en": "FMB Sketch",
+          "hi": "एफएमबी नक्शा"
+        },
+        "subtitle": {
+          "en": "Choose FMB Sketch on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "FMB Sketch",
+          "एफएमबी नक्शा",
+          "FMB Sketch"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-patt",
+        "title": {
+          "en": "TSLR Extract",
+          "hi": "टीएसएलआर प्रति"
+        },
+        "subtitle": {
+          "en": "Choose TSLR Extract on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Land records",
+        "icon": "file-document-outline",
+        "searchTerms": [
+          "TSLR Extract",
+          "टीएसएलआर प्रति",
+          "TSLR Extract"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-patttt",
+        "title": {
+          "en": "TSLR Sketch",
+          "hi": "टीएसएलआर नक्शा"
+        },
+        "subtitle": {
+          "en": "Choose TSLR Sketch on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "TSLR Sketch",
+          "टीएसएलआर नक्शा",
+          "TSLR Sketch"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-patttttt",
+        "title": {
+          "en": "F-Line Sketch Statement",
+          "hi": "एफ-लाइन नक्शा विवरण"
+        },
+        "subtitle": {
+          "en": "Choose F-Line Sketch Statement on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Maps & survey",
+        "icon": "map-outline",
+        "searchTerms": [
+          "F-Line Sketch Statement",
+          "एफ-लाइन नक्शा विवरण",
+          "F-Line Sketch Statement"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      },
+      {
+        "id": "TN-fw-pattttttttt",
+        "title": {
+          "en": "Application Status",
+          "hi": "आवेदन स्थिति"
+        },
+        "subtitle": {
+          "en": "Choose Application Status on the Tamil Nadu e-Services portal.",
+          "hi": "तमिलनाडु ई-सेवा पोर्टल पर संबंधित विकल्प चुनें।"
+        },
+        "category": "Revenue services",
+        "icon": "clipboard-text-outline",
+        "searchTerms": [
+          "Application Status",
+          "आवेदन स्थिति",
+          "Application Status"
+        ],
+        "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+        "browserMode": "webview",
+        "review": {
+          "status": "source-reviewed",
+          "sourceUrl": "https://eservices.tn.gov.in/eservicesnew/index.html",
+          "checkedOn": "2026-10-11",
+          "note": "Reference menu and destination reviewed on 2026-10-11; authenticated Android workflow not verified."
+        }
+      }
+    ]
+  }
+]

@@ -65,7 +65,7 @@ const ServiceListRow = ({
   return (
     <AppPressable
       onPress={onPress}
-      pressEffect="slide"
+
       pressedOpacity={0.88}
       style={[
         styles.wrapper,

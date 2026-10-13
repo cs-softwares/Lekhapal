@@ -26,10 +26,11 @@ const DashboardBlockButton = ({
 }: Props) => (
   <AppPressable
     onPress={onPress}
-    pressEffect="slide"
+
     pressedOpacity={0.9}
     style={({pressed}) => [
       styles.card,
+      {borderColor: `${accentColor}55`},
       pressed && {
         borderColor: `${accentColor}55`,
         shadowColor: accentColor,
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.surface,
     borderColor: COLORS.border,
     borderRadius: 22,
-    borderWidth: 1,
+    borderWidth: 1.15,
     minHeight: 136,
     paddingHorizontal: 14,
     paddingVertical: 16,

@@ -208,7 +208,7 @@ const ToolsScreen = () => {
                   <AppPressable
                     key={category.key}
                     onPress={() => setActiveCategory(category.key)}
-                    pressEffect="none"
+
                     pressedOpacity={0.88}
                     style={[
                       styles.filterTab,

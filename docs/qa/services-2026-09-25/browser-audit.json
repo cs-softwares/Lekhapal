@@ -1,0 +1,444 @@
+[
+  {
+    "id": "up-revenue-court",
+    "url": "https://vaad.up.nic.in/Default_new.aspx",
+    "title": "RCCMS | Revenue | Department | UP",
+    "state": "complete",
+    "text": "उत्तर प्रदेश सरकार\nSwipe to view \nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS\nश्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री, उत्तर प्रदेश\n\nPause\nराजस्व परिषद् न्यायालय की दैनिक वाद तालिका (काज लिस्ट) देखें\n\nकुल न्यायालय\n\n3081\n\nकुल वाद\n\n3.02 Cr\n\n5.82 Million\n\nकुल निस्तारित\n\n2.90 Cr\n\n30.97 Million\n\nकुल विचाराधीन\n\n11.75 L\n\n1.51 Million\n\nकुल विचाराधीन (एक वर्ष से अधिक)\n\n1.20 L\n\nकुल विचाराधीन (तीन वर्ष से अधिक)\n\n31,629\n\n38.83 Million\n\nकुल विचाराधीन (पांच वर्ष से अधिक)\n\n41,833\n\n695.36 Thousand\n\nकुल अनअद्यतनीकृत वाद\n\n4.14 L\n\n775.95 Thousand\n\n\n RCCMS DASHBOARD\n The Uttar Pradesh Revenue Code (Amendment) Act, 2021 U.P. Act No. 4 of 2021\n\n The Uttar Pradesh Revenue Code (Amendment) Act, 2020 U.P. Act No. 7 of 2020\n उत्तर प्रदेश राजस्व संहिता -2006 ई-बुक\n\n\n The Uttar Pradesh Revenue Code (Amendment) Act, 2019 U.P. Act No. 7 of 2019\n उत्तर प्रदेश राजस्व सं",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [
+      {
+        "tag": "UL",
+        "id": "",
+        "cls": "slides",
+        "text": "",
+        "top": 573,
+        "right": 5343
+      },
+      {
+        "tag": "LI",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 822
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 822
+      },
+      {
+        "tag": "LI",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 1233
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 1233
+      },
+      {
+        "tag": "LI",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 1644
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 1644
+      },
+      {
+        "tag": "LI",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 2055
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 573,
+        "right": 2055
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "text": "राजस्व परिषद् न्यायालय की दैनिक वाद तालिका (काज लिस्ट) देखें",
+        "top": 1023,
+        "right": 944
+      },
+      {
+        "tag": "UL",
+        "id": "",
+        "cls": "slides",
+        "text": "   \n   \n   \n   \n   \n   \n   \n  ",
+        "top": 6439,
+        "right": 6173
+      },
+      {
+        "tag": "LI",
+        "id": "",
+        "cls": "text-center",
+        "text": "",
+        "top": 6439,
+        "right": 549
+      }
+    ],
+    "controls": 18,
+    "elapsedMs": 2609,
+    "exceptions": [
+      {
+        "text": "TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.\n    at Object.jQueryDetection (https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:2942)\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:3282\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:227\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:330",
+        "url": "https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js",
+        "line": 5
+      },
+      {
+        "text": "TypeError: Cannot read properties of null (reading 'insertBefore')\n    at addElement (https://vaad.up.nic.in/Default.aspx:48:27)\n    at https://vaad.up.nic.in/Default.aspx:42:32",
+        "url": "https://vaad.up.nic.in/Default.aspx",
+        "line": 47
+      },
+      {
+        "text": "TypeError: Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.\n    at Object.jQueryDetection (https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:2942)\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:3282\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:227\n    at https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js:6:330",
+        "url": "https://vaad.up.nic.in/home_assests/custom/bootstrap-min.js",
+        "line": 5
+      },
+      {
+        "text": "TypeError: Cannot read properties of null (reading 'insertBefore')\n    at addElement (https://vaad.up.nic.in/Default_new.aspx:47:27)\n    at https://vaad.up.nic.in/Default_new.aspx:41:32",
+        "url": "https://vaad.up.nic.in/Default_new.aspx",
+        "line": 46
+      },
+      {
+        "text": "TypeError: Cannot read properties of undefined (reading 'contains')\n    at Object.renderVideoPlayButton (https://vaad.up.nic.in/home_theme/js/custom.js:117:38)\n    at HTMLDocument.<anonymous> (https://vaad.up.nic.in/home_theme/js/custom.js:139:22)\n    at j (https://vaad.up.nic.in/home_assests/js/jquery-2.1.1.min.js:2:27244)\n    at Object.fireWith [as resolveWith] (https://vaad.up.nic.in/home_assests/js/jquery-2.1.1.min.js:2:28057)\n    at m.ready (https://vaad.up.nic.in/home_assests/js/jquery-2.1.1.min.js:2:29891)\n    at HTMLDocument.J (https://vaad.up.nic.in/home_assests/js/jquery-2.1.1.min.js:2:30257)",
+        "url": "https://vaad.up.nic.in/home_theme/js/custom.js",
+        "line": 116
+      }
+    ]
+  },
+  {
+    "id": "up-department",
+    "url": "https://bor.up.gov.in/Department_login.aspx",
+    "title": "राजस्व परिषद् | उत्तर प्रदेश",
+    "state": "complete",
+    "text": "25/09/2026 - Friday - 16:15:31\nराजस्व परिषद्\nउत्तर प्रदेश\nश्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री, उत्तर प्रदेश\nविभागीय लॉग इन सॉफ्टवेयर\nलेखपाल डैशबोर्ड\n↗\nराजस्व निरीक्षक डैशबोर्ड\n↗\nतहसीलदार डैशबोर्ड\n↗\nउपजिलाधिकारी डैशबोर्ड\n↗\nविभागीय सूचना अपलोड\n↗\nविभागीय महत्वपूर्ण लिंक\n↗\nराजस्व न्यायालय कंम्प्यूटरीकृत प्रबन्धन प्रणाली\n↗\nअनुसूचित जाति के भूमिधर द्वारा अन्तरण हेतु अनुज्ञा (उ0प्र0 राजस्व संहिता की धारा- 98)\n↗\n5.0586 हे0 (12.5) एकड़ से अधिक भूमि के अर्जन हेतु अनुमति (उ0प्र0 राजस्व संहिता की धारा- 89)\n↗\nमुख्यमंत्री कृषक दुर्घटना कल्याण योजना\n↗\nभूलेख (खसरा)\n↗\nभूलेख (भू-नक्शा / शजरा)\n↗\nवसूली प्रमाण पत्र\n↗\nभूलेख(खतौनी)\n↗\nपट्टा आवंटन (तालाब)\n↗\nभूलेख खतौनी अंश/नाम/संरक्षक/पता में त्रुटि सुधार\n↗\nभू-मानचित्र डिजिटलीकरण\n↗\nमण्डलायुक्त/जिलाधिकारी की निरिक्षण आख्या\n↗\nचकबन्दी न्यायालय कम्प्यूटरीकृत प्रबंधन प्रणाली\n↗\nअनावासीय एवं आवासीय निर्माण कार्यो का वित्ती",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "c-carousel__item swiper-slide",
+        "text": "",
+        "top": 2968,
+        "right": 656
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2968,
+        "right": 656
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2968,
+        "right": 656
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "c-carousel__item swiper-slide",
+        "text": "",
+        "top": 2974,
+        "right": 854
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 854
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 854
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "c-carousel__item swiper-slide",
+        "text": "",
+        "top": 2974,
+        "right": 1052
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 1052
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 1052
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "c-carousel__item swiper-slide",
+        "text": "",
+        "top": 2974,
+        "right": 1250
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 1250
+      },
+      {
+        "tag": "IMG",
+        "id": "",
+        "cls": "",
+        "text": "",
+        "top": 2974,
+        "right": 1250
+      }
+    ],
+    "controls": 14,
+    "elapsedMs": 2723,
+    "exceptions": []
+  },
+  {
+    "id": "up-khatauni-login",
+    "url": "https://upbhulekh.gov.in/bhulekh_login/#/home",
+    "title": "BhuLekh",
+    "state": "complete",
+    "text": "BHULEKH\n\nUttar Pradesh\n\nLand Records Computerization\nBoard of Revenue, Uttar Pradesh\n\nbhulekh-up[at]gov[dot]in\n\nTehsil Administrative Login\n\nAdministrative Login, Uttar Pradesh\n\nTehsil Mutation Login\n\nTehsil Mutation Login, Uttar Pradesh",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [],
+    "controls": 1,
+    "elapsedMs": 2511,
+    "exceptions": []
+  },
+  {
+    "id": "up-registration",
+    "url": "https://igrsup.gov.in/igrsup/defaultAction.action",
+    "title": "Stamp And Registration Department,Uttar Pradesh",
+    "state": "complete",
+    "text": " Stamp And Registration Department,Uttar Pradesh\nToggle navigation\n नागरिक ऑनलाइन सेवाएं\nसम्पत्ति पंजीकरण\n आवेदन करें\n औद्योगिक सम्पत्ति पंजीकरण हेतु निवेश मित्र वेबसाइट के माध्यम से आवेदन करें\n सम्पत्ति खोजें\n सम्पत्ति विवरण\n स्टाम्प वापसी हेतु आवेदन\n स्टाम्प-निबन्धन शुल्क कैलकुलेटर\n12 माह तक के किरायानामा विलेख की डिजिटल स्टाम्पिंग\n 12 माह तक के किरायानामा विलेख की डिजिटल स्टाम्पिंग (FAQ)\n किरायानामा सत्यापन\n किराया / लीज़ विलेख — स्टाम्प-निबन्धन शुल्क कैलकुलेटर\nपंजीकृत लेखपत्र का प्रमाणपत्र\n पंजीकृत लेखपत्र प्रमाणपत्र का आवेदन\nविवाह पंजीकरण\n आवेदन करें\n विवाह पंजीकरण सत्यापन\nभारमुक्त प्रमाणपत्र /बारह साला\n आवेदन करें\n प्रमाण पत्र प्राप्ति/सत्यापन करें\nविलेखों की प्रमाणित प्रतिलिपि\n आवेदन करें\nबैंक गारंटी\n बैंक गारंटी की स्थिति\nफोटो गैलरी\nPrevious\nNext\n  Property Registration Dashboard  \nParticulars\nDetails\nTime limit prescribed as per the Public Service Guarantee Act\n01 Day\nAverage ti",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [],
+    "controls": 21,
+    "elapsedMs": 5512,
+    "exceptions": [
+      {
+        "text": "TypeError: Cannot read properties of null (reading 'addEventListener')\n    at HTMLDocument.<anonymous> (https://igrsup.gov.in/igrsup/defaultAction.action:5916:13)",
+        "url": "https://igrsup.gov.in/igrsup/defaultAction.action",
+        "line": 5915
+      }
+    ]
+  },
+  {
+    "id": "up-realtime-khatauni",
+    "url": "https://upbhulekh.gov.in/bhulekh/",
+    "title": "BhuLekh",
+    "state": "complete",
+    "text": "BHULEKH\nUttar Pradesh\nHome\nCommissioner\nDM\nTEHSILDAR\nADM\nSDM\nBANK\nLand Records Computerization\nReal Time Khatauni\nBoard of Revenue, Uttar Pradesh\nBOARD \nBoard of Revenue Report\nLogin\nDISTRICT \nDistrict Administrative\nLogin\nTEHSIL \nTehsil\nAdministrative\nLogin\n\nTEHSIL \nTehsil\nMutation\nLogin\n\nTEHSIL \nTehsil\nReport\nLogin\n",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [],
+    "controls": 10,
+    "elapsedMs": 2581,
+    "exceptions": []
+  },
+  {
+    "id": "india",
+    "url": "https://www.india.gov.in/",
+    "title": "Home | National Portal of India",
+    "state": "complete",
+    "text": "This website uses cookies to provide a better user experience.\nBy clicking accept, you agree to the policies outlined in the Cookie Settings.\nCUSTOMIZE COOKIES\nDECLINE OPTIONAL COOKIES\nACCEPT ALL COOKIES\nTranslation Feedback\nCPGRAMS\nCalendar\nShare\nColour\nColor\n+\n\nWhere Government Information Converges\n\nAll Categories\nActs\nCitizen Engagements\nDirectory\nExplore India\nGovernment Datasets\nHelplines\nNews\nPublic Utilities\nSchemes\nServices\nOthers\nSearch\nTrending Searches :\nApply Aadhaar\nDigiLocker\nNew Voter Registration\nTatkaal Passport Service\nApply for Driving Licence\n\nIndia's Digital Public Infrastructure has demonstrated how technology can expand opportunity, improve governance, boost financial inclusion and deliver services for hundreds of millions of people.\n\nNational Assembly of Seychelles\n28 June 2026\n\nDisplaying slide 1 to 6 of 6\n13985\n\nOnline Services\n\n5731\n\nGovernment Schemes\n\n31\n\nCi",
+    "width": 411,
+    "scrollWidth": 427,
+    "wide": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "\n        fixed right_panel_sidebar right-0 top-[80%] md:top-[60%] lg:top-[60%] transform -translate-y-[50%] flex flex-col gap-1 z-[100]  items-end layout-icons\n        translate-x-full md:translate-x-0\n        transition-transform duration-300\n      ",
+        "text": "Translation Feedback\nCPGRAMS\nCalendar\nShare\nColour\nColor",
+        "top": 587,
+        "right": 472
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "right-0 top-[20%] transform -translate-y-[50%] flex flex-col gap-1 z-[100]  items-end layout-icons header-overlay",
+        "text": "Translation Feedback\nCPGRAMS\nCalendar\nShare\nColour\nColor",
+        "top": 466,
+        "right": 472
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "",
+        "text": "Translation Feedback",
+        "top": 466,
+        "right": 472
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "",
+        "text": "Translation Feedback",
+        "top": 466,
+        "right": 472
+      },
+      {
+        "tag": "BUTTON",
+        "id": "translationFeedbackButton",
+        "cls": "Btn dark:bg-[#121212] dark:hover:bg-[#121212]",
+        "text": "Translation Feedback",
+        "top": 466,
+        "right": 472
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "p-[0.5em] pl-[0.75rem] inline-flex items-center",
+        "text": "",
+        "top": 471,
+        "right": 467
+      },
+      {
+        "tag": "svg",
+        "id": "feedbackSVG",
+        "cls": {},
+        "top": 479,
+        "right": 459
+      },
+      {
+        "tag": "path",
+        "id": "",
+        "cls": {},
+        "top": 482,
+        "right": 457
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "",
+        "text": "CPGRAMS",
+        "top": 515,
+        "right": 472
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "",
+        "text": "CPGRAMS",
+        "top": 515,
+        "right": 472
+      },
+      {
+        "tag": "A",
+        "id": "cpgramsLink",
+        "cls": "Btn dark:bg-[#121212] dark:hover:bg-[#121212]",
+        "text": "CPGRAMS",
+        "top": 515,
+        "right": 472
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "cls": "p-[0.5em] pl-[0.75rem]",
+        "text": "",
+        "top": 520,
+        "right": 467
+      }
+    ],
+    "controls": 99,
+    "elapsedMs": 2639,
+    "exceptions": []
+  },
+  {
+    "id": "voters",
+    "url": "https://voters.eci.gov.in/",
+    "title": "Citizen Service Portal",
+    "state": "complete",
+    "text": "|\n|\nAB\nA_B\nA__B\n|\nA-\nA\nA+\n|\nEnglish\nHindi\nECINET\n  \n \n \nनागरिक सेवा पोर्टल\nCitizen Service Portal\nECINET Mobile App\nDownload From\nLoginSign-Up\n\nFORMS\n\nSpecial Intensive Revision (SIR) – 2026\nSearch Your Name in Last SIR\nSubmit Document Against Notice issued\n\nNew Voter Registration\n\nFill Form 6 if you are 18 years or above or you will turn 18 in few months\n\nFill Form 6\nFill Declaration Form\nDownload\nGuidelines\nDownload Declaration Form for Pre-Draft Forms\n\nNew Voter Registration (NRI)\n\nFill Form 6A if you are a citizen of India and has not acquired citizenship of any other country.\n\nFill Form 6A\nDownload\nGuidelines\n\nDeletion\n\nFill Form 7 to get name deleted from the existing electoral roll.\n\nFill Form 7\nFill Form 7 Overseas\nDownload\nGuidelines\n\nCorrection Of Entries\n\nFill Form 8 to get EPIC with updated or replacement or marking of PwD.\n\nFill Form 8\nFill Form 8 Overseas (Self Correction O",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "row ",
+        "text": "English\nHindi",
+        "top": 10,
+        "right": 415
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "cls": "col-md-12 mb-2 mb-md-0 mb-lg-0",
+        "text": "English\nHindi",
+        "top": 10,
+        "right": 415
+      }
+    ],
+    "controls": 28,
+    "elapsedMs": 3274,
+    "exceptions": []
+  },
+  {
+    "id": "up-bhulekh-districts",
+    "url": "https://upbhulekh.gov.in/#/districts_list",
+    "title": "भूलेख",
+    "state": "complete",
+    "text": "Uttar Pradesh District List\n Back\nकुल जनपदों की संख्या :- 75\nSerial No.\tDistrict Name (English)\tDistrict Code\tDistrict Name (Hindi)\n1\tAmroha\t137\tअमरोहा\n2\tAmethi\t203\tअमेठी\n3\tAmbedkar Nagar\t178\tअम्बेडकरनगर\n4\tAyodhya\t177\tअयोध्या\n5\tAligarh\t143\tअलीगढ़\n6\tAgra\t146\tआगरा\n7\tAzamgarh\t191\tआजमगढ\n8\tEtawah\t161\tइटावा\n9\tUnnao\t156\tउन्नाव\n10\tEtah\t201\tएटा\n11\tAuraiya\t162\tऔरैया\n12\tKannauj\t160\tकन्नौज\n13\tKanpur Dehat\t163\tकानपुर देहात\n14\tKanpur Nagar\t164\tकानपुर नगर\n15\tKasganj\t202\tकासगंज\n16\tKushinagar\t189\tकुशीनगर\n17\tKaushambi\t174\tकौशाम्बी\n18\tKheri\t153\tखीरी\n19\tGhaziabad\t140\tगाजियाबाद\n20\tGhazipur\t195\tगाजीपुर\n21\tGonda\t183\tगोंडा\n22\tGorakhpur\t188\tगोरखपुर\n23\tGautam Buddha Nagar\t141\tगौतम बुद्ध नगर\n24\tChandauli\t196\tचन्दौली\n25\tChitrakoot\t171\tचित्रकूट\n26\tJalaun\t165\tजालौन\n27\tJaunpur\t194\tजौनपुर\n28\tJhansi\t166\tझांसी\n29\tDeoria\t190\tदेवरिया\n30\tPilibhit\t151\tपीलीभीत\n31\tPratapgarh\t173\tप्रतापगढ\n32\tPrayagraj\t175\tप्रयागराज\n33\tFatehpur\t",
+    "width": 411,
+    "scrollWidth": 411,
+    "wide": [],
+    "controls": 1,
+    "elapsedMs": 8175,
+    "exceptions": []
+  }
+]

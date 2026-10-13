@@ -1,52 +1,36 @@
-import React, {
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
-import {
-  Alert,
-  Animated,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import ViewShot, {
-  ViewShotRef,
-} from 'react-native-view-shot';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, Animated, StyleSheet, Text, View } from 'react-native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import ViewShot, { ViewShotRef } from 'react-native-view-shot';
 
+import { useSelectedState } from '../context/SelectedStateContext';
+import { LAND_PORTALS } from '../data/nationalPortalLinks';
 import AppHeader from '../components/AppHeader';
+import AppPressable from '../components/AppPressable';
 import AppScreen from '../components/AppScreen';
 import AppSectionTitle from '../components/AppSectionTitle';
 import SavedRecordsPanel from '../components/workspaces/SavedRecordsPanel';
 import WorkspaceActionRow from '../components/workspaces/WorkspaceActionRow';
 import WorkspaceField from '../components/workspaces/WorkspaceField';
-import {useLanguage} from '../context/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 import {
   buildInitialWorkflowValues,
   getWorkflowConfig,
 } from '../data/workflowConfigs';
-import {getToolById} from '../data/toolCatalog';
-import {useSavedWorkspaceRecords} from '../hooks/useSavedWorkspaceRecords';
-import {COLORS} from '../theme/colors';
-import {RootStackParamList} from '../types/navigation';
-import {getLocalizedText} from '../types/tool';
-import {WorkspaceRecord} from '../types/workspace';
+import { getToolById } from '../data/toolCatalog';
+import { useSavedWorkspaceRecords } from '../hooks/useSavedWorkspaceRecords';
+import { COLORS } from '../theme/colors';
+import { RootStackParamList } from '../types/navigation';
+import { getLocalizedText } from '../types/tool';
+import { WorkspaceRecord } from '../types/workspace';
 import {
   exportRefAsImage,
   exportSummaryAsPdf,
   shareTextSummary,
 } from '../utils/workspaceExport';
-import {
-  hasAnyValue,
-  sanitizeFileName,
-} from '../utils/workspaceFormatters';
+import { hasAnyValue, sanitizeFileName } from '../utils/workspaceFormatters';
 
-type Props = NativeStackScreenProps<
-  RootStackParamList,
-  'RecordWorkspace'
->;
+type Props = NativeStackScreenProps<RootStackParamList, 'RecordWorkspace'>;
 
 type StyledFieldSection = {
   accentColor: string;
@@ -57,95 +41,106 @@ type StyledFieldSection = {
   };
 };
 
-const VILLAGE_DIARY_FIELD_SECTIONS: StyledFieldSection[] =
-  [
-    {
-      accentColor: '#38BDF8',
-      fieldKeys: ['villageName', 'tehsil', 'district'],
-      title: {
-        en: 'Village details',
-        hi: 'गांव विवरण',
-      },
+const VILLAGE_DIARY_FIELD_SECTIONS: StyledFieldSection[] = [
+  {
+    accentColor: '#38BDF8',
+    fieldKeys: ['villageName', 'tehsil', 'district'],
+    title: {
+      en: 'Village details',
+      hi: 'गांव विवरण',
     },
-    {
-      accentColor: '#F59E0B',
-      fieldKeys: ['visitDate', 'purpose'],
-      title: {
-        en: 'Visit details',
-        hi: 'विजिट विवरण',
-      },
+  },
+  {
+    accentColor: '#F59E0B',
+    fieldKeys: ['visitDate', 'purpose'],
+    title: {
+      en: 'Visit details',
+      hi: 'विजिट विवरण',
     },
-    {
-      accentColor: '#14B8A6',
-      fieldKeys: ['notes', 'pendingWork', 'nextStep'],
-      title: {
-        en: 'Notes & follow-up',
-        hi: 'नोट्स और फॉलो-अप',
-      },
+  },
+  {
+    accentColor: '#14B8A6',
+    fieldKeys: ['notes', 'pendingWork', 'nextStep'],
+    title: {
+      en: 'Notes & follow-up',
+      hi: 'नोट्स और फॉलो-अप',
     },
-  ];
+  },
+];
 
-const MUTATION_TRACKER_FIELD_SECTIONS: StyledFieldSection[] =
-  [
-    {
-      accentColor: '#F97316',
-      fieldKeys: ['applicantName', 'villageName'],
-      title: {
-        en: 'Applicant details',
-        hi: 'आवेदक विवरण',
-      },
+const MUTATION_TRACKER_FIELD_SECTIONS: StyledFieldSection[] = [
+  {
+    accentColor: '#F97316',
+    fieldKeys: ['applicantName', 'villageName'],
+    title: {
+      en: 'Applicant details',
+      hi: 'आवेदक विवरण',
     },
-    {
-      accentColor: '#0EA5E9',
-      fieldKeys: ['khataNumber', 'caseNumber', 'status'],
-      title: {
-        en: 'Case reference',
-        hi: 'केस संदर्भ',
-      },
+  },
+  {
+    accentColor: '#0EA5E9',
+    fieldKeys: ['khataNumber', 'caseNumber', 'status'],
+    title: {
+      en: 'Case reference',
+      hi: 'केस संदर्भ',
     },
-    {
-      accentColor: '#14B8A6',
-      fieldKeys: ['documentsPending', 'nextAction', 'remarks'],
-      title: {
-        en: 'Follow-up notes',
-        hi: 'फॉलो-अप नोट्स',
-      },
+  },
+  {
+    accentColor: '#14B8A6',
+    fieldKeys: ['documentsPending', 'nextAction', 'remarks'],
+    title: {
+      en: 'Follow-up notes',
+      hi: 'फॉलो-अप नोट्स',
     },
-  ];
+  },
+];
 
-const RecordWorkspaceScreen = ({
-  navigation,
-  route,
-}: Props) => {
-  const {language} = useLanguage();
+const OFFICIAL_WORKFLOW_PORTALS: Record<
+  string,
+  { title: string; url: string }
+> = {
+  'crop-girdawari': {
+    title: 'Lekhpal Department Dashboard',
+    url: 'https://bor.up.gov.in/revenuesoft/login.aspx',
+  },
+  'mutation-tracker': {
+    title: 'RCMS Mutation / Varasat',
+    url: 'https://rccms.up.gov.in/dashboard/login/',
+  },
+  'government-land-inspection': {
+    title: 'Lekhpal Department Dashboard',
+    url: 'https://bor.up.gov.in/revenuesoft/login.aspx',
+  },
+  'encroachment-report': {
+    title: 'Lekhpal Department Dashboard',
+    url: 'https://bor.up.gov.in/revenuesoft/login.aspx',
+  },
+};
+
+const RecordWorkspaceScreen = ({ navigation, route }: Props) => {
+  const { language } = useLanguage();
+  const { stateCode } = useSelectedState();
   const tool = getToolById(route.params.toolId);
   const config = getWorkflowConfig(route.params.toolId);
   const reportRef = useRef<ViewShotRef>(null);
-  const revealAnimation = useRef(
-    new Animated.Value(0),
-  ).current;
-  const [values, setValues] = useState<Record<string, string>>(
-    () => buildInitialWorkflowValues(route.params.toolId),
+  const revealAnimation = useRef(new Animated.Value(0)).current;
+  const [values, setValues] = useState<Record<string, string>>(() =>
+    buildInitialWorkflowValues(route.params.toolId),
   );
-  const [savedPanelOpen, setSavedPanelOpen] =
-    useState(false);
-  const {deleteRecord, records, saveRecord} =
-    useSavedWorkspaceRecords(route.params.toolId);
+  const [savedPanelOpen, setSavedPanelOpen] = useState(false);
+  const { deleteRecord, records, saveRecord } = useSavedWorkspaceRecords(
+    route.params.toolId,
+  );
 
   const copy = useMemo(
     () => ({
       currentReport:
-        language === 'hi'
-          ? 'अभी की वर्क रिपोर्ट'
-          : 'Current work report',
+        language === 'hi' ? 'अभी की वर्क रिपोर्ट' : 'Current work report',
       save: language === 'hi' ? 'सेव करें' : 'Save',
       share: language === 'hi' ? 'शेयर' : 'Share',
       pdf: 'PDF',
       image: 'Image',
-      savedReports:
-        language === 'hi'
-          ? 'सेव्ड रिकॉर्ड्स'
-          : 'Saved records',
+      savedReports: language === 'hi' ? 'सेव्ड रिकॉर्ड्स' : 'Saved records',
       load: language === 'hi' ? 'लोड करें' : 'Load',
       emptyTitle:
         language === 'hi'
@@ -156,17 +151,12 @@ const RecordWorkspaceScreen = ({
           ? 'फॉर्म भरकर सेव करेंगे तो वह यहां बाद में दोबारा उपयोग के लिए दिखेगा।'
           : 'Saved records will appear here for quick reuse.',
       saveBlocked:
-        language === 'hi'
-          ? 'पहले कुछ विवरण भरें'
-          : 'Add some details first',
+        language === 'hi' ? 'पहले कुछ विवरण भरें' : 'Add some details first',
       saveBlockedBody:
         language === 'hi'
           ? 'रिकॉर्ड सेव या एक्सपोर्ट करने से पहले कम से कम एक फील्ड भर दें।'
           : 'Fill at least one field before saving or exporting.',
-      saveDoneTitle:
-        language === 'hi'
-          ? 'रिकॉर्ड सेव हो गया'
-          : 'Record saved',
+      saveDoneTitle: language === 'hi' ? 'रिकॉर्ड सेव हो गया' : 'Record saved',
       saveDoneBody:
         language === 'hi'
           ? 'यह रिकॉर्ड अब सेव्ड लिस्ट में उपलब्ध है।'
@@ -175,31 +165,31 @@ const RecordWorkspaceScreen = ({
         language === 'hi'
           ? 'एक्सपोर्ट पूरा नहीं हुआ'
           : 'Export could not finish',
+      officialSite:
+        language === 'hi'
+          ? 'अब आधिकारिक साइट पर जाएँ'
+          : 'Now go to official site',
+      officialSiteBody:
+        language === 'hi'
+          ? 'ऐप में तैयारी पूरी करें, फिर लॉगिन करके सरकारी पोर्टल पर अंतिम काम पूरा करें।'
+          : 'Finish preparing here, then log in and complete the final government action on the official portal.',
     }),
     [language],
   );
 
-  const toolTitle = tool
-    ? getLocalizedText(tool.title, language)
-    : 'Workspace';
-  const isVillageDiary =
-    route.params.toolId === 'village-diary';
-  const isMutationTracker =
-    route.params.toolId === 'mutation-tracker';
-  const isStyledWorkflow =
-    isVillageDiary || isMutationTracker;
+  const toolTitle = tool ? getLocalizedText(tool.title, language) : 'Workspace';
+  const isVillageDiary = route.params.toolId === 'village-diary';
+  const isMutationTracker = route.params.toolId === 'mutation-tracker';
+  const isStyledWorkflow = isVillageDiary || isMutationTracker;
   const formFieldMap = useMemo(
-    () =>
-      new Map(
-        (config?.fields ?? []).map(field => [field.key, field]),
-      ),
+    () => new Map((config?.fields ?? []).map(field => [field.key, field])),
     [config?.fields],
   );
   const styledFieldSections = isVillageDiary
     ? VILLAGE_DIARY_FIELD_SECTIONS
     : isMutationTracker
-      ? MUTATION_TRACKER_FIELD_SECTIONS
-      : [];
+    ? MUTATION_TRACKER_FIELD_SECTIONS
+    : [];
   const defaultSummaryLines = config
     ? config.buildSummary(values, language)
     : [];
@@ -211,10 +201,7 @@ const RecordWorkspaceScreen = ({
     : undefined;
   const emptyLabel = language === 'hi' ? 'नॉट ऐडेड' : 'Not added';
   const pendingLabel = language === 'hi' ? 'पेंडिंग' : 'Pending';
-  const routeValue = [
-    values.tehsil?.trim(),
-    values.district?.trim(),
-  ]
+  const routeValue = [values.tehsil?.trim(), values.district?.trim()]
     .filter(Boolean)
     .join(' / ');
 
@@ -240,71 +227,68 @@ const RecordWorkspaceScreen = ({
         }`,
       ]
     : isMutationTracker
-      ? [
-          `${language === 'hi' ? 'आवेदक' : 'Applicant'}: ${
-            values.applicantName?.trim() || emptyLabel
-          }`,
-          `${language === 'hi' ? 'गांव' : 'Village'}: ${
-            values.villageName?.trim() || emptyLabel
-          }`,
-          `${language === 'hi' ? 'खाता संदर्भ' : 'Khata ref'}: ${
-            values.khataNumber?.trim() || pendingLabel
-          }`,
-          `${language === 'hi' ? 'केस संख्या' : 'Case number'}: ${
-            values.caseNumber?.trim() || pendingLabel
-          }`,
-          `${language === 'hi' ? 'स्थिति' : 'Status'}: ${
-            values.status?.trim() || pendingLabel
-          }`,
-          `${language === 'hi' ? 'पेंडिंग डॉक्यूमेंट्स' : 'Documents pending'}: ${
-            values.documentsPending?.trim() || pendingLabel
-          }`,
-          `${language === 'hi' ? 'अगली कार्यवाही' : 'Next action'}: ${
-            values.nextAction?.trim() || pendingLabel
-          }`,
-          `${language === 'hi' ? 'रिमार्क्स' : 'Remarks'}: ${
-            values.remarks?.trim() || emptyLabel
-          }`,
-        ]
-      : defaultSummaryLines;
+    ? [
+        `${language === 'hi' ? 'आवेदक' : 'Applicant'}: ${
+          values.applicantName?.trim() || emptyLabel
+        }`,
+        `${language === 'hi' ? 'गांव' : 'Village'}: ${
+          values.villageName?.trim() || emptyLabel
+        }`,
+        `${language === 'hi' ? 'खाता संदर्भ' : 'Khata ref'}: ${
+          values.khataNumber?.trim() || pendingLabel
+        }`,
+        `${language === 'hi' ? 'केस संख्या' : 'Case number'}: ${
+          values.caseNumber?.trim() || pendingLabel
+        }`,
+        `${language === 'hi' ? 'स्थिति' : 'Status'}: ${
+          values.status?.trim() || pendingLabel
+        }`,
+        `${language === 'hi' ? 'पेंडिंग डॉक्यूमेंट्स' : 'Documents pending'}: ${
+          values.documentsPending?.trim() || pendingLabel
+        }`,
+        `${language === 'hi' ? 'अगली कार्यवाही' : 'Next action'}: ${
+          values.nextAction?.trim() || pendingLabel
+        }`,
+        `${language === 'hi' ? 'रिमार्क्स' : 'Remarks'}: ${
+          values.remarks?.trim() || emptyLabel
+        }`,
+      ]
+    : defaultSummaryLines;
 
   const recordTitle =
-    isVillageDiary &&
-    !values.villageName?.trim()
+    isVillageDiary && !values.villageName?.trim()
       ? language === 'hi'
         ? 'भ्रमण सार'
         : 'Visit summary'
-      : isMutationTracker &&
-          !values.applicantName?.trim()
-        ? language === 'hi'
-          ? 'म्यूटेशन केस सार'
-          : 'Mutation case summary'
-        : defaultRecordTitle;
+      : isMutationTracker && !values.applicantName?.trim()
+      ? language === 'hi'
+        ? 'म्यूटेशन केस सार'
+        : 'Mutation case summary'
+      : defaultRecordTitle;
 
   const recordSubtitle = isVillageDiary
-    ? [
-        values.visitDate?.trim(),
-        routeValue || undefined,
-      ]
+    ? [values.visitDate?.trim(), routeValue || undefined]
         .filter(Boolean)
         .join(' • ')
     : isMutationTracker
-      ? [
-          values.caseNumber?.trim(),
-          values.status?.trim(),
-          values.khataNumber?.trim(),
-        ]
-          .filter(Boolean)
-          .join(' • ')
-      : defaultRecordSubtitle;
+    ? [
+        values.caseNumber?.trim(),
+        values.status?.trim(),
+        values.khataNumber?.trim(),
+      ]
+        .filter(Boolean)
+        .join(' • ')
+    : defaultRecordSubtitle;
 
-  const visibleReportTitle = isStyledWorkflow
-    ? ''
-    : recordTitle;
-  const visibleReportSubtitle = isStyledWorkflow
-    ? ''
-    : recordSubtitle;
+  const visibleReportTitle = isStyledWorkflow ? '' : recordTitle;
+  const visibleReportSubtitle = isStyledWorkflow ? '' : recordSubtitle;
   const hasValues = hasAnyValue(values);
+  const officialWorkflowPortal =
+    stateCode === 'UP'
+      ? OFFICIAL_WORKFLOW_PORTALS[route.params.toolId]
+      : stateCode
+      ? { title: 'State land & revenue services', url: LAND_PORTALS[stateCode] }
+      : undefined;
   const styledWorkflowRevealStyle = isStyledWorkflow
     ? {
         opacity: revealAnimation,
@@ -387,9 +371,7 @@ const RecordWorkspaceScreen = ({
 
     try {
       await exportSummaryAsPdf({
-        fileName: sanitizeFileName(
-          `${route.params.toolId}-${recordTitle}`,
-        ),
+        fileName: sanitizeFileName(`${route.params.toolId}-${recordTitle}`),
         summaryLines,
         title: `${toolTitle} • ${recordTitle}`,
       });
@@ -405,9 +387,7 @@ const RecordWorkspaceScreen = ({
 
     try {
       await exportRefAsImage({
-        fileName: sanitizeFileName(
-          `${route.params.toolId}-${recordTitle}`,
-        ),
+        fileName: sanitizeFileName(`${route.params.toolId}-${recordTitle}`),
         ref: reportRef,
         title: `${toolTitle} • ${recordTitle}`,
       });
@@ -455,8 +435,7 @@ const RecordWorkspaceScreen = ({
             iconName: savedPanelOpen
               ? 'bookmark-remove-outline'
               : 'bookmark-multiple-outline',
-            onPress: () =>
-              setSavedPanelOpen(previous => !previous),
+            onPress: () => setSavedPanelOpen(previous => !previous),
           },
         ]}
         title={toolTitle}
@@ -486,21 +465,19 @@ const RecordWorkspaceScreen = ({
                   format: 'png',
                   quality: 1,
                 }}
-                ref={reportRef}>
+                ref={reportRef}
+              >
                 {isStyledWorkflow ? (
                   <View style={styles.villageReportCard}>
                     {summaryLines.map((line, index) => {
-                      const separatorIndex =
-                        line.indexOf(':');
+                      const separatorIndex = line.indexOf(':');
                       const label =
                         separatorIndex >= 0
                           ? line.slice(0, separatorIndex)
                           : line;
                       const value =
                         separatorIndex >= 0
-                          ? line
-                              .slice(separatorIndex + 1)
-                              .trim()
+                          ? line.slice(separatorIndex + 1).trim()
                           : '';
 
                       return (
@@ -508,19 +485,15 @@ const RecordWorkspaceScreen = ({
                           key={`${label}-${index}`}
                           style={[
                             styles.villageReportLineText,
-                            index > 0 &&
-                              styles.villageReportLineTextSpaced,
-                          ]}>
-                          <Text
-                            style={styles.villageReportLineLabel}>
-                              {label}
-                              {value ? ': ' : ''}
-                            </Text>
+                            index > 0 && styles.villageReportLineTextSpaced,
+                          ]}
+                        >
+                          <Text style={styles.villageReportLineLabel}>
+                            {label}
+                            {value ? ': ' : ''}
+                          </Text>
                           {value ? (
-                            <Text
-                              style={
-                                styles.villageReportLineValue
-                              }>
+                            <Text style={styles.villageReportLineValue}>
                               {value}
                             </Text>
                           ) : null}
@@ -541,9 +514,7 @@ const RecordWorkspaceScreen = ({
                       </Text>
                     ) : null}
                     {summaryLines.map(line => (
-                      <Text
-                        key={line}
-                        style={styles.reportLine}>
+                      <Text key={line} style={styles.reportLine}>
                         {line}
                       </Text>
                     ))}
@@ -559,20 +530,43 @@ const RecordWorkspaceScreen = ({
                 onShare={handleShareCurrent}
               />
 
+              {officialWorkflowPortal ? (
+                <View style={styles.officialNextCard}>
+                  <Text style={styles.officialNextTitle}>
+                    {copy.officialSite}
+                  </Text>
+                  <Text style={styles.officialNextBody}>
+                    {copy.officialSiteBody}
+                  </Text>
+                  <AppPressable
+                    onPress={() =>
+                      navigation.navigate('WebViewPortal', {
+                        title: officialWorkflowPortal.title,
+                        url: officialWorkflowPortal.url,
+                      })
+                    }
+                    style={styles.officialNextButton}
+                  >
+                    <Text style={styles.officialNextButtonText}>
+                      {officialWorkflowPortal.title}
+                    </Text>
+                  </AppPressable>
+                </View>
+              ) : null}
+
               {isStyledWorkflow ? (
                 <View style={styles.villageFormStack}>
                   {styledFieldSections.map(section => (
                     <View
                       key={section.title.en}
-                      style={styles.villageSectionCard}>
-                      <View
-                        style={styles.villageSectionHeader}>
+                      style={styles.villageSectionCard}
+                    >
+                      <View style={styles.villageSectionHeader}>
                         <View
                           style={[
                             styles.villageSectionAccent,
                             {
-                              backgroundColor:
-                                section.accentColor,
+                              backgroundColor: section.accentColor,
                             },
                           ]}
                         />
@@ -582,17 +576,14 @@ const RecordWorkspaceScreen = ({
                             {
                               color: section.accentColor,
                             },
-                          ]}>
-                          {getLocalizedText(
-                            section.title,
-                            language,
-                          )}
+                          ]}
+                        >
+                          {getLocalizedText(section.title, language)}
                         </Text>
                       </View>
 
                       {section.fieldKeys.map(fieldKey => {
-                        const field =
-                          formFieldMap.get(fieldKey);
+                        const field = formFieldMap.get(fieldKey);
 
                         if (!field) {
                           return null;
@@ -600,15 +591,10 @@ const RecordWorkspaceScreen = ({
 
                         return (
                           <WorkspaceField
-                            compactMultiline={
-                              field.compactMultiline
-                            }
+                            compactMultiline={field.compactMultiline}
                             key={field.key}
                             keyboardType={field.keyboardType}
-                            label={getLocalizedText(
-                              field.label,
-                              language,
-                            )}
+                            label={getLocalizedText(field.label, language)}
                             multiline={field.multiline}
                             onChangeText={nextValue =>
                               setValues(previous => ({
@@ -618,10 +604,7 @@ const RecordWorkspaceScreen = ({
                             }
                             placeholder={
                               field.placeholder
-                                ? getLocalizedText(
-                                    field.placeholder,
-                                    language,
-                                  )
+                                ? getLocalizedText(field.placeholder, language)
                                 : undefined
                             }
                             value={values[field.key] ?? ''}
@@ -638,10 +621,7 @@ const RecordWorkspaceScreen = ({
                       compactMultiline={field.compactMultiline}
                       key={field.key}
                       keyboardType={field.keyboardType}
-                      label={getLocalizedText(
-                        field.label,
-                        language,
-                      )}
+                      label={getLocalizedText(field.label, language)}
                       multiline={field.multiline}
                       onChangeText={nextValue =>
                         setValues(previous => ({
@@ -651,10 +631,7 @@ const RecordWorkspaceScreen = ({
                       }
                       placeholder={
                         field.placeholder
-                          ? getLocalizedText(
-                              field.placeholder,
-                              language,
-                            )
+                          ? getLocalizedText(field.placeholder, language)
                           : undefined
                       }
                       value={values[field.key] ?? ''}
@@ -707,6 +684,37 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 21,
     marginTop: 10,
+  },
+  officialNextCard: {
+    backgroundColor: '#EFF6FF',
+    borderColor: '#BFDBFE',
+    borderRadius: 18,
+    borderWidth: 1,
+    marginTop: 14,
+    padding: 16,
+  },
+  officialNextTitle: {
+    color: COLORS.primaryDark,
+    fontSize: 15,
+    fontWeight: '800',
+  },
+  officialNextBody: {
+    color: COLORS.textMuted,
+    fontSize: 13,
+    lineHeight: 19,
+    marginTop: 6,
+  },
+  officialNextButton: {
+    alignItems: 'center',
+    backgroundColor: COLORS.primary,
+    borderRadius: 12,
+    marginTop: 12,
+    paddingVertical: 12,
+  },
+  officialNextButtonText: {
+    color: COLORS.white,
+    fontSize: 13,
+    fontWeight: '800',
   },
   formCard: {
     backgroundColor: 'transparent',

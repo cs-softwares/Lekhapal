@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "2026-10-09.1",
+  "stateCode": "MP",
+  "name": {
+    "en": "Madhya Pradesh",
+    "hi": "मध्य प्रदेश"
+  },
+  "languages": ["hi", "en"],
+  "stage": "pilot",
+  "catalog": "configured",
+  "dashboardServiceIds": ["MP-records", "MP-certificates", "MP-registration"],
+  "services": [
+    {
+      "id": "MP-records",
+      "title": {
+        "en": "MP Bhulekh · Khasra & Khatauni",
+        "hi": "MP भूलेख · खसरा और खतौनी"
+      },
+      "subtitle": {
+        "en": "Land records and map services on the official MP portal.",
+        "hi": "मध्य प्रदेश के आधिकारिक पोर्टल पर भू-अभिलेख और नक्शा सेवाएं।"
+      },
+      "category": "Land records",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Land records",
+        "MP Bhulekh · Khasra & Khatauni",
+        "MP भूलेख · खसरा और खतौनी"
+      ],
+      "url": "https://mpbhulekh.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://sidhi.nic.in/en/service/land-records/",
+        "checkedOn": "2026-10-09",
+        "note": "Official district directory confirms this portal. Research fetch timed out; Android and workflow checks are pending."
+      }
+    },
+    {
+      "id": "MP-certificates",
+      "title": {
+        "en": "MPOnline · Citizen services",
+        "hi": "MPOnline · नागरिक सेवाएं"
+      },
+      "subtitle": {
+        "en": "Select the relevant service on MPOnline.",
+        "hi": "MPOnline पर संबंधित सेवा चुनें।"
+      },
+      "category": "Certificates",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Certificates",
+        "MPOnline · Citizen services",
+        "MPOnline · नागरिक सेवाएं"
+      ],
+      "url": "https://mponline.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://mponline.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "MP-registration",
+      "title": {
+        "en": "MP Registration & Stamps",
+        "hi": "MP पंजीयन और मुद्रांक"
+      },
+      "subtitle": {
+        "en": "Official registration and stamp department portal.",
+        "hi": "आधिकारिक पंजीयन और मुद्रांक विभाग का पोर्टल।"
+      },
+      "category": "Registration",
+      "icon": "file-sign",
+      "searchTerms": [
+        "Registration",
+        "MP Registration & Stamps",
+        "MP पंजीयन और मुद्रांक"
+      ],
+      "url": "https://www.mpigr.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://www.mpigr.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    }
+  ]
+}

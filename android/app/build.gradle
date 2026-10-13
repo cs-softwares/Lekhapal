@@ -8,6 +8,11 @@ react {
 
 def enableProguardInReleaseBuilds = false
 def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
 
 android {
     ndkVersion rootProject.ext.ndkVersion
@@ -20,8 +25,14 @@ android {
         applicationId "com.lekhpal"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        testInstrumentationRunner "com.lekhpal.ero.EroPdfInstrumentation"
+        versionCode 4
+        versionName "1.1.0"
+        // Internal testing uses Google's sample app as well as sample ad units.
+        // Otherwise UMP rejects the unpublished production consent configuration.
+        manifestPlaceholders.lekhpalAdsAppId = project.hasProperty('internalTestAds')
+            ? 'ca-app-pub-3940256099942544~3347511713'
+            : 'ca-app-pub-4794037209316760~2855952918'
     }
 
     signingConfigs {
@@ -31,6 +42,14 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            if (keystorePropertiesFile.exists()) {
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+            }
+        }
     }
 
     buildTypes {
@@ -39,7 +58,7 @@ android {
         }
 
         release {
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -48,6 +67,9 @@ android {
 
 dependencies {
     implementation("com.facebook.react:react-android")
+    implementation("androidx.browser:browser:1.8.0")
+    implementation("androidx.webkit:webkit:1.14.0")
+    implementation("com.google.android.play:app-update:2.1.0")
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

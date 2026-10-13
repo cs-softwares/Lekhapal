@@ -1,0 +1,95 @@
+[
+  {
+    "name": "copy",
+    "ms": 1585,
+    "url": "https://upbhulekh.gov.in/#/selection",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "certified",
+    "ms": 587,
+    "url": "https://upbhulekh.gov.in/#/index-login",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "sale",
+    "ms": 4181,
+    "url": "https://upbhulekh.gov.in/#/selection",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "dispute",
+    "ms": 11288,
+    "url": "https://upbhulekh.gov.in/#/selection",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "districts",
+    "ms": 1527,
+    "url": "https://upbhulekh.gov.in/#/districts_list",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "tehsils",
+    "ms": 508,
+    "url": "https://upbhulekh.gov.in/#/tehsils_list",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "parganas",
+    "ms": 381,
+    "url": "https://upbhulekh.gov.in/#/parganaReport",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "land-types",
+    "ms": 532,
+    "url": "https://upbhulekh.gov.in/#/landTypeReports",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "government-land",
+    "ms": 591,
+    "url": "https://upbhulekh.gov.in/#/login",
+    "pageId": "2DD6B427C3B041E019704EAE2FD4405B",
+    "main": 1
+  },
+  {
+    "name": "khatauni-login",
+    "url": "https://upbhulekh.gov.in/bhulekh_login/#/home",
+    "ready": "interactive",
+    "inputs": 1
+  },
+  {
+    "name": "realtime-login",
+    "url": "https://upbhulekh.gov.in/bhulekh/",
+    "ready": "interactive",
+    "inputs": 10
+  },
+  {
+    "name": "corrections-final",
+    "url": "https://upbhulekh.gov.in/ansh/",
+    "ready": "complete",
+    "inputs": 9
+  },
+  {
+    "name": "allotment",
+    "url": "https://upbhulekh.gov.in/allotment/#/login2",
+    "ready": "interactive",
+    "inputs": 5
+  },
+  {
+    "name": "map-digitisation-final",
+    "url": "https://upbhulekh.gov.in/DMap/#/",
+    "ready": "complete",
+    "inputs": 5
+  }
+]

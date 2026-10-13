@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {useAppTheme} from '../context/ThemeContext';
-import {useResponsiveMetrics} from '../hooks/useResponsiveMetrics';
+import { useAppTheme } from '../context/ThemeContext';
+import { useResponsiveMetrics } from '../hooks/useResponsiveMetrics';
 import AppPressable from './AppPressable';
 
 type Props = {
@@ -22,9 +22,11 @@ type Props = {
   rightIcons?: Array<{
     iconName: string;
     onPress: () => void;
+    accessibilityLabel?: string;
   }>;
   rightIconName?: string;
   rightLabel?: string;
+  rightAccessibilityLabel?: string;
   onRightPress?: () => void;
   onMenuPress?: () => void;
   onSearchPress?: () => void;
@@ -44,6 +46,7 @@ const AppHeader = ({
   rightIcons,
   rightIconName,
   rightLabel,
+  rightAccessibilityLabel,
   onRightPress,
   onMenuPress,
   onSearchPress,
@@ -54,22 +57,16 @@ const AppHeader = ({
   searchValue = '',
 }: Props) => {
   const metrics = useResponsiveMetrics();
-  const {colors, isDarkTheme} = useAppTheme();
-  const headerBackgroundColor = isDarkTheme
-    ? '#1E3A8A'
-    : colors.primary;
+  const { colors, isDarkTheme } = useAppTheme();
+  const headerBackgroundColor = isDarkTheme ? '#1E3A8A' : colors.primary;
   const controlBackgroundColor = isDarkTheme
     ? 'rgba(191,219,254,0.12)'
     : 'rgba(255,255,255,0.15)';
   const controlBorderColor = isDarkTheme
     ? 'rgba(191,219,254,0.18)'
     : 'transparent';
-  const titleColor = isDarkTheme
-    ? '#F8FAFC'
-    : '#FFFFFF';
-  const iconColor = isDarkTheme
-    ? '#F8FAFC'
-    : '#FFFFFF';
+  const titleColor = isDarkTheme ? '#F8FAFC' : '#FFFFFF';
+  const iconColor = isDarkTheme ? '#F8FAFC' : '#FFFFFF';
   const secondaryTextColor = isDarkTheme
     ? 'rgba(226,232,240,0.82)'
     : 'rgba(255,255,255,0.8)';
@@ -83,11 +80,9 @@ const AppHeader = ({
           alignItems: 'center',
           backgroundColor: headerBackgroundColor,
           borderBottomColor: isDarkTheme
-            ? 'rgba(251,191,36,0.38)'
+            ? 'rgba(191,219,254,0.18)'
             : 'transparent',
-          borderBottomWidth: isDarkTheme
-            ? 1
-            : 0,
+          borderBottomWidth: isDarkTheme ? 1 : 0,
           elevation: isDarkTheme ? 3 : 4,
           flexDirection: 'row',
           justifyContent: 'space-between',
@@ -212,16 +207,18 @@ const AppHeader = ({
           {
             iconName: 'magnify',
             onPress: onSearchPress,
+            accessibilityLabel: 'Search',
           },
         ]
       : !searchActive && !onSearchPress && onRightPress && !rightLabel
-        ? [
-            {
-              iconName: rightIconName ?? 'magnify',
-              onPress: onRightPress,
-            },
-          ]
-        : []),
+      ? [
+          {
+            iconName: rightIconName ?? 'magnify',
+            onPress: onRightPress,
+            accessibilityLabel: rightAccessibilityLabel,
+          },
+        ]
+      : []),
   ];
 
   return (
@@ -233,9 +230,12 @@ const AppHeader = ({
           paddingHorizontal: headerHorizontalPadding,
           paddingTop: headerTopPadding,
         },
-      ]}>
+      ]}
+    >
       {leftLabel ? (
         <AppPressable
+          accessibilityRole="button"
+          accessibilityLabel={onMenuPress ? 'Open menu' : leftLabel || 'Back'}
           onPress={leftAction}
           style={[
             styles.labelButton,
@@ -245,13 +245,14 @@ const AppHeader = ({
               minWidth: labelButtonMinWidth,
               paddingHorizontal: metrics.scale(12),
             },
-          ]}>
-          <Text style={styles.labelButtonText}>
-            {leftLabel}
-          </Text>
+          ]}
+        >
+          <Text style={styles.labelButtonText}>{leftLabel}</Text>
         </AppPressable>
       ) : (
         <AppPressable
+          accessibilityRole="button"
+          accessibilityLabel={onMenuPress ? 'Open menu' : leftLabel || 'Back'}
           onPress={leftAction}
           style={[
             styles.iconButton,
@@ -260,7 +261,8 @@ const AppHeader = ({
               height: iconButtonSize,
               width: iconButtonSize,
             },
-          ]}>
+          ]}
+        >
           <Icon
             name={leftIconName ?? 'menu'}
             size={metrics.scale(26, {
@@ -282,7 +284,8 @@ const AppHeader = ({
               marginHorizontal: titleMargin,
               paddingHorizontal: searchFieldPadding,
             },
-          ]}>
+          ]}
+        >
           <Icon
             color={secondaryTextColor}
             name="magnify"
@@ -308,17 +311,11 @@ const AppHeader = ({
           />
         </View>
       ) : (
-        <View
-          style={[
-            styles.textBlock,
-            {marginHorizontal: titleMargin},
-          ]}>
+        <View style={[styles.textBlock, { marginHorizontal: titleMargin }]}>
           <Text
             numberOfLines={1}
-            style={[
-              styles.title,
-              {fontSize: titleFontSize},
-            ]}>
+            style={[styles.title, { fontSize: titleFontSize }]}
+          >
             {title}
           </Text>
 
@@ -334,7 +331,8 @@ const AppHeader = ({
                     minFactor: 0.9,
                   }),
                 },
-              ]}>
+              ]}
+            >
               {subtitle}
             </Text>
           ) : null}
@@ -351,7 +349,8 @@ const AppHeader = ({
               height: iconButtonSize,
               width: iconButtonSize,
             },
-          ]}>
+          ]}
+        >
           <Icon
             color={iconColor}
             name="close"
@@ -372,20 +371,17 @@ const AppHeader = ({
               minWidth: labelButtonMinWidth,
               paddingHorizontal: metrics.scale(12),
             },
-          ]}>
-          <Text style={styles.labelButtonText}>
-            {rightLabel}
-          </Text>
+          ]}
+        >
+          <Text style={styles.labelButtonText}>{rightLabel}</Text>
         </AppPressable>
       ) : iconActions.length ? (
-        <View
-          style={[
-            styles.rightGroup,
-            {gap: headerGap},
-          ]}>
+        <View style={[styles.rightGroup, { gap: headerGap }]}>
           {iconActions.map((action, index) => (
             <AppPressable
               key={`${action.iconName}-${index}`}
+              accessibilityRole="button"
+              accessibilityLabel={action.accessibilityLabel ?? action.iconName}
               onPress={action.onPress}
               style={[
                 styles.iconButton,
@@ -394,7 +390,8 @@ const AppHeader = ({
                   height: iconButtonSize,
                   width: iconButtonSize,
                 },
-              ]}>
+              ]}
+            >
               <Icon
                 name={action.iconName}
                 size={metrics.scale(24, {

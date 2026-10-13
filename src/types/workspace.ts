@@ -7,6 +7,7 @@ export type WorkspaceRecord = {
   subtitle?: string;
   summaryLines: string[];
   values: WorkspaceValues;
+  organization?: {owner: string; village: string; plot: string; client: string; notes: string};
   createdAt: string;
   updatedAt: string;
 };

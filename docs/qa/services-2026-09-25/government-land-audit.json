@@ -1,0 +1,42 @@
+[
+  {
+    "id": "up-bhulekh-government-land",
+    "title": "Government Land Search",
+    "web": {
+      "url": "https://upbhulekh.gov.in/#/login",
+      "title": "भूलेख",
+      "state": "complete",
+      "text": "सरकारी भूमि यूजर लागिन\nPassword\ncaptcha\nLogin",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 111,
+          "dom": 4354,
+          "load": 4516
+        }
+      ],
+      "forms": 1,
+      "inputs": 5
+    },
+    "nativeText": [
+      "󰁍",
+      "Government Land Search",
+      "upbhulekh.gov.in",
+      "󰑐",
+      "󰇙",
+      "सरकारी भूमि यूजर लागिन",
+      "Password",
+      "",
+      "captcha",
+      "",
+      "",
+      "Login"
+    ],
+    "backToMenu": false,
+    "error": "Missing control: Close website"
+  }
+]

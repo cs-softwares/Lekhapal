@@ -26,7 +26,7 @@ const StateListItem = ({
 }: Props) => (
   <AppPressable
     onPress={onPress}
-    pressEffect="slide"
+
     pressedOpacity={0.92}
     style={({pressed}) => [
       styles.row,

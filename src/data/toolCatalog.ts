@@ -1,8 +1,14 @@
-import {ToolItem} from '../types/tool';
+import { LIGHT_COLORS } from '../theme/palette';
+import { ToolItem } from '../types/tool';
+import { DESK_CALCULATOR_IDS } from '../domain/lekhpalCalculator';
+import {
+  calculatorTools,
+  toolNotes,
+} from '../components/calculator/calculatorContent';
 
-const text = (en: string, hi: string) => ({en, hi});
+const text = (en: string, hi: string) => ({ en, hi });
 
-export const TOOL_CATALOG: ToolItem[] = [
+const BASE_TOOL_CATALOG: ToolItem[] = [
   {
     id: 'up-bhulekh',
     shortCode: 'BL',
@@ -18,16 +24,28 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Official', 'आधिकारिक'),
     highlights: [
-      text('Useful for khatauni and khasra checking', 'खतौनी और खसरा जांच के लिए उपयोगी'),
-      text('Opens a public department website', 'सार्वजनिक विभाग की वेबसाइट खोलता है'),
+      text(
+        'Useful for khatauni and khasra checking',
+        'खतौनी और खसरा जांच के लिए उपयोगी',
+      ),
+      text(
+        'Opens a public department website',
+        'सार्वजनिक विभाग की वेबसाइट खोलता है',
+      ),
       text('Fast route from one dashboard', 'एक डैशबोर्ड से तेज़ एक्सेस'),
     ],
     steps: [
       text('Open the portal from the app.', 'ऐप से पोर्टल खोलें।'),
-      text('Choose district, tehsil, and village.', 'जिला, तहसील और गांव चुनें।'),
-      text('Search record by account or plot details.', 'खाता या प्लॉट विवरण से रिकॉर्ड खोजें।'),
+      text(
+        'Choose district, tehsil, and village.',
+        'जिला, तहसील और गांव चुनें।',
+      ),
+      text(
+        'Search record by account or plot details.',
+        'खाता या प्लॉट विवरण से रिकॉर्ड खोजें।',
+      ),
     ],
-    accentColor: '#1E40AF',
+    accentColor: LIGHT_COLORS.primary,
     url: 'https://upbhulekh.gov.in',
   },
   {
@@ -52,9 +70,12 @@ export const TOOL_CATALOG: ToolItem[] = [
     steps: [
       text('Open the map portal.', 'मैप पोर्टल खोलें।'),
       text('Select district and village.', 'जिला और गांव चुनें।'),
-      text('Use map layers to inspect plot references.', 'प्लॉट संदर्भ देखने के लिए मैप लेयर का उपयोग करें।'),
+      text(
+        'Use map layers to inspect plot references.',
+        'प्लॉट संदर्भ देखने के लिए मैप लेयर का उपयोग करें।',
+      ),
     ],
-    accentColor: '#2563EB',
+    accentColor: LIGHT_COLORS.primary,
     url: 'https://upbhunaksha.gov.in',
   },
   {
@@ -72,17 +93,26 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Citizen', 'नागरिक'),
     highlights: [
-      text('Certificate and service application access', 'प्रमाणपत्र और सेवा आवेदन एक्सेस'),
-      text('Good for mixed office workflows', 'मिश्रित ऑफिस कार्यों के लिए अच्छा'),
+      text(
+        'Certificate and service application access',
+        'प्रमाणपत्र और सेवा आवेदन एक्सेस',
+      ),
+      text(
+        'Good for mixed office workflows',
+        'मिश्रित ऑफिस कार्यों के लिए अच्छा',
+      ),
       text('Public department source', 'सार्वजनिक विभाग स्रोत'),
     ],
     steps: [
       text('Open eDistrict from the app.', 'ऐप से ई-डिस्ट्रिक्ट खोलें।'),
       text('Choose the relevant service area.', 'संबंधित सेवा क्षेत्र चुनें।'),
-      text('Continue with the official process.', 'आधिकारिक प्रक्रिया के साथ आगे बढ़ें।'),
+      text(
+        'Continue with the official process.',
+        'आधिकारिक प्रक्रिया के साथ आगे बढ़ें।',
+      ),
     ],
-    accentColor: '#0F766E',
-    url: 'https://edistrict.up.gov.in',
+    accentColor: LIGHT_COLORS.primary,
+    url: 'https://edistrict.up.gov.in/edistrictup/',
   },
   {
     id: 'igrs-registry',
@@ -100,16 +130,25 @@ export const TOOL_CATALOG: ToolItem[] = [
     badge: text('Registry', 'रजिस्ट्री'),
     highlights: [
       text('Property registration support', 'प्रॉपर्टी रजिस्ट्रेशन सहायता'),
-      text('Useful for rate and value checking', 'रेट और वैल्यू जांच में उपयोगी'),
+      text(
+        'Useful for rate and value checking',
+        'रेट और वैल्यू जांच में उपयोगी',
+      ),
       text('Official public source', 'आधिकारिक सार्वजनिक स्रोत'),
     ],
     steps: [
       text('Open the IGRS portal.', 'आईजीआरएस पोर्टल खोलें।'),
-      text('Select the registry or valuation area.', 'रजिस्ट्री या मूल्यांकन सेक्शन चुनें।'),
-      text('Continue with the relevant official service.', 'संबंधित आधिकारिक सेवा के साथ आगे बढ़ें।'),
+      text(
+        'Select the registry or valuation area.',
+        'रजिस्ट्री या मूल्यांकन सेक्शन चुनें।',
+      ),
+      text(
+        'Continue with the relevant official service.',
+        'संबंधित आधिकारिक सेवा के साथ आगे बढ़ें।',
+      ),
     ],
-    accentColor: '#EA580C',
-    url: 'https://igrsup.gov.in',
+    accentColor: LIGHT_COLORS.primary,
+    url: 'https://igrsup.gov.in/igrsup/defaultAction.action',
   },
   {
     id: 'revenue-court',
@@ -126,16 +165,25 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Case', 'मामला'),
     highlights: [
-      text('Useful for case tracking references', 'केस ट्रैकिंग संदर्भ के लिए उपयोगी'),
+      text(
+        'Useful for case tracking references',
+        'केस ट्रैकिंग संदर्भ के लिए उपयोगी',
+      ),
       text('Public department portal route', 'सार्वजनिक विभाग पोर्टल मार्ग'),
       text('Fits daily office follow-up work', 'दैनिक ऑफिस फॉलो-अप में सहायक'),
     ],
     steps: [
       text('Open the portal from the app.', 'ऐप से पोर्टल खोलें।'),
-      text('Choose the case search or status area.', 'केस सर्च या स्टेटस सेक्शन चुनें।'),
-      text('Use the public records available there.', 'उपलब्ध सार्वजनिक रिकॉर्ड्स का उपयोग करें।'),
+      text(
+        'Choose the case search or status area.',
+        'केस सर्च या स्टेटस सेक्शन चुनें।',
+      ),
+      text(
+        'Use the public records available there.',
+        'उपलब्ध सार्वजनिक रिकॉर्ड्स का उपयोग करें।',
+      ),
     ],
-    accentColor: '#7C3AED',
+    accentColor: LIGHT_COLORS.primary,
     url: 'https://vaad.up.nic.in',
   },
   {
@@ -155,14 +203,26 @@ export const TOOL_CATALOG: ToolItem[] = [
     highlights: [
       text('Good for daily visit notes', 'दैनिक भ्रमण नोट्स के लिए अच्छा'),
       text('Keeps pending tasks visible', 'पेंडिंग काम स्पष्ट रखता है'),
-      text('Fits drawer-based daily work navigation', 'ड्रॉअर आधारित दैनिक कार्य नेविगेशन में फिट'),
+      text(
+        'Fits drawer-based daily work navigation',
+        'ड्रॉअर आधारित दैनिक कार्य नेविगेशन में फिट',
+      ),
     ],
     steps: [
-      text('Start with the village name and date.', 'गांव का नाम और तारीख से शुरू करें।'),
-      text('Add important field observations.', 'महत्वपूर्ण फील्ड टिप्पणियां जोड़ें।'),
-      text('Mark pending follow-up items clearly.', 'पेंडिंग फॉलो-अप बिंदु स्पष्ट लिखें।'),
+      text(
+        'Start with the village name and date.',
+        'गांव का नाम और तारीख से शुरू करें।',
+      ),
+      text(
+        'Add important field observations.',
+        'महत्वपूर्ण फील्ड टिप्पणियां जोड़ें।',
+      ),
+      text(
+        'Mark pending follow-up items clearly.',
+        'पेंडिंग फॉलो-अप बिंदु स्पष्ट लिखें।',
+      ),
     ],
-    accentColor: '#0891B2',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'field-inspection',
@@ -181,14 +241,20 @@ export const TOOL_CATALOG: ToolItem[] = [
     highlights: [
       text('Built for visit notes', 'भ्रमण नोट्स के लिए उपयुक्त'),
       text('Helps maintain a checklist mindset', 'चेकलिस्ट सोच बनाए रखता है'),
-      text('Useful for daily record quality', 'दैनिक रिकॉर्ड गुणवत्ता में सहायक'),
+      text(
+        'Useful for daily record quality',
+        'दैनिक रिकॉर्ड गुणवत्ता में सहायक',
+      ),
     ],
     steps: [
       text('Record the visit context first.', 'पहले भ्रमण का संदर्भ लिखें।'),
-      text('List observed issues or confirmations.', 'देखी गई समस्याएं या पुष्टि बिंदु लिखें।'),
+      text(
+        'List observed issues or confirmations.',
+        'देखी गई समस्याएं या पुष्टि बिंदु लिखें।',
+      ),
       text('Note the next required action.', 'अगली आवश्यक कार्रवाई लिखें।'),
     ],
-    accentColor: '#0F766E',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'mutation-tracker',
@@ -211,10 +277,130 @@ export const TOOL_CATALOG: ToolItem[] = [
     ],
     steps: [
       text('Create a case entry.', 'एक केस एंट्री बनाएं।'),
-      text('List received and pending documents.', 'मिले और पेंडिंग डॉक्यूमेंट्स लिखें।'),
-      text('Update status after each follow-up.', 'हर फॉलो-अप के बाद स्थिति अपडेट करें।'),
+      text(
+        'List received and pending documents.',
+        'मिले और पेंडिंग डॉक्यूमेंट्स लिखें।',
+      ),
+      text(
+        'Update status after each follow-up.',
+        'हर फॉलो-अप के बाद स्थिति अपडेट करें।',
+      ),
     ],
-    accentColor: '#DC2626',
+    accentColor: LIGHT_COLORS.primary,
+  },
+  {
+    id: 'crop-girdawari',
+    shortCode: 'CG',
+    category: 'workflow',
+    title: text('Crop Girdawari Entry', 'फसल गिरदावरी एंट्री'),
+    subtitle: text(
+      'Record seasonal crop and cultivation observations for each plot.',
+      'हर प्लॉट की मौसमी फसल और खेती संबंधी निरीक्षण दर्ज करें।',
+    ),
+    description: text(
+      'Prepare a structured Rabi, Kharif, or Zaid field entry with crop, irrigation, area, and verification notes. Use the official department portal for final submission.',
+      'रबी, खरीफ या जायद के लिए फसल, सिंचाई, क्षेत्रफल और सत्यापन नोट्स की संरचित एंट्री तैयार करें। अंतिम सबमिशन के लिए आधिकारिक विभागीय पोर्टल का उपयोग करें।',
+    ),
+    badge: text('Seasonal', 'मौसमी'),
+    highlights: [
+      text('Rabi, Kharif, and Zaid seasons', 'रबी, खरीफ और जायद सीजन'),
+      text('Plot and crop observation fields', 'प्लॉट और फसल निरीक्षण फील्ड'),
+      text(
+        'Save and export a field-ready report',
+        'फील्ड रिपोर्ट सेव और एक्सपोर्ट करें',
+      ),
+    ],
+    steps: [
+      text(
+        'Enter village, plot, season, and crop details.',
+        'गांव, प्लॉट, सीजन और फसल विवरण दर्ज करें।',
+      ),
+      text(
+        'Add irrigation, area, and field observations.',
+        'सिंचाई, क्षेत्रफल और फील्ड निरीक्षण जोड़ें।',
+      ),
+      text(
+        'Save the entry and submit through the official portal when required.',
+        'एंट्री सेव करें और जरूरत पर आधिकारिक पोर्टल से सबमिट करें।',
+      ),
+    ],
+    accentColor: LIGHT_COLORS.primary,
+  },
+  {
+    id: 'government-land-inspection',
+    shortCode: 'GL',
+    category: 'workflow',
+    title: text('Government Land Inspection', 'सरकारी भूमि निरीक्षण'),
+    subtitle: text(
+      'Document public land, water bodies, and encroachment risk during a visit.',
+      'भ्रमण के दौरान सार्वजनिक भूमि, जल निकाय और कब्जे का जोखिम दर्ज करें।',
+    ),
+    description: text(
+      'Create a village-wise government-land inspection record with land classification, location, use, boundary condition, and action required.',
+      'भूमि वर्गीकरण, स्थान, उपयोग, सीमा स्थिति और आवश्यक कार्रवाई के साथ गांववार सरकारी भूमि निरीक्षण रिकॉर्ड बनाएं।',
+    ),
+    badge: text('Inspection', 'निरीक्षण'),
+    highlights: [
+      text(
+        'Government land and water-body categories',
+        'सरकारी भूमि और जल निकाय श्रेणियां',
+      ),
+      text('Boundary and usage verification', 'सीमा और उपयोग सत्यापन'),
+      text('Action and escalation notes', 'कार्रवाई और एस्केलेशन नोट्स'),
+    ],
+    steps: [
+      text(
+        'Record village, plot, land type, and visit date.',
+        'गांव, प्लॉट, भूमि प्रकार और भ्रमण तिथि दर्ज करें।',
+      ),
+      text(
+        'Note current use, boundary markers, and people present.',
+        'वर्तमान उपयोग, सीमा चिन्ह और उपस्थित लोगों को लिखें।',
+      ),
+      text(
+        'Save the report and forward it through the official chain.',
+        'रिपोर्ट सेव करें और आधिकारिक चैनल से आगे भेजें।',
+      ),
+    ],
+    accentColor: LIGHT_COLORS.primary,
+  },
+  {
+    id: 'encroachment-report',
+    shortCode: 'ER',
+    category: 'workflow',
+    title: text('Encroachment Report', 'अतिक्रमण रिपोर्ट'),
+    subtitle: text(
+      'Capture an evidence-ready note for a suspected boundary or public-land encroachment.',
+      'सीमा या सार्वजनिक भूमि के संभावित अतिक्रमण के लिए साक्ष्य-तैयार नोट बनाएं।',
+    ),
+    description: text(
+      'Keep plot references, measurements, observations, witnesses, and required follow-up together. This is a preparation record and does not itself issue an official order.',
+      'प्लॉट संदर्भ, माप, निरीक्षण, गवाह और फॉलो-अप को एक साथ रखें। यह तैयारी रिकॉर्ड है और स्वयं कोई आधिकारिक आदेश जारी नहीं करता।',
+    ),
+    badge: text('Report', 'रिपोर्ट'),
+    highlights: [
+      text('Khasra and public-land reference', 'खसरा और सार्वजनिक भूमि संदर्भ'),
+      text('Evidence and witness notes', 'साक्ष्य और गवाह नोट्स'),
+      text(
+        'Export for departmental follow-up',
+        'विभागीय फॉलो-अप के लिए एक्सपोर्ट',
+      ),
+    ],
+    steps: [
+      text(
+        'Enter location and plot reference.',
+        'स्थान और प्लॉट संदर्भ दर्ज करें।',
+      ),
+      text(
+        'Record the observed issue and measurements.',
+        'देखी गई समस्या और माप दर्ज करें।',
+      ),
+      text(
+        'Export and submit to the responsible officer or portal.',
+        'एक्सपोर्ट करके संबंधित अधिकारी या पोर्टल पर जमा करें।',
+      ),
+    ],
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'area-converter',
@@ -233,14 +419,23 @@ export const TOOL_CATALOG: ToolItem[] = [
     highlights: [
       text('Useful for standard units', 'मानक यूनिट्स के लिए उपयोगी'),
       text('Fast field-side conversion', 'फील्ड में तेज़ रूपांतरण'),
-      text('Avoids rough manual conversion', 'अनुमानित मैनुअल रूपांतरण से बचाता है'),
+      text(
+        'Avoids rough manual conversion',
+        'अनुमानित मैनुअल रूपांतरण से बचाता है',
+      ),
     ],
     steps: [
       text('Enter the source value.', 'मूल वैल्यू दर्ज करें।'),
-      text('Choose from and to units.', 'कौन सी यूनिट से और किस यूनिट में चुनें।'),
-      text('Read the converted result instantly.', 'तुरंत परिवर्तित परिणाम देखें।'),
+      text(
+        'Choose from and to units.',
+        'कौन सी यूनिट से और किस यूनिट में चुनें।',
+      ),
+      text(
+        'Read the converted result instantly.',
+        'तुरंत परिवर्तित परिणाम देखें।',
+      ),
     ],
-    accentColor: '#0284C7',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'plot-boundary-guide',
@@ -264,9 +459,12 @@ export const TOOL_CATALOG: ToolItem[] = [
     steps: [
       text('Note the plot reference first.', 'पहले प्लॉट संदर्भ लिखें।'),
       text('Check visible boundary markers.', 'दिखने वाले सीमा चिन्ह देखें।'),
-      text('Record mismatches for follow-up.', 'अंतर मिलने पर फॉलो-अप के लिए लिखें।'),
+      text(
+        'Record mismatches for follow-up.',
+        'अंतर मिलने पर फॉलो-अप के लिए लिखें।',
+      ),
     ],
-    accentColor: '#0369A1',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'map-scale-helper',
@@ -283,16 +481,25 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Scale', 'स्केल'),
     highlights: [
-      text('Helpful for map reading discipline', 'मैप पढ़ने की अनुशासन में सहायक'),
+      text(
+        'Helpful for map reading discipline',
+        'मैप पढ़ने की अनुशासन में सहायक',
+      ),
       text('Good with BhuNaksha work', 'भू-नक्शा कार्य के साथ उपयोगी'),
       text('Fits quick reference usage', 'त्वरित संदर्भ उपयोग के लिए उपयुक्त'),
     ],
     steps: [
       text('Keep the map scale visible.', 'मैप स्केल स्पष्ट रखें।'),
-      text('Compare notes with the map reference.', 'नोट्स को मैप संदर्भ से मिलाएं।'),
-      text('Use standard measurements for conversions.', 'रूपांतरण के लिए मानक मापों का उपयोग करें।'),
+      text(
+        'Compare notes with the map reference.',
+        'नोट्स को मैप संदर्भ से मिलाएं।',
+      ),
+      text(
+        'Use standard measurements for conversions.',
+        'रूपांतरण के लिए मानक मापों का उपयोग करें।',
+      ),
     ],
-    accentColor: '#0EA5E9',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'registry-estimate',
@@ -309,16 +516,28 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Calc', 'कैल्क'),
     highlights: [
-      text('No fixed legal assumption inside the app', 'ऐप के अंदर कोई तय कानूनी मान नहीं'),
-      text('You control the rates and percentages', 'रेट और प्रतिशत आप तय करते हैं'),
+      text(
+        'No fixed legal assumption inside the app',
+        'ऐप के अंदर कोई तय कानूनी मान नहीं',
+      ),
+      text(
+        'You control the rates and percentages',
+        'रेट और प्रतिशत आप तय करते हैं',
+      ),
       text('Useful for practical estimation', 'व्यावहारिक अनुमान में उपयोगी'),
     ],
     steps: [
       text('Enter area and rate values.', 'क्षेत्रफल और रेट दर्ज करें।'),
-      text('Add stamp and registration percentages.', 'स्टाम्प और रजिस्ट्रेशन प्रतिशत जोड़ें।'),
-      text('Review market value and total estimate.', 'मार्केट वैल्यू और कुल अनुमान देखें।'),
+      text(
+        'Add stamp and registration percentages.',
+        'स्टाम्प और रजिस्ट्रेशन प्रतिशत जोड़ें।',
+      ),
+      text(
+        'Review market value and total estimate.',
+        'मार्केट वैल्यू और कुल अनुमान देखें।',
+      ),
     ],
-    accentColor: '#EA580C',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'share-calculator',
@@ -335,16 +554,25 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Share', 'हिस्सा'),
     highlights: [
-      text('Useful for quick split checks', 'त्वरित बंटवारा जांच के लिए उपयोगी'),
-      text('Works with any numeric total', 'किसी भी संख्यात्मक कुल के साथ काम करता है'),
-      text('Easy for daily rough planning', 'दैनिक प्रारंभिक योजना के लिए आसान'),
+      text(
+        'Useful for quick split checks',
+        'त्वरित बंटवारा जांच के लिए उपयोगी',
+      ),
+      text(
+        'Works with any numeric total',
+        'किसी भी संख्यात्मक कुल के साथ काम करता है',
+      ),
+      text(
+        'Easy for daily rough planning',
+        'दैनिक प्रारंभिक योजना के लिए आसान',
+      ),
     ],
     steps: [
       text('Enter the total amount.', 'कुल राशि दर्ज करें।'),
       text('Enter the owner share percentage.', 'मालिक का प्रतिशत दर्ज करें।'),
       text('Review both split values.', 'दोनों हिस्सों की वैल्यू देखें।'),
     ],
-    accentColor: '#7C3AED',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'fraction-hissa-calculator',
@@ -361,16 +589,31 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Fraction', 'फ्रैक्शन'),
     highlights: [
-      text('Useful for land-share entries', 'भूमि हिस्सेदारी प्रविष्टियों के लिए उपयोगी'),
-      text('Shows both area and percentage', 'क्षेत्रफल और प्रतिशत दोनों दिखाता है'),
-      text('Helps avoid manual fraction mistakes', 'मैन्युअल फ्रैक्शन गलती से बचाता है'),
+      text(
+        'Useful for land-share entries',
+        'भूमि हिस्सेदारी प्रविष्टियों के लिए उपयोगी',
+      ),
+      text(
+        'Shows both area and percentage',
+        'क्षेत्रफल और प्रतिशत दोनों दिखाता है',
+      ),
+      text(
+        'Helps avoid manual fraction mistakes',
+        'मैन्युअल फ्रैक्शन गलती से बचाता है',
+      ),
     ],
     steps: [
       text('Enter total area first.', 'पहले कुल क्षेत्रफल दर्ज करें।'),
-      text('Enter numerator and denominator of the share.', 'हिस्से का अंश और हर दर्ज करें।'),
-      text('Review share area, remaining area, and percentage.', 'हिस्से का क्षेत्रफल, शेष क्षेत्रफल और प्रतिशत देखें।'),
+      text(
+        'Enter numerator and denominator of the share.',
+        'हिस्से का अंश और हर दर्ज करें।',
+      ),
+      text(
+        'Review share area, remaining area, and percentage.',
+        'हिस्से का क्षेत्रफल, शेष क्षेत्रफल और प्रतिशत देखें।',
+      ),
     ],
-    accentColor: '#C026D3',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'rate-finder',
@@ -387,16 +630,31 @@ export const TOOL_CATALOG: ToolItem[] = [
     ),
     badge: text('Rate', 'रेट'),
     highlights: [
-      text('Useful when total value is already known', 'जब कुल मूल्य पहले से पता हो तब उपयोगी'),
-      text('Shows gross and net rate separately', 'ग्रॉस और नेट रेट अलग-अलग दिखाता है'),
-      text('Helps cross-check manual estimates', 'मैन्युअल अनुमान की जांच में मदद करता है'),
+      text(
+        'Useful when total value is already known',
+        'जब कुल मूल्य पहले से पता हो तब उपयोगी',
+      ),
+      text(
+        'Shows gross and net rate separately',
+        'ग्रॉस और नेट रेट अलग-अलग दिखाता है',
+      ),
+      text(
+        'Helps cross-check manual estimates',
+        'मैन्युअल अनुमान की जांच में मदद करता है',
+      ),
     ],
     steps: [
       text('Enter total area first.', 'पहले कुल क्षेत्रफल दर्ज करें।'),
-      text('Enter total value and any charge part.', 'कुल मूल्य और चार्ज हिस्सा दर्ज करें।'),
-      text('Review gross rate, net rate, and charge per unit.', 'ग्रॉस रेट, नेट रेट और प्रति यूनिट चार्ज देखें।'),
+      text(
+        'Enter total value and any charge part.',
+        'कुल मूल्य और चार्ज हिस्सा दर्ज करें।',
+      ),
+      text(
+        'Review gross rate, net rate, and charge per unit.',
+        'ग्रॉस रेट, नेट रेट और प्रति यूनिट चार्ज देखें।',
+      ),
     ],
-    accentColor: '#0F766E',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'circle-rate-compare',
@@ -414,15 +672,24 @@ export const TOOL_CATALOG: ToolItem[] = [
     badge: text('Rate', 'रेट'),
     highlights: [
       text('Supports estimate comparison', 'अनुमान तुलना में सहायक'),
-      text('Useful before formal reference work', 'औपचारिक संदर्भ कार्य से पहले उपयोगी'),
+      text(
+        'Useful before formal reference work',
+        'औपचारिक संदर्भ कार्य से पहले उपयोगी',
+      ),
       text('Keeps the process structured', 'प्रक्रिया को व्यवस्थित रखता है'),
     ],
     steps: [
-      text('Collect the rate points to compare.', 'तुलना के लिए रेट बिंदु इकट्ठा करें।'),
+      text(
+        'Collect the rate points to compare.',
+        'तुलना के लिए रेट बिंदु इकट्ठा करें।',
+      ),
       text('Check the difference in assumptions.', 'मान्यताओं का अंतर देखें।'),
-      text('Keep notes before final action.', 'अंतिम कार्रवाई से पहले नोट्स रखें।'),
+      text(
+        'Keep notes before final action.',
+        'अंतिम कार्रवाई से पहले नोट्स रखें।',
+      ),
     ],
-    accentColor: '#9333EA',
+    accentColor: LIGHT_COLORS.primary,
   },
   {
     id: 'saved-record-locker',
@@ -441,14 +708,23 @@ export const TOOL_CATALOG: ToolItem[] = [
     highlights: [
       text('For repeated daily access', 'बार-बार दैनिक उपयोग के लिए'),
       text('Keeps work grouped together', 'काम को एक साथ रखता है'),
-      text('Designed for faster navigation', 'तेज़ नेविगेशन के लिए डिज़ाइन किया गया'),
+      text(
+        'Designed for faster navigation',
+        'तेज़ नेविगेशन के लिए डिज़ाइन किया गया',
+      ),
     ],
     steps: [
       text('Select your frequent tools.', 'अपने नियमित टूल्स चुनें।'),
-      text('Pin record references for quick reuse.', 'त्वरित उपयोग के लिए रिकॉर्ड्स पिन करें।'),
-      text('Open everything from one premium space.', 'सब कुछ एक प्रीमियम स्पेस से खोलें।'),
+      text(
+        'Pin record references for quick reuse.',
+        'त्वरित उपयोग के लिए रिकॉर्ड्स पिन करें।',
+      ),
+      text(
+        'Open everything from one premium space.',
+        'सब कुछ एक प्रीमियम स्पेस से खोलें।',
+      ),
     ],
-    accentColor: '#F59E0B',
+    accentColor: LIGHT_COLORS.primary,
     premium: true,
   },
 ];
@@ -457,6 +733,28 @@ export const WORKFLOW_TOOL_IDS = [
   'village-diary',
   'field-inspection',
   'mutation-tracker',
+  'crop-girdawari',
+  'government-land-inspection',
+  'encroachment-report',
+];
+
+export const TOOL_CATALOG: ToolItem[] = [
+  ...BASE_TOOL_CATALOG.filter(tool => tool.category !== 'calculator'),
+  ...calculatorTools.map(tool => ({
+    id: tool.id,
+    shortCode:
+      BASE_TOOL_CATALOG.find(item => item.id === tool.id)?.shortCode ??
+      (tool.id === 'crop-loss' ? 'CL' : 'RC'),
+    icon: tool.icon,
+    category: 'calculator' as const,
+    title: text(...tool.title),
+    subtitle: text(...tool.description),
+    description: text(...tool.description),
+    badge: text('Calculator', '\u0917\u0923\u0928\u093e'),
+    highlights: [text(...toolNotes[tool.id])],
+    steps: [text(...tool.description)],
+    accentColor: LIGHT_COLORS.primary,
+  })),
 ];
 
 export const FEATURED_TOOL_IDS = [
@@ -480,13 +778,7 @@ export const MEASUREMENT_TOOL_IDS = [
   'map-scale-helper',
 ];
 
-export const CALCULATOR_TOOL_IDS = [
-  'registry-estimate',
-  'share-calculator',
-  'fraction-hissa-calculator',
-  'rate-finder',
-  'circle-rate-compare',
-];
+export const CALCULATOR_TOOL_IDS: readonly string[] = DESK_CALCULATOR_IDS;
 
 export const PREMIUM_TOOL_IDS = ['saved-record-locker'];
 

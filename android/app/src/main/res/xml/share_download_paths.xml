@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="rnshare_downloads" path="Download/" />
+    <cache-path name="rnshare_cache" path="." />
+    <external-files-path name="lekhpal_pdf_documents" path="Documents/" />
+    <files-path name="lekhpal_internal_documents" path="Documents/" />
+    <files-path name="lekhpal_ero_pdfs" path="ero-pdfs/" />
+</paths>

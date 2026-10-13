@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "2026-10-09.1",
+  "stateCode": "RJ",
+  "name": {
+    "en": "Rajasthan",
+    "hi": "राजस्थान"
+  },
+  "languages": ["hi", "en"],
+  "stage": "next",
+  "catalog": "configured",
+  "dashboardServiceIds": [
+    "RJ-records",
+    "rj-bhunaksha",
+    "rj-girdawari",
+    "RJ-certificates"
+  ],
+  "services": [
+    {
+      "id": "RJ-records",
+      "title": {
+        "en": "Apna Khata · Jamabandi",
+        "hi": "अपना खाता · जमाबंदी"
+      },
+      "subtitle": {
+        "en": "Rajasthan land records on the official Apna Khata portal.",
+        "hi": "आधिकारिक अपना खाता पोर्टल पर राजस्थान के भूमि अभिलेख।"
+      },
+      "category": "Land records",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Land records",
+        "Apna Khata · Jamabandi",
+        "अपना खाता · जमाबंदी"
+      ],
+      "url": "https://apnakhata.rajasthan.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://apnakhata.rajasthan.gov.in/",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "rj-edharti",
+      "title": {
+        "en": "eDharti",
+        "hi": "ई-धरती"
+      },
+      "subtitle": {
+        "en": "Official Rajasthan eDharti portal.",
+        "hi": "आधिकारिक राजस्थान ई-धरती पोर्टल।"
+      },
+      "category": "Revenue services",
+      "icon": "file-document-outline",
+      "searchTerms": ["Revenue services", "eDharti", "ई-धरती"],
+      "url": "https://edharti.rajasthan.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://edharti.rajasthan.gov.in",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "rj-bhunaksha",
+      "title": {
+        "en": "BhuNaksha Rajasthan",
+        "hi": "भू-नक्शा राजस्थान"
+      },
+      "subtitle": {
+        "en": "Official Rajasthan map portal.",
+        "hi": "आधिकारिक राजस्थान भू-नक्शा पोर्टल।"
+      },
+      "category": "Maps & survey",
+      "icon": "map-outline",
+      "searchTerms": [
+        "Maps & survey",
+        "BhuNaksha Rajasthan",
+        "भू-नक्शा राजस्थान"
+      ],
+      "url": "https://bhunaksha.rajasthan.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://bhunaksha.rajasthan.gov.in",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "rj-girdawari",
+      "title": {
+        "en": "Girdawari",
+        "hi": "गिरदावरी"
+      },
+      "subtitle": {
+        "en": "Official Rajasthan girdawari portal.",
+        "hi": "आधिकारिक राजस्थान गिरदावरी पोर्टल।"
+      },
+      "category": "Revenue services",
+      "icon": "clipboard-list-outline",
+      "searchTerms": ["Revenue services", "Girdawari", "गिरदावरी"],
+      "url": "https://webgirdawari.rajasthan.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://webgirdawari.rajasthan.gov.in",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "rj-epanjiyan",
+      "title": {
+        "en": "ePanjiyan",
+        "hi": "ई-पंजीयन"
+      },
+      "subtitle": {
+        "en": "Official Rajasthan registration portal.",
+        "hi": "आधिकारिक राजस्थान ई-पंजीयन पोर्टल।"
+      },
+      "category": "Revenue services",
+      "icon": "file-certificate-outline",
+      "searchTerms": ["Revenue services", "ePanjiyan", "ई-पंजीयन"],
+      "url": "https://epanjiyan.rajasthan.gov.in",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://epanjiyan.rajasthan.gov.in",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "RJ-certificates",
+      "title": {
+        "en": "eMitra · Citizen services",
+        "hi": "ई-मित्र · नागरिक सेवाएं"
+      },
+      "subtitle": {
+        "en": "Select the relevant service on Rajasthan eMitra.",
+        "hi": "राजस्थान ई-मित्र पर संबंधित सेवा चुनें।"
+      },
+      "category": "Certificates",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Certificates",
+        "eMitra · Citizen services",
+        "ई-मित्र · नागरिक सेवाएं"
+      ],
+      "url": "https://emitra.rajasthan.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://emitra.rajasthan.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    }
+  ]
+}

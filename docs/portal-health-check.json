@@ -1,0 +1,743 @@
+{
+  "checkedAt": "2026-09-22T12:48:14.245Z",
+  "states": 36,
+  "entries": 155,
+  "results": [
+    {
+      "url": "https://dweepbhoomi.andamannicobar.gov.in/process/html/index.php",
+      "status": 200,
+      "finalUrl": "https://dweepbhoomi.andamannicobar.gov.in/process/html/index.php"
+    },
+    {
+      "url": "https://registration.ap.gov.in/igrs",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://bhunaksha.ap.gov.in/bhunakshalpm/28/index.jsp",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.ap.gov.in/bhunakshalpm/28/index.jsp"
+    },
+    {
+      "url": "https://vswsonline.ap.gov.in/",
+      "status": 200,
+      "finalUrl": "https://apseva.ap.gov.in/"
+    },
+    {
+      
+      "url": "https://meebhoomi.ap.gov.in/",
+      "status": 200,
+      "finalUrl": "https://meebhoomi.ap.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.arunachal.gov.in/NGDRS_AR/",
+      "error": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+    },
+    {
+      "url": "https://eservice.arunachal.gov.in/",
+      "status": 200,
+      "finalUrl": "https://eservice.arunachal.gov.in/"
+    },
+    {
+      "url": "https://ilrms.assam.gov.in/dhar/index.php/Welcome/SelectLOC",
+      "status": 200,
+      "finalUrl": "https://ilrms.assam.gov.in/dhar/index.php/Welcome/SelectLOC"
+    },
+    {
+      "url": "https://bhunaksha.assam.gov.in/",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.assam.gov.in/"
+    },
+    {
+      "url": "https://anieseva.andamannicobar.gov.in/",
+      "status": 200,
+      "finalUrl": "https://anieseva.andamannicobar.gov.in/"
+    },
+    {
+      "url": "https://dlrs.assam.gov.in",
+      "status": 200,
+      "finalUrl": "https://dlrs.assam.gov.in/"
+    },
+    {
+      "url": "https://biharbhumi.bihar.gov.in/BiharEmutationNew/",
+      "status": 200,
+      "finalUrl": "https://biharbhumi.bihar.gov.in/BiharEmutationNew/"
+    },
+    {
+      "url": "https://biharbhumi.bihar.gov.in/Biharbhumi/",
+      "status": 200,
+      "finalUrl": "https://biharbhumi.bihar.gov.in/Biharbhumi/"
+    },
+    {
+      "url": "https://sewasetu.assam.gov.in/",
+      "status": 200,
+      "finalUrl": "https://sewasetu.assam.gov.in/"
+    },
+    {
+      "url": "https://biharbhumi.bihar.gov.in/Bashudha/NewLogin.aspx",
+      "status": 200,
+      "finalUrl": "https://biharbhumi.bihar.gov.in/Bashudha/NewLogin.aspx"
+    },
+    {
+      "url": "https://parimarjanplus.bihar.gov.in/RaiseATicket/",
+      "status": 200,
+      "finalUrl": "https://parimarjanplus.bihar.gov.in/RaiseATicket/"
+    },
+    {
+      "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/NewLogin.aspx",
+      "status": 200,
+      "finalUrl": "https://parimarjanplus.bihar.gov.in/ejamabandi/NewLogin.aspx"
+    },
+    {
+      "url": "https://parimarjanplus.bihar.gov.in/ejamabandi/Authority/GovLandLogin.aspx",
+      "status": 200,
+      "finalUrl": "https://parimarjanplus.bihar.gov.in/ejamabandi/Authority/GovLandLogin.aspx"
+    },
+    {
+      "url": "https://ngdrs.assam.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.assam.gov.in/"
+    },
+    {
+      "url": "https://biharbhumiplus.bihar.gov.in/kaithitranslator/AdminLogin.aspx",
+      "status": 200,
+      "finalUrl": "https://biharbhumiplus.bihar.gov.in/kaithitranslator/AdminLogin.aspx"
+    },
+    {
+      "url": "https://landrevenue.assam.gov.in",
+      "status": 200,
+      "finalUrl": "https://landrevenue.assam.gov.in/"
+    },
+    {
+      "url": "https://www.bhulagan.bihar.gov.in",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://serviceonline.bihar.gov.in/",
+      "status": 200,
+      "finalUrl": "https://serviceonline.bihar.gov.in/"
+    },
+    {
+      "url": "https://bhuabhilekh.bihar.gov.in",
+      "status": 200,
+      "finalUrl": "https://bhuabhilekh.bihar.gov.in/login?ref=aW5kZXgucGhw"
+    },
+    {
+      "url": "https://revenue.chd.gov.in/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://nibandhan.bihar.gov.in/",
+      "status": 200,
+      "finalUrl": "https://nibandhan.bihar.gov.in/"
+    },
+    {
+      "url": "https://bhunaksha.bihar.gov.in/",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.bihar.gov.in/10/index.jsp"
+    },
+    {
+      "url": "https://bhuiyan.cg.nic.in/",
+      "status": 200,
+      "finalUrl": "https://bhuiyan.cg.nic.in/"
+    },
+    {
+      "url": "https://serviceonline.gov.in/",
+      "status": 200,
+      "finalUrl": "https://serviceonline.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.chd.gov.in/NGDRS_CH/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.chd.gov.in/NGDRS_CH/"
+    },
+    {
+      "url": "https://swp.dddgov.in/",
+      "status": 200,
+      "finalUrl": "https://swp.dddgov.in/"
+    },
+    {
+      "url": "https://www.ngdrs.cg.gov.in/NGDRS_CG/",
+      "status": 200,
+      "finalUrl": "https://www.ngdrs.cg.gov.in/NGDRS_CG/"
+    },
+    {
+      "url": "https://dlrc.delhi.gov.in/Default.aspx",
+      "status": 200,
+      "finalUrl": "https://dlrc.delhi.gov.in/Default.aspx"
+    },
+    {
+      "url": "https://edistrict.delhi.gov.in/",
+      "status": 200,
+      "finalUrl": "https://edistrict.delhi.gov.in/"
+    },
+    {
+      "url": "https://edistrict.cgstate.gov.in/",
+      "status": 200,
+      "finalUrl": "https://sewasetu.cgstate.gov.in/home?lang=hi"
+    },
+    {
+      "url": "https://sugam.dddgov.in/",
+      "status": 200,
+      "finalUrl": "https://sugam.dddgov.in/"
+    },
+    {
+      "url": "https://ngdrs.dnh.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.dnh.gov.in/"
+    },
+    {
+      "url": "https://goaonline.gov.in/",
+      "status": 200,
+      "finalUrl": "https://goaonline.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.delhi.gov.in/NGDRS_DL/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.delhi.gov.in/NGDRS_DL/"
+    },
+    {
+      "url": "https://dslr.goa.gov.in/",
+      "status": 200,
+      "finalUrl": "https://dslr.goa.gov.in/"
+    },
+    {
+      "url": "https://bhunaksha.goa.gov.in/bhunaksha",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.goa.gov.in/bhunaksha/"
+    },
+    {
+      "url": "https://anyror.gujarat.gov.in/",
+      "status": 200,
+      "finalUrl": "https://anyror.gujarat.gov.in/"
+    },
+    {
+      "url": "https://iora.gujarat.gov.in",
+      "status": 200,
+      "finalUrl": "https://iora.gujarat.gov.in/"
+    },
+    {
+      "url": "https://e-milkat.gujarat.gov.in",
+      "status": 200,
+      "finalUrl": "https://e-milkat.gujarat.gov.in/"
+    },
+    {
+      "url": "https://garvi.gujarat.gov.in",
+      "status": 200,
+      "finalUrl": "https://garvi.gujarat.gov.in/"
+    },
+    {
+      "url": "https://ngdrsgoa.gov.in/NGDRS_GA/",
+      "status": 200,
+      "finalUrl": "https://ngdrsgoa.gov.in/NGDRS_GA/"
+    },
+    {
+      "url": "https://digitalgujarat.gov.in/",
+      "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+    },
+    {
+      "url": "https://hryrevenuecourts.gov.in",
+      "status": 200,
+      "finalUrl": "https://hryrevenuecourts.gov.in/"
+    },
+    {
+      "url": "https://saralharyana.gov.in/",
+      "status": 200,
+      "finalUrl": "https://saralharyana.gov.in/"
+    },
+    {
+      "url": "https://himbhoomilmk.nic.in/viewlandrecords.aspx",
+      "status": 200,
+      "finalUrl": "https://himbhoomilmk.nic.in/viewlandrecords.aspx"
+    },
+    {
+      "url": "http://bhunaksha.bihar.gov.in/10/index.jsp",
+      "status": 200,
+      "finalUrl": "http://bhunaksha.bihar.gov.in/10/index.jsp"
+    },
+    {
+      "url": "https://jamabandi.nic.in/defaultpages/default",
+      "status": 200,
+      "finalUrl": "https://jamabandi.nic.in/defaultpages/default"
+    },
+    {
+      "url": "https://jamabandi.nic.in",
+      "status": 200,
+      "finalUrl": "https://jamabandi.nic.in/defaultpages/default"
+    },
+    {
+      "url": "https://jkrevenue.nic.in/",
+      "status": 200,
+      "finalUrl": "https://jkrevenue.nic.in/"
+    },
+    {
+      "url": "https://edistrict.hp.gov.in/",
+      "status": 200,
+      "finalUrl": "https://edistrict.hp.gov.in/HPeDistrict/"
+    },
+    {
+      "url": "https://lisa.arunachal.gov.in/",
+      "status": 200,
+      "finalUrl": "https://lisa.arunachal.gov.in/"
+    },
+    {
+      "url": "https://eunnat.jk.gov.in/",
+      "status": 200,
+      "finalUrl": "https://eunnat.jk.gov.in/pages/Home.aspx"
+    },
+    {
+      "url": "https://ngdrshp.gov.in/NGDRS_HP_LIVE/",
+      "status": 200,
+      "finalUrl": "https://ngdrshp.gov.in/NGDRS_HP_LIVE/"
+    },
+    {
+      "url": "https://jharbhoomi.jharkhand.gov.in/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://jharbhulagan.jharkhand.gov.in",
+      "status": 200,
+      "finalUrl": "https://jharbhulagan.jharkhand.gov.in/"
+    },
+    {
+      "url": "https://erevenuecourt.jharkhand.gov.in",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://jharnibandhan.gov.in",
+      "status": 200,
+      "finalUrl": "https://jharnibandhan.gov.in/"
+    },
+    {
+      "url": "https://jharsewa.jharkhand.gov.in/",
+      "status": 200,
+      "finalUrl": "https://jharsewa.jharkhand.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.jk.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.jk.gov.in/NGDRS_JK/"
+    },
+    {
+      "url": "https://rdservices.karnataka.gov.in/",
+      "status": 200,
+      "finalUrl": "https://rdservices.karnataka.gov.in/"
+    },
+    {
+      "url": "https://landrecords.karnataka.gov.in",
+      "status": 200,
+      "finalUrl": "https://landrecords.karnataka.gov.in/"
+    },
+    {
+      "url": "https://landconversion.karnataka.gov.in",
+      "status": 200,
+      "finalUrl": "https://landconversion.karnataka.gov.in/"
+    },
+    {
+      "url": "https://rtc.karnataka.gov.in",
+      "status": 200,
+      "finalUrl": "https://rtc.karnataka.gov.in/"
+    },
+    {
+      "url": "https://jharbhunaksha.jharkhand.gov.in",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://bhoomojini.karnataka.gov.in",
+      "status": 200,
+      "finalUrl": "https://bhoomojini.karnataka.gov.in/"
+    },
+    {
+      "url": "https://revenue.kerala.gov.in/",
+      "status": 200,
+      "finalUrl": "https://revenue.kerala.gov.in/"
+    },
+    {
+      "url": "https://services.kerala.gov.in/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://sevasindhu.karnataka.gov.in/",
+      "status": 200,
+      "finalUrl": "https://sevasindhu.karnataka.gov.in/Sevasindhu/Kannada?ReturnUrl=%2F"
+    },
+    {
+      "url": "https://keralaregistration.gov.in/",
+      "error": "ERR_SSL_DH_KEY_TOO_SMALL"
+    },
+    {
+      "url": "https://landrecords.ladakh.gov.in/lalr",
+      "status": 200,
+      "finalUrl": "https://landrecords.ladakh.gov.in/lalr"
+    },
+    {
+      "url": "https://eseva.ladakh.gov.in/",
+      "error": "SELF_SIGNED_CERT_IN_CHAIN"
+    },
+    {
+      "url": "https://lakshadweep.gov.in/department-of-revenue/",
+      "status": 200,
+      "finalUrl": "https://lakshadweep.gov.in/department-of-revenue/"
+    },
+    {
+      "url": "https://lakshadweep.gov.in/service/revenue-servicen/",
+      "status": 200,
+      "finalUrl": "https://lakshadweep.gov.in/service/revenue-servicen/"
+    },
+    {
+      "url": "https://ngdrs.ladakh.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.ladakh.gov.in/NGDRS_LEH/"
+    },
+    {
+      "url": "https://igr.karnataka.gov.in/",
+      "status": 200,
+      "finalUrl": "https://igr.karnataka.gov.in/"
+    },
+    {
+      "url": "https://www.mpigr.gov.in/",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://mahabhumi.gov.in/mahabhumilink",
+      "status": 200,
+      "finalUrl": "https://mahabhumi.gov.in/mahabhumilink"
+    },
+    {
+      "url": "https://bhunaksha.cg.nic.in",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.cg.nic.in/"
+    },
+    {
+      "url": "https://digitalsatbara.mahabhumi.gov.in",
+      "status": 200,
+      "finalUrl": "https://digitalsatbara.mahabhumi.gov.in/"
+    },
+    {
+      "url": "https://mponline.gov.in/",
+      "status": 200,
+      "finalUrl": "https://mponline.gov.in/portal/"
+    },
+    {
+      "url": "https://mahabhunakasha.mahabhumi.gov.in/27/index.jsp",
+      "error": "TypeError"
+    },
+    {
+      "url": "https://onlineregistrationani.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://isarita.igrmaharashtra.gov.in/PDE_2_0/",
+      "error": "CERT_HAS_EXPIRED"
+    },
+    {
+      "url": "https://bhumiabhilekh.maharashtra.gov.in",
+      "status": 200,
+      "finalUrl": "https://bhumiabhilekh.maharashtra.gov.in/"
+    },
+    {
+      "url": "https://eservicesmanipur.gov.in/",
+      "status": 200,
+      "finalUrl": "https://eservicesmanipur.gov.in/"
+    },
+    {
+      "url": "https://ngdrsmanipur.nic.in/NGDRS_MN/",
+      "status": 200,
+      "finalUrl": "https://ngdrsmanipur.nic.in/NGDRS_MN/"
+    },
+    {
+      "url": "https://megrevenuedm.gov.in/",
+      "status": 200,
+      "finalUrl": "https://megrevenuedm.gov.in/"
+    },
+    {
+      "url": "https://bhulekh.mahabhumi.gov.in",
+      "status": 200,
+      "finalUrl": "https://bhulekh.mahabhumi.gov.in/"
+    },
+    {
+      "url": "https://meghalayaonline.gov.in/",
+      "error": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+    },
+    {
+      "url": "https://louchapathap.nic.in/egras/frmPayTax.aspx",
+      "error": "TypeError"
+    },
+    {
+      "url": "https://igrmizoram.nic.in/",
+      "error": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+    },
+    {
+      "url": "https://landrevenue.mizoram.gov.in/",
+      "status": 200,
+      "finalUrl": "https://landrevenue.mizoram.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.meghalaya.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.meghalaya.gov.in/"
+    },
+    {
+      "url": "https://bhulekh.ori.nic.in/RoRView.aspx",
+      "status": 200,
+      "finalUrl": "https://bhulekh.ori.nic.in/BhulekhError.aspx"
+    },
+    {
+      "url": "http://bhunaksha.gujarat.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://bhulekh.ori.nic.in",
+      "status": 200,
+      "finalUrl": "https://bhulekh.ori.nic.in/BhulekhError.aspx"
+    },
+    {
+      "url": "http://bhunakshaodisha.nic.in",
+      "status": 200,
+      "finalUrl": "https://bhunakshaodisha.nic.in/"
+    },
+    {
+      "url": "https://odishaone.gov.in/",
+      "status": 200,
+      "finalUrl": "https://odishaone.gov.in/"
+    },
+    {
+      "url": "https://nilamagal.py.gov.in/public",
+      "status": 200,
+      "finalUrl": "https://nilamagal.py.gov.in/public/"
+    },
+    {
+      "url": "https://dlrs.nagaland.gov.in/",
+      "status": 200,
+      "finalUrl": "https://dlrs.nagaland.gov.in/"
+    },
+    {
+      "url": "https://regnec.py.gov.in/",
+      "error": "ECONNREFUSED"
+    },
+    {
+      "url": "http://bhunakshahp.nic.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://revenue.punjab.gov.in/",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://connect.punjab.gov.in/",
+      "status": 200,
+      "finalUrl": "https://connect.punjab.gov.in/"
+    },
+    {
+      "url": "https://easyregistry.punjab.gov.in/",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://jamabandi.punjab.gov.in",
+      "status": 200,
+      "finalUrl": "https://jamabandi.punjab.gov.in/"
+    },
+    {
+      "url": "https://apnakhata.rajasthan.gov.in",
+      "status": 200,
+      "finalUrl": "https://apnakhata.rajasthan.gov.in/"
+    },
+    {
+      "url": "https://edharti.rajasthan.gov.in",
+      "status": 200,
+      "finalUrl": "https://edharti.rajasthan.gov.in/"
+    },
+    {
+      "url": "https://bhunaksha.rajasthan.gov.in",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.rajasthan.gov.in/"
+    },
+    {
+      "url": "https://igrodisha.gov.in/",
+      "status": 200,
+      "finalUrl": "https://igrodisha.gov.in/"
+    },
+    {
+      "url": "https://epanjiyan.rajasthan.gov.in",
+      "status": 200,
+      "finalUrl": "https://epanjiyan.rajasthan.gov.in/"
+    },
+    {
+      "url": "https://webgirdawari.rajasthan.gov.in",
+      "status": 200,
+      "finalUrl": "https://webgirdawari.rajasthan.gov.in/Web/Index"
+    },
+    {
+      "url": "https://emitra.rajasthan.gov.in/",
+      "status": 200,
+      "finalUrl": "https://emitra.rajasthan.gov.in/"
+    },
+    {
+      "url": "https://ilrms.sikkim.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ilrms.sikkim.gov.in/"
+    },
+    {
+      "url": "https://eservices.tn.gov.in/eservicesnew/home.html",
+      "status": 200,
+      "finalUrl": "https://eservices.tn.gov.in/eservicesnew/home.html"
+    },
+    {
+      "url": "http://bhunaksha.utl.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://eservices.tn.gov.in/eservicesnew/index.html",
+      "status": 200,
+      "finalUrl": "https://eservices.tn.gov.in/eservicesnew/index.html"
+    },
+    {
+      "url": "https://mpbhulekh.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://tamilnilam.tn.gov.in/",
+      "status": 200,
+      "finalUrl": "https://tamilnilam.tn.gov.in/Revenue/"
+    },
+    {
+      "url": "https://tnesevai.tn.gov.in/",
+      "status": 200,
+      "finalUrl": "https://tnesevai.tn.gov.in/"
+    },
+    {
+      "url": "https://bhubharati.telangana.gov.in/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://tnreginet.gov.in/",
+      "status": 200,
+      "finalUrl": "https://tnreginet.gov.in/portal/"
+    },
+    {
+      "url": "https://sso.sikkim.gov.in/",
+      "status": 200,
+      "finalUrl": "https://sso.sikkim.gov.in/account/login"
+    },
+    {
+      "url": "https://registration.telangana.gov.in/",
+      "error": "ECONNRESET"
+    },
+    {
+      "url": "https://edistrict.tripura.gov.in/",
+      "status": 200,
+      "finalUrl": "https://edistrict.tripura.gov.in/"
+    },
+    {
+      "url": "https://ts.meeseva.telangana.gov.in/",
+      "status": 200,
+      "finalUrl": "https://ts.meeseva.telangana.gov.in/meeseva/"
+    },
+    {
+      "url": "https://edistrict.up.gov.in",
+      "status": 200,
+      "finalUrl": "https://edistrict.up.gov.in/"
+    },
+    {
+      "url": "https://jami.tripura.gov.in/site/index_eng.htm",
+      "status": 200,
+      "finalUrl": "https://jami.tripura.gov.in/site/index_eng.htm"
+    },
+    {
+      "url": "https://upbhunaksha.gov.in",
+      "status": 200,
+      "finalUrl": "https://upbhunaksha.gov.in/"
+    },
+    {
+      "url": "https://upbhulekh.gov.in/#/home",
+      "status": 200,
+      "finalUrl": "https://upbhulekh.gov.in/"
+    },
+    {
+      "url": "https://bhunaksha.tripura.gov.in/bhunaksha/",
+      "status": 200,
+      "finalUrl": "https://bhunaksha.tripura.gov.in/bhunaksha/Bhunaksha_MainTP.jsp"
+    },
+    {
+      "url": "https://edistrict.up.gov.in/",
+      "status": 200,
+      "finalUrl": "https://edistrict.up.gov.in/"
+    },
+    {
+      "url": "https://bor.up.gov.in/Department_login.aspx",
+      "error": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY"
+    },
+    {
+      "url": "https://bhulekh.uk.gov.in",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://igrsup.gov.in/",
+      "status": 200,
+      "finalUrl": "https://igrsup.gov.in/"
+    },
+    {
+      "url": "https://ngdrs.tripura.gov.in/NGDRS_TR/",
+      "status": 200,
+      "finalUrl": "https://ngdrs.tripura.gov.in/NGDRS_TR/"
+    },
+    {
+      "url": "https://bhulekh.uk.gov.in/public/public_ror/Public_ROR.jsp",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://upbhunaksha.gov.in/",
+      "status": 200,
+      "finalUrl": "https://upbhunaksha.gov.in/"
+    },
+    {
+      "url": "https://bhulekh.uk.gov.in/app/commonUserLogin.jsp",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "http://eregistrationukgov.in/",
+      "status": 200,
+      "finalUrl": "http://eregistrationukgov.in/"
+    },
+    {
+      "url": "https://banglarbhumi.gov.in/BanglarBhumi/Home.action",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://eservices.uk.gov.in/",
+      "status": 200,
+      "finalUrl": "https://eservices.uk.gov.in/"
+    },
+    {
+      "url": "https://banglarbhumi.gov.in",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://edistrict.wb.gov.in/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    },
+    {
+      "url": "https://aaplesarkar.mahaonline.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://wbregistration.gov.in/",
+      "error": "ERR_SSL_UNSAFE_LEGACY_RENEGOTIATION_DISABLED"
+    },
+    {
+      "url": "https://services.nagaland.gov.in/",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "url": "https://edistrict.py.gov.in/",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "http://apnakhata.raj.nic.in/LRCLogin.aspx",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://bhunaksha.uk.gov.in",
+      "error": "TimeoutError"
+    }
+  ]
+}

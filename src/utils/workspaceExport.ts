@@ -1,21 +1,16 @@
+import { editReport, ReportDetails } from '../services/reportEditor';
+import { buildReportHtml } from './reportHtml';
+import { requestPremiumAccess } from '../services/premiumAccess';
 import Share from 'react-native-share';
 import {
   CaptureOptions,
   captureRef,
   releaseCapture,
 } from 'react-native-view-shot';
-import {generatePDF} from 'react-native-html-to-pdf';
+import { generatePDF } from 'react-native-html-to-pdf';
 
 const ensureFileUri = (value: string) =>
   value.startsWith('file://') ? value : `file://${value}`;
-
-const escapeHtml = (value: string) =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
 
 export const shareTextSummary = async ({
   summaryLines,
@@ -35,59 +30,29 @@ export const exportSummaryAsPdf = async ({
   fileName,
   summaryLines,
   title,
+  details,
+  points,
 }: {
   title: string;
   fileName: string;
   summaryLines: string[];
+  details?: Partial<ReportDetails>;
+  points?: { lat: number; lng: number }[];
 }) => {
-  const html = `
-    <html>
-      <head>
-        <meta charset="utf-8" />
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            background: #f8fafc;
-            color: #0f172a;
-            padding: 24px;
-          }
-          .card {
-            background: #ffffff;
-            border-radius: 18px;
-            border: 1px solid #dbeafe;
-            padding: 24px;
-          }
-          h1 {
-            margin: 0 0 10px 0;
-            font-size: 24px;
-            color: #1e40af;
-          }
-          p {
-            margin: 0 0 10px 0;
-            line-height: 1.5;
-            font-size: 14px;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="card">
-          <h1>${escapeHtml(title)}</h1>
-          ${summaryLines
-            .map(
-              line =>
-                `<p>${escapeHtml(line)}</p>`,
-            )
-            .join('')}
-        </div>
-      </body>
-    </html>
-  `;
+  if (!requestPremiumAccess('pdf_reports')) return;
+  const report = await editReport({ title, summaryLines, details, points });
+  if (!report || !requestPremiumAccess('pdf_reports')) return;
+  const html = buildReportHtml({ ...report, summaryLines, points });
 
   const result = await generatePDF({
     directory: 'Documents',
     fileName,
     html,
   });
+
+  if (!result.filePath) {
+    throw new Error('The PDF could not be generated. Please retry.');
+  }
 
   await Share.open({
     failOnCancel: false,

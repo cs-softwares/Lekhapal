@@ -4955,7 +4955,7 @@ const UpBhulekhAssistantScreen = ({
       <AppPressable
         key={action.title}
         onPress={() => handlePortalHomeActionPress(action)}
-        pressEffect="slide"
+
         style={styles.portalActionRow}>
         <View
           style={[
@@ -4988,7 +4988,7 @@ const UpBhulekhAssistantScreen = ({
       <AppPressable
         key={action.title}
         onPress={() => handlePortalHomeActionPress(action)}
-        pressEffect="slide"
+
         style={styles.portalServiceCard}>
         <View
           style={[
@@ -5033,7 +5033,7 @@ const UpBhulekhAssistantScreen = ({
               quickRoute.source,
             );
           }}
-          pressEffect="slide"
+
           style={[
             styles.morePortalCard,
             {
@@ -5115,7 +5115,7 @@ const UpBhulekhAssistantScreen = ({
                     action.directUrl,
                   )
                 }
-                pressEffect="slide"
+
                 style={[
                   styles.portalServiceCard,
                   styles.khasraMenuCard,
@@ -5173,7 +5173,7 @@ const UpBhulekhAssistantScreen = ({
               onPress={() =>
                 stageField && setActiveSelectionStage(stageKey)
               }
-              pressEffect="slide"
+
               style={[
                 styles.portalStageTab,
                 selected && styles.portalStageTabActive,
@@ -5275,7 +5275,7 @@ const UpBhulekhAssistantScreen = ({
                           option.value,
                         )
                       }
-                      pressEffect="slide"
+
                       style={[
                         styles.selectionLetterChip,
                         selected &&
@@ -5302,7 +5302,7 @@ const UpBhulekhAssistantScreen = ({
                       allVillageOption.value,
                     )
                   }
-                  pressEffect="slide"
+
                   style={styles.selectionAllVillageButton}>
                   <Text
                     style={styles.selectionAllVillageText}>
@@ -5447,7 +5447,7 @@ const UpBhulekhAssistantScreen = ({
                 onPress={() =>
                   triggerAction(portalBackAction, 'button')
                 }
-                pressEffect="slide"
+
                 style={styles.portalBackButton}>
                 <Text style={styles.portalBackButtonText}>
                   Back
@@ -5473,7 +5473,7 @@ const UpBhulekhAssistantScreen = ({
                           option.value,
                         );
                       }}
-                      pressEffect="slide"
+
                       style={[
                         styles.searchModeTab,
                         selected && styles.searchModeTabActive,
@@ -5547,7 +5547,7 @@ const UpBhulekhAssistantScreen = ({
                         onPress={() =>
                           appendActiveSearchDigit(digit)
                         }
-                        pressEffect="slide"
+
                         style={styles.portalKeypadButton}>
                         <Text style={styles.keypadButtonText}>
                           {digit}
@@ -5557,7 +5557,7 @@ const UpBhulekhAssistantScreen = ({
 
                     <AppPressable
                       onPress={deleteActiveSearchDigit}
-                      pressEffect="slide"
+
                       style={styles.portalKeypadButton}>
                       <Text style={styles.keypadButtonText}>
                         {'\u232b'}
@@ -5566,7 +5566,7 @@ const UpBhulekhAssistantScreen = ({
 
                     <AppPressable
                       onPress={clearActiveSearchInput}
-                      pressEffect="slide"
+
                       style={styles.portalKeypadButton}>
                       <Text style={styles.keypadButtonText}>
                         clear
@@ -5636,7 +5636,7 @@ const UpBhulekhAssistantScreen = ({
             <AppPressable
               key={stage.key}
               onPress={() => setActiveSelectionStage(stage.key)}
-              pressEffect="slide"
+
               style={[
                 styles.portalStageTab,
                 activeSelectionField?.key === stage.field.key &&
@@ -5691,7 +5691,7 @@ const UpBhulekhAssistantScreen = ({
                           option.value,
                         )
                       }
-                      pressEffect="slide"
+
                       style={[
                         styles.searchModeTab,
                         selected &&
@@ -5770,7 +5770,7 @@ const UpBhulekhAssistantScreen = ({
                         onPress={() =>
                           appendActiveSearchDigit(digit)
                         }
-                        pressEffect="slide"
+
                         style={styles.portalKeypadButton}>
                         <Text style={styles.keypadButtonText}>
                           {digit}
@@ -5780,7 +5780,7 @@ const UpBhulekhAssistantScreen = ({
 
                     <AppPressable
                       onPress={deleteActiveSearchDigit}
-                      pressEffect="slide"
+
                       style={styles.portalKeypadButton}>
                       <Text style={styles.keypadButtonText}>
                         Back
@@ -5789,7 +5789,7 @@ const UpBhulekhAssistantScreen = ({
 
                     <AppPressable
                       onPress={clearActiveSearchInput}
-                      pressEffect="slide"
+
                       style={styles.portalKeypadWideButton}>
                       <Text
                         style={[
@@ -5849,7 +5849,7 @@ const UpBhulekhAssistantScreen = ({
                             option.value,
                           )
                         }
-                        pressEffect="slide"
+
                         style={[
                           styles.selectionLetterChip,
                           selected &&
@@ -5876,7 +5876,7 @@ const UpBhulekhAssistantScreen = ({
                         allVillageOption.value,
                       )
                     }
-                    pressEffect="slide"
+
                     style={styles.selectionAllVillageButton}>
                     <Text
                       style={styles.selectionAllVillageText}>

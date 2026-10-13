@@ -82,7 +82,7 @@ const InfoChip = ({
     return (
       <AppPressable
         onPress={onPress}
-        pressEffect="slide"
+
         pressedOpacity={0.78}
         style={[styles.container, style]}>
         {content}

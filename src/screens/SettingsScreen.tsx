@@ -17,7 +17,6 @@ import {
   UP_BHULEKH_HISTORY_STORAGE_KEY,
   UP_BHULEKH_PRESET_STORAGE_KEY,
 } from '../data/homeQuickStats';
-import {STATE_SELECTION_STORAGE_KEY} from '../data/stateDashboardCatalog';
 import {selectDrawerSection} from '../navigation/drawerHelpers';
 
 const WORKSPACE_RECORDS_PREFIX = 'smart-work-records-';
@@ -138,7 +137,6 @@ const SettingsScreen = () => {
     const keysToClear = [
       UP_BHULEKH_PRESET_STORAGE_KEY,
       UP_BHULEKH_HISTORY_STORAGE_KEY,
-      STATE_SELECTION_STORAGE_KEY,
     ];
     const values = await Promise.all(
       keysToClear.map(key => AsyncStorage.getItem(key)),

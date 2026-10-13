@@ -1,0 +1,6 @@
+project_id = "edzpqmcjsweddavklitb"
+
+[functions.premium]
+# Requests are authenticated inside the function with auth.getUser; cron uses
+# its own narrow secret. This also supports Supabase's new publishable keys.
+verify_jwt = false

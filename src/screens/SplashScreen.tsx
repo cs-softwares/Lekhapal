@@ -1,44 +1,27 @@
-import React, {
-  useEffect,
-  useMemo,
-  useRef,
-} from 'react';
-import {
-  Animated,
-  Easing,
-  Image,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import React, { useEffect, useMemo, useRef } from 'react';
+import { Animated, Easing, Image, StyleSheet, Text, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+import { useSelectedState } from '../context/SelectedStateContext';
 import AppScreen from '../components/AppScreen';
-import {useAuthSession} from '../context/AuthSessionContext';
-import {useLanguage} from '../context/LanguageContext';
-import {COLORS} from '../theme/colors';
-import {RootStackParamList} from '../types/navigation';
+import { useAuthSession } from '../context/AuthSessionContext';
+import { useLanguage } from '../context/LanguageContext';
+import { COLORS } from '../theme/colors';
+import { RootStackParamList } from '../types/navigation';
 
-type Props = NativeStackScreenProps<
-  RootStackParamList,
-  'Splash'
->;
+type Props = NativeStackScreenProps<RootStackParamList, 'Splash'>;
 
-const SPLASH_ICON = require('../../assets/branding/play-store-icon-512.png');
+const SPLASH_ICON = require('../../assets/branding/play-store-icon-le-land-512.png');
 
-const SplashScreen = ({navigation}: Props) => {
-  const {strings, language} = useLanguage();
-  const {isHydrated, session} = useAuthSession();
+const SplashScreen = ({ navigation }: Props) => {
+  const { stateCode, ready: stateReady } = useSelectedState();
+  const { strings } = useLanguage();
+  const { isHydrated, session } = useAuthSession();
   const iconOpacity = useRef(new Animated.Value(0)).current;
   const iconScale = useRef(new Animated.Value(0.88)).current;
   const titleOpacity = useRef(new Animated.Value(0)).current;
-  const titleTranslateY = useRef(
-    new Animated.Value(20),
-  ).current;
-  const subtitleOpacity = useRef(
-    new Animated.Value(0),
-  ).current;
+  const titleTranslateY = useRef(new Animated.Value(20)).current;
 
   const [primaryTitle, secondaryTitle] = useMemo(() => {
     const parts = strings.appName
@@ -53,22 +36,17 @@ const SplashScreen = ({navigation}: Props) => {
     return [strings.appName, ''];
   }, [strings.appName]);
 
-  const splashTagline =
-    language === 'hi'
-      ? 'Records, measurement aur field work ek jagah'
-      : 'Records, measurement, and field work together';
-
   useEffect(() => {
     Animated.parallel([
       Animated.timing(iconOpacity, {
-        duration: 440,
+        duration: 600,
         easing: Easing.out(Easing.cubic),
         toValue: 1,
         useNativeDriver: true,
       }),
       Animated.spring(iconScale, {
-        bounciness: 6,
-        speed: 12,
+        bounciness: 4,
+        speed: 10,
         toValue: 1,
         useNativeDriver: true,
       }),
@@ -86,58 +64,41 @@ const SplashScreen = ({navigation}: Props) => {
         toValue: 0,
         useNativeDriver: true,
       }),
-      Animated.timing(subtitleOpacity, {
-        delay: 380,
-        duration: 520,
-        easing: Easing.out(Easing.cubic),
-        toValue: 1,
-        useNativeDriver: true,
-      }),
     ]).start();
-  }, [
-    iconOpacity,
-    iconScale,
-    subtitleOpacity,
-    titleOpacity,
-    titleTranslateY,
-  ]);
+  }, [iconOpacity, iconScale, titleOpacity, titleTranslateY]);
 
   useEffect(() => {
-    if (!isHydrated) {
+    if (!isHydrated || !stateReady) {
       return;
     }
 
-    const timer = setTimeout(() => {
-      navigation.replace(session ? 'MainDrawer' : 'Login');
-    }, 2800);
-
-    return () => clearTimeout(timer);
-  }, [isHydrated, navigation, session]);
+    navigation.replace(
+      session ? (stateCode ? 'MainDrawer' : 'StateSelection') : 'Login',
+    );
+  }, [isHydrated, navigation, session, stateCode, stateReady]);
 
   return (
-    <AppScreen
-      contentContainerStyle={styles.fill}
-      scroll={false}>
+    <AppScreen contentContainerStyle={styles.fill} scroll={false}>
       <LinearGradient
-        colors={[
-          '#050B1A',
-          '#0B1E4A',
-          '#123983',
-        ]}
-        style={styles.fill}>
+        colors={['#050B1A', '#0B1E4A', '#123983']}
+        style={styles.fill}
+      >
+        <View style={styles.orbTop} />
+        <View style={styles.orbBottom} />
         <View style={styles.centerContent}>
           <Animated.View
             style={[
-              styles.iconWrap,
+              styles.iconStage,
               {
                 opacity: iconOpacity,
-                transform: [{scale: iconScale}],
+                transform: [{ scale: iconScale }],
               },
-            ]}>
+            ]}
+          >
             <Image
               resizeMode="cover"
               source={SPLASH_ICON}
-              style={styles.icon}
+              style={styles.iconWrap}
             />
           </Animated.View>
 
@@ -146,30 +107,20 @@ const SplashScreen = ({navigation}: Props) => {
               styles.titleWrap,
               {
                 opacity: titleOpacity,
-                transform: [
-                  {translateY: titleTranslateY},
-                ],
+                transform: [{ translateY: titleTranslateY }],
               },
-            ]}>
-            <Text style={styles.titlePrimary}>
-              {primaryTitle}
-            </Text>
+            ]}
+          >
+            <Text style={styles.titlePrimary}>{primaryTitle}</Text>
 
             {secondaryTitle ? (
-              <Text style={styles.titleSecondary}>
-                {secondaryTitle}
-              </Text>
+              <Text style={styles.titleSecondary}>{secondaryTitle}</Text>
             ) : null}
-          </Animated.View>
-
-          <Animated.View
-            style={[
-              styles.subtitleWrap,
-              {opacity: subtitleOpacity},
-            ]}>
-            <Text style={styles.subtitle}>
-              {splashTagline}
-            </Text>
+            <View style={styles.brandRule}>
+              <View style={styles.ruleLine} />
+              <View style={styles.ruleDot} />
+              <View style={styles.ruleLine} />
+            </View>
           </Animated.View>
         </View>
       </LinearGradient>
@@ -187,47 +138,78 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 28,
   },
-  iconWrap: {
-    borderRadius: 18,
-    marginBottom: 24,
-    overflow: 'hidden',
+  orbTop: {
+    backgroundColor: 'rgba(54, 111, 255, 0.16)',
+    borderRadius: 220,
+    height: 440,
+    position: 'absolute',
+    right: -210,
+    top: -170,
+    width: 440,
   },
-  icon: {
-    borderRadius: 18,
-    height: 64,
-    width: 64,
+  orbBottom: {
+    backgroundColor: 'rgba(20, 77, 181, 0.18)',
+    borderRadius: 190,
+    bottom: -210,
+    height: 380,
+    left: -180,
+    position: 'absolute',
+    width: 380,
+  },
+  iconStage: {
+    alignItems: 'center',
+    height: 152,
+    justifyContent: 'center',
+    marginBottom: 28,
+    width: 152,
+  },
+  iconWrap: {
+    borderRadius: 25,
+    elevation: 12,
+    height: 104,
+    shadowColor: '#3972FF',
+    shadowOffset: { height: 12, width: 0 },
+    shadowOpacity: 0.38,
+    shadowRadius: 24,
+    width: 104,
   },
   titleWrap: {
     alignItems: 'center',
   },
   titlePrimary: {
     color: COLORS.white,
-    fontSize: 48,
-    fontWeight: '800',
+    fontSize: 44,
+    fontWeight: '900',
     letterSpacing: 0.2,
-    lineHeight: 56,
+    lineHeight: 52,
     textAlign: 'center',
   },
   titleSecondary: {
     color: '#D8E4FF',
-    fontSize: 18,
-    fontWeight: '700',
-    letterSpacing: 2.4,
+    fontSize: 15,
+    fontWeight: '800',
+    letterSpacing: 3.2,
     lineHeight: 24,
-    marginTop: 8,
+    marginTop: 10,
     textAlign: 'center',
     textTransform: 'uppercase',
   },
-  subtitleWrap: {
-    marginTop: 28,
-    minHeight: 24,
+  brandRule: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    marginTop: 22,
   },
-  subtitle: {
-    color: '#FCD34D',
-    fontSize: 15,
-    fontWeight: '700',
-    lineHeight: 22,
-    textAlign: 'center',
+  ruleDot: {
+    backgroundColor: '#8EB1FF',
+    borderRadius: 3,
+    height: 6,
+    marginHorizontal: 9,
+    width: 6,
+  },
+  ruleLine: {
+    backgroundColor: 'rgba(180, 205, 255, 0.44)',
+    height: 1,
+    width: 38,
   },
 });
 

@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "up-officer-login",
+    "title": "RC-9 / Lekhpal Login",
+    "web": {
+      "url": "https://rccms.up.gov.in/dashboard/login/",
+      "title": "Login Management System",
+      "state": "complete",
+      "text": "राजस्व परिषद , उत्तर प्रदेश\nBoard Of Revenue, U.P.\nलॉगिन करें\nसाइन अप करें\neHRMS कोड / यूज़रनेम\nपासवर्ड\nमैं नियम व शर्तें स्वीकार करता हूँ। कृपया चेकबॉक्स पर क्लिक करें ।\nOTP भेजें\n🔐 पासवर्ड भूल गए?\n\nहेल्पलाइन- 70801 00588",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 1734,
+          "dom": 2315,
+          "load": 2315
+        }
+      ],
+      "forms": 1,
+      "inputs": 7
+    },
+    "observedSeconds": 6.93,
+    "backToServices": true
+  },
+  {
+    "id": "up-edistrict",
+    "title": "eDistrict Login",
+    "web": {
+      "url": "https://edistrict.up.gov.in/edistrictup/",
+      "title": "eDistrict Uttar Pradesh",
+      "state": "complete",
+      "text": " मुख्य कंटेंट पर जाएं\nEnglish\nHindi\n+A\nA\n-A\n स्क्रीन रीडर\n साइट मैप\nलॉगिन\n आवेदन की स्थिति  प्रमाण पत्र का सत्यापन  सर्विस डैशबोर्ड  शिकायत डैशबोर्ड  नवीन संदेश  सिटिजन पोर्टल (ई-साथी)\n1.5Lakh+\n\nपंजीकृत सीएससी\n\n \n0Lakh+\n\nपंजीकृत नागरिक\n\n \n0+\n\nपंजीकृत सेवाएं\n\n \n0+\n\nपंजीकृत विभाग\n\n \n0Crore+\n\nपंजीकृत आवेदन\n\nई- डिस्ट्रिक्ट\nसेवाएं\nइंटीग्रेटेड विभागीय\nसेवाएं\nभारत सरकार की\nसेवाएं\nशीर्ष पाँच जिले / सेवाओं की स्थिति आज के आवेदन के आधार पर\nMore..\nस्वयं की पात्रता के आधार पर शासकीय जनहित सेवाओं को खोजें\nकृपया अपना नाम बताएं *\nकृपया अपना मोबाइल नंबर बताएं *\nकृपया अपनी आयु (वर्षों में) बताएं *\nकृपया अपना लिंग चुनें*\n--चुनें--\nपुरुष\nस्त्री\nअन्य\n1 2 3 4\nआगे बढें \nअन्य सेवाएँ एवं डाउनलोड\nतहसील / ग्राम निर्देशिका\n \nई-डिस्ट्रिक्ट शासनादेश / विभागीय आदेश\n \nस्वप्रमाणित घोषणा पत्र\n \nसी.एस.सी. 3.0 खोलने के निर्देश\n \nई-साथी यू.पी. मोबाइल एप (Ver 3.1)\n \nसेवाकेन्द्र फोटो अपलोड मोबाइल एप\nसामान्यतः पूछे जाने वाले प्रश्न (एफ.ए.क्यू)\nई-डिस्ट्रिक्ट\nई-साथी\nगैलरी\n\nस्वामित्व : सूचना प्रौद्योगिकी एवं इलेक्ट्रॉनिक्स विभाग उत्तर प्रदेश शासन तकनीकी विकास एवं प्रबंधन: (एन.आई.सी.) उत्तर प्रदेश राज्य केंद्र लखनऊ\n\nत्वरित लिंक्स\nसेवाएं\nसेवाकेन्द्र\nप्रोग्रेस मॉनिटरिंग\nवित्तीय प्रबंधन\nविभागीय एकीकरण\nसम्पर्क करें\nउपयोगी लिंक्स\nअभिगम्यता वक्तव्य\nगोपनीयता नीति\nहाइपर लिंकिंग नीति\nकॉपीराइट नीति\nनियम और शर्तें\nडिस्क्लेमर\nसंपर्क करें\n\nफ़ोन: 0522-2304706 ( सोमवार से शनिवार सुबह 10 बजे से शाम 5 बजे तक सरकारी अवकाश को छोड़कर )\nईमेल",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 598,
+          "dom": 1026,
+          "load": 1742
+        }
+      ],
+      "forms": 2,
+      "inputs": 62
+    },
+    "observedSeconds": 2.13,
+    "backToServices": true
+  },
+  {
+    "id": "up-bhunaksha",
+    "title": "Bhu Naksha",
+    "web": {
+      "url": "https://upbhunaksha.gov.in/",
+      "title": "Bhunaksha",
+      "state": "interactive",
+      "text": "BhuNaksha\n📍 Location\nDistrict\n146 आगरा\nTehsil\n00766 आगरा\nVillage\n124649 अकवरपुर\nPlot No.\nBase Map\nCustom Layers\n ALL",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "right-sidebar",
+          "left": 411,
+          "right": 751,
+          "text": "Base Map\nCustom Layers\n ALL"
+        },
+        {
+          "tag": "APP-LAYER",
+          "id": "",
+          "cls": "",
+          "left": 411,
+          "right": 751,
+          "text": "Base Map\nCustom Layers\n ALL"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "container",
+          "left": 411,
+          "right": 751,
+          "text": "Base Map\nCustom Layers\n ALL"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel panel-info",
+          "left": 427,
+          "right": 735,
+          "text": "Base Map"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel-heading",
+          "left": 428,
+          "right": 735,
+          "text": "Base Map"
+        },
+        {
+          "tag": "H5",
+          "id": "",
+          "cls": "",
+          "left": 431,
+          "right": 732,
+          "text": "Base Map"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel panel-info",
+          "left": 427,
+          "right": 735,
+          "text": "Custom Layers\n ALL"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel-heading",
+          "left": 428,
+          "right": 735,
+          "text": "Custom Layers"
+        },
+        {
+          "tag": "H5",
+          "id": "",
+          "cls": "",
+          "left": 431,
+          "right": 732,
+          "text": "Custom Layers"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel-body",
+          "left": 428,
+          "right": 735,
+          "text": " ALL"
+        },
+        {
+          "tag": "FORM",
+          "id": "",
+          "cls": "",
+          "left": 428,
+          "right": 735,
+          "text": " ALL"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 428,
+          "right": 735,
+          "text": " ALL"
+        }
+      ],
+      "navigation": [
+        {
+          "response": 49,
+          "dom": 0,
+          "load": 0
+        }
+      ],
+      "forms": 5,
+      "inputs": 3
+    },
+    "observedSeconds": 18.29,
+    "backToServices": true
+  },
+  {
+    "id": "up-varasat",
+    "title": "Varasat Aavedan",
+    "web": {
+      "url": "https://rccms.up.gov.in/Varasat/userlogin",
+      "title": "वरासत | राजस्व परिषद्, उ० प्र०",
+      "state": "complete",
+      "text": "\t\nराजस्व परिषद्, उत्तर प्रदेश\nउत्तराधिकार / वरासत ऑनलाइन आवेदन लॉग इन\nमोबाइल नंबर\nओ0 टी0 पी0 भेजें \n\n",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 832,
+          "dom": 16347,
+          "load": 16348
+        }
+      ],
+      "forms": 0,
+      "inputs": 2
+    },
+    "observedSeconds": 17.48,
+    "backToServices": true
+  },
+  {
+    "id": "up-registration",
+    "title": "IGRS Registry",
+    "web": {
+      "url": "https://igrsup.gov.in/igrsup/defaultAction.action",
+      "title": "Stamp And Registration Department,Uttar Pradesh",
+      "state": "complete",
+      "text": " Stamp And Registration Department,Uttar Pradesh\nToggle navigation\n नागरिक ऑनलाइन सेवाएं\nसम्पत्ति पंजीकरण\n आवेदन करें\n औद्योगिक सम्पत्ति पंजीकरण हेतु निवेश मित्र वेबसाइट के माध्यम से आवेदन करें\n सम्पत्ति खोजें\n सम्पत्ति विवरण\n स्टाम्प वापसी हेतु आवेदन\n स्टाम्प-निबन्धन शुल्क कैलकुलेटर\n12 माह तक के किरायानामा विलेख की डिजिटल स्टाम्पिंग\n 12 माह तक के किरायानामा विलेख की डिजिटल स्टाम्पिंग (FAQ)\n किरायानामा सत्यापन\n किराया / लीज़ विलेख — स्टाम्प-निबन्धन शुल्क कैलकुलेटर\nपंजीकृत लेखपत्र का प्रमाणपत्र\n पंजीकृत लेखपत्र प्रमाणपत्र का आवेदन\nविवाह पंजीकरण\n आवेदन करें\n विवाह पंजीकरण सत्यापन\nभारमुक्त प्रमाणपत्र /बारह साला\n आवेदन करें\n प्रमाण पत्र प्राप्ति/सत्यापन करें\nविलेखों की प्रमाणित प्रतिलिपि\n आवेदन करें\nबैंक गारंटी\n बैंक गारंटी की स्थिति\nफोटो गैलरी\nPrevious\nNext\n  Property Registration Dashboard  \nParticulars\nDetails\nTime limit prescribed as per the Public Service Guarantee Act\n01 Day\nAverage time taken to obtain registered deed\n01 Day\nMedian time taken to obtain registered deed\n01 Day\nMinimum time taken to obtain registered deed\n01 Day\nMaximum time taken to obtain registered deed\n01 Day\nDetailed Property Registration Data Statistics\n\nFinancial Year   2025-2026  \nTotal Revenue Collected\n32,598.49 Cr\nFinancial Year   2026-2027   (Till   JULY )\nTotal Revenue Collected\n12,451.46 Cr\nCurrent Month\nTotal Document Registered\n364601\nTotal Revenue Collected\n23,88,69,37,727.00\nPrevious Working D",
+      "width": 411,
+      "scrollWidth": 554,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [
+        {
+          "tag": "DIV",
+          "id": "prerna4_header_div",
+          "cls": "col-md-12",
+          "left": 0,
+          "right": 554,
+          "text": " Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "row",
+          "left": 0,
+          "right": 554,
+          "text": " Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "col-lg-1 mt-1",
+          "left": 0,
+          "right": 554,
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "col-lg-9 g-0 ps-4",
+          "left": 0,
+          "right": 554,
+          "text": " Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "navbar-brand",
+          "left": 24,
+          "right": 554,
+          "text": " Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "cls": "d-block d-md-none",
+          "left": 24,
+          "right": 554,
+          "text": " Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "SMALL",
+          "id": "",
+          "cls": "",
+          "left": 56,
+          "right": 554,
+          "text": "Stamp And Registration Department,Uttar Pradesh"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "col-lg-2 text-end pe-20",
+          "left": 0,
+          "right": 554,
+          "text": ""
+        }
+      ],
+      "navigation": [
+        {
+          "response": 266,
+          "dom": 1121,
+          "load": 2493
+        }
+      ],
+      "forms": 0,
+      "inputs": 21
+    },
+    "observedSeconds": 2.66,
+    "backToServices": true
+  },
+  {
+    "id": "up-revenue-court",
+    "title": "Revenue Court",
+    "web": {
+      "url": "https://vaad.up.nic.in/Default_new.aspx",
+      "title": "RCCMS | Revenue | Department | UP",
+      "state": "complete",
+      "text": "उत्तर प्रदेश सरकार\nSwipe to view \n\t\nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS\n\t\t\nश्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री, उत्तर प्रदेश\n\nMore\nPause\nराजस्व परिषद् न्यायालय की दैनिक वाद तालिका (काज लिस्ट) देखें\n\nकुल न्यायालय\n\n3081\n\nकुल वाद\n\n3.02 Cr\n\n5.82 Million\n\nकुल निस्तारित\n\n2.90 Cr\n\n30.97 Million\n\nकुल विचाराधीन\n\n11.75 L\n\n1.51 Million\n\nकुल विचाराधीन (एक वर्ष से अधिक)\n\n1.20 L\n\nकुल विचाराधीन (तीन वर्ष से अधिक)\n\n31,629\n\n38.83 Million\n\nकुल विचाराधीन (पांच वर्ष से अधिक)\n\n41,833\n\n695.36 Thousand\n\nकुल अनअद्यतनीकृत वाद\n\n4.14 L\n\n775.95 Thousand\n\n\n RCCMS DASHBOARD\n The Uttar Pradesh Revenue Code (Amendment) Act, 2021 U.P. Act No. 4 of 2021\n\n The Uttar Pradesh Revenue Code (Amendment) Act, 2020 U.P. Act No. 7 of 2020\n उत्तर प्रदेश राजस्व संहिता -2006 ई-बुक\n\n\n The Uttar Pradesh Revenue Code (Amendment) Act, 2019 U.P. Act No. 7 of 2019\n उत्तर प्रदेश राजस्व संहिता -2006 पी डी एफ\n The Uttar Pradesh Revenue Code 2006 (Updated)\n\nIndia Code Portal\n\nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली के लिए मोबाइल एप्लीकेशन (एंड्रॉयड)    डाउनलोड करने के लिए क्लिक करें\nवाद सूची\nवाद खोज विधि\nन्यायालय आदेश\n\n\nलॉगिन (राजस्व परिषद)\nलॉगिन (एन०टी० से मण्डलायुक्त)\nऑनलाइन आवेदन\n\n\nफोलियो\nलॉगिन (लेखपाल/रा० नि०)\nचकबन्दी न्यायालय\n VISION\n\nप्रदेश के सभी राजस्व न्यायालय के कम्प्यूटरीकरण राजस्व न्यायालयों की कार्यवाहियों में शत प्रतिशत पारदर्शिता सुनिश्चित करवाना तथा व",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [
+        {
+          "tag": "TABLE",
+          "id": "",
+          "cls": "",
+          "left": 0,
+          "right": 745,
+          "text": "\t\nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS\n\t\t\nश्री नरेंद्र म"
+        },
+        {
+          "tag": "TBODY",
+          "id": "",
+          "cls": "",
+          "left": 0,
+          "right": 745,
+          "text": "\t\nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS\n\t\t\nश्री नरेंद्र म"
+        },
+        {
+          "tag": "TR",
+          "id": "",
+          "cls": "",
+          "left": 0,
+          "right": 745,
+          "text": "\t\nराजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS\n\t\t\nश्री नरेंद्र म"
+        },
+        {
+          "tag": "TD",
+          "id": "",
+          "cls": "",
+          "left": 20,
+          "right": 578,
+          "text": "राजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली\nRCCMS"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 40,
+          "right": 568,
+          "text": "राजस्व न्यायालय कंप्यूटरीकृत प्रबंधन प्रणाली"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 40,
+          "right": 568,
+          "text": "RCCMS"
+        },
+        {
+          "tag": "TD",
+          "id": "",
+          "cls": "",
+          "left": 578,
+          "right": 598,
+          "text": ""
+        },
+        {
+          "tag": "TD",
+          "id": "",
+          "cls": "",
+          "left": 598,
+          "right": 745,
+          "text": "श्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 608,
+          "right": 735,
+          "text": "श्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 608,
+          "right": 651,
+          "text": "श्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत"
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "cls": "",
+          "left": 608,
+          "right": 651,
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 608,
+          "right": 651,
+          "text": "श्री नरेंद्र मोदी"
+        }
+      ],
+      "navigation": [
+        {
+          "response": 46,
+          "dom": 239,
+          "load": 2681
+        }
+      ],
+      "forms": 2,
+      "inputs": 18
+    },
+    "observedSeconds": 3.89,
+    "backToServices": true
+  },
+  {
+    "id": "up-department",
+    "title": "Department Services",
+    "web": {
+      "url": "https://bor.up.gov.in/Department_login.aspx",
+      "title": "राजस्व परिषद् | उत्तर प्रदेश",
+      "state": "complete",
+      "text": "9/25/2026 - Friday - 3:50:58 PM\nराजस्व परिषद्\nउत्तर प्रदेश\nश्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री, भारत\nश्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री, उत्तर प्रदेश\nविभागीय लॉग इन सॉफ्टवेयर\nलेखपाल डैशबोर्ड\n↗\nराजस्व निरीक्षक डैशबोर्ड\n↗\nतहसीलदार डैशबोर्ड\n↗\nउपजिलाधिकारी डैशबोर्ड\n↗\nविभागीय सूचना अपलोड\n↗\nविभागीय महत्वपूर्ण लिंक\n↗\nराजस्व न्यायालय कंम्प्यूटरीकृत प्रबन्धन प्रणाली\n↗\nअनुसूचित जाति के भूमिधर द्वारा अन्तरण हेतु अनुज्ञा (उ0प्र0 राजस्व संहिता की धारा- 98)\n↗\n5.0586 हे0 (12.5) एकड़ से अधिक भूमि के अर्जन हेतु अनुमति (उ0प्र0 राजस्व संहिता की धारा- 89)\n↗\nमुख्यमंत्री कृषक दुर्घटना कल्याण योजना\n↗\nभूलेख (खसरा)\n↗\nभूलेख (भू-नक्शा / शजरा)\n↗\nवसूली प्रमाण पत्र\n↗\nभूलेख(खतौनी)\n↗\nपट्टा आवंटन (तालाब)\n↗\nभूलेख खतौनी अंश/नाम/संरक्षक/पता में त्रुटि सुधार\n↗\nभू-मानचित्र डिजिटलीकरण\n↗\nमण्डलायुक्त/जिलाधिकारी की निरिक्षण आख्या\n↗\nचकबन्दी न्यायालय कम्प्यूटरीकृत प्रबंधन प्रणाली\n↗\nअनावासीय एवं आवासीय निर्माण कार्यो का वित्तीय एवं भौतिक प्रगति\n↗\nसन 1952 फसली वर्ष 1359 वाटरबॉडीज की गाटावार स्थिति\n↗\nनियुक्ति विवरण (तहसीलदार/नायब तहसीलदार)\n↗\nनियुक्ति प्रविष्टि (तहसीलदार/नायब तहसीलदार)\n↗\nरेवेन्यूसॉफ्ट\n↗\nस्वामित्व\n↗\nविभागीय उपयोग हेतु आदेश\nपरिषदादेश\nराजस्व अधिनियम\nनियमावलियां\nसेवा नियमावलियां\nजनपद बहराइच के साथ-साथ उ०प्र० के अन्य प्रभावित क्षेत्रों में नदी कटाव से प्रभावित किसानों के पुनर्वास, कृषि भूमि की उपलब्धता एवं रोजगार-व्यवस्था सुनिश्चित करने के सम्बन्ध में।\nराजस्व निरीक्षक कोटिक्रम सूची को अनन्तिम रूप से प्रख्या",
+      "width": 980,
+      "scrollWidth": 980,
+      "visualWidth": 979.8096313476562,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 297,
+          "dom": 960,
+          "load": 1065
+        }
+      ],
+      "forms": 1,
+      "inputs": 14
+    },
+    "observedSeconds": 1.43,
+    "backToServices": true
+  },
+  {
+    "id": "up-revenuesoft",
+    "title": "RevenueSoft",
+    "web": {
+      "url": "https://bor.up.gov.in/revenuesoft/login.aspx",
+      "title": "रेवेन्यूसॉफ्ट",
+      "state": "complete",
+      "text": "राजस्व परिषद, उत्तर प्रदेश\nरेवेन्यूसॉफ्ट\nLOGIN PAGE\nयूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन\nयूजर चयन करें : \nपासवर्ड : \nलॉगिन करें",
+      "width": 411,
+      "scrollWidth": 960,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "main-container",
+          "left": 0,
+          "right": 960,
+          "text": "LOGIN PAGE\nयूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन\nयूजर "
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "float-right1 left-cp",
+          "left": 312,
+          "right": 648,
+          "text": "LOGIN PAGE\nयूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन\nयूजर "
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "box-shadow-1",
+          "left": 312,
+          "right": 648,
+          "text": "LOGIN PAGE\nयूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन\nयूजर "
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 312,
+          "right": 648,
+          "text": "LOGIN PAGE"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "bg-white padding-20",
+          "left": 312,
+          "right": 648,
+          "text": "यूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन\nयूजर चयन करें : "
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "input-wrap",
+          "left": 332,
+          "right": 628,
+          "text": "यूजर प्रारूप : \nचयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन"
+        },
+        {
+          "tag": "SELECT",
+          "id": "ddltype",
+          "cls": "text-field1",
+          "left": 332,
+          "right": 628,
+          "text": "चयन करें\nराजस्व परिषद\nमण्डल\nजनपद\nशासन"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "input-wrap",
+          "left": 332,
+          "right": 628,
+          "text": "यूजर चयन करें : "
+        },
+        {
+          "tag": "LABEL",
+          "id": "",
+          "cls": "",
+          "left": 332,
+          "right": 430,
+          "text": "यूजर चयन करें :"
+        },
+        {
+          "tag": "SELECT",
+          "id": "ddluser",
+          "cls": "text-field1",
+          "left": 332,
+          "right": 628,
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "input-wrap",
+          "left": 332,
+          "right": 628,
+          "text": "पासवर्ड : "
+        },
+        {
+          "tag": "INPUT",
+          "id": "TextBox1",
+          "cls": "text-field",
+          "left": 332,
+          "right": 613,
+          "text": ""
+        }
+      ],
+      "navigation": [
+        {
+          "response": 112,
+          "dom": 267,
+          "load": 342
+        }
+      ],
+      "forms": 1,
+      "inputs": 11
+    },
+    "observedSeconds": 1.03,
+    "backToServices": true
+  },
+  {
+    "id": "up-record-correction",
+    "title": "Khatauni Corrections",
+    "web": {
+      "url": "https://upbhulekh.gov.in/ansh/",
+      "title": "अंश संशोधन",
+      "state": "complete",
+      "text": "उत्तर प्रदेश सरकारGovernment of Uttar Pradesh\nEmail : bhulekh-up[at]gov[dot]in\nभूलेख खतौनी त्रुटि सुधार\nखतौनी में अंश / नाम / संरक्षक / पता\nमें त्रुटि सुधार\nडाउनलोड पब्लिक यूजर मैनुअल\nविभागीय लॉग इन\nभूलेख खतौनी त्रुटि सुधार\nखतौनी में अंश / नाम / संरक्षक / पता में त्रुटि सुधार\nLog In\n खातेदार द्वारा\nसहखातेदार/आवेदक का मोबाइल नंबर\nओ०टी०पी०\n\n\nLog In\nDesigned, developed and hosted by National Informatics Centre, UP State Unit, Lucknow",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 14,
+          "dom": 2564,
+          "load": 2565
+        }
+      ],
+      "forms": 1,
+      "inputs": 9
+    },
+    "observedSeconds": 3.1,
+    "backToServices": true
+  },
+  {
+    "id": "up-allotment",
+    "title": "Pond Allotment",
+    "web": {
+      "url": "https://upbhulekh.gov.in/allotment/#/login2",
+      "title": "राजस्व परिषद",
+      "state": "complete",
+      "text": "Loading...\n\nLoading, please wait...\n\nमहत्वपूर्ण\nइस पोर्टल पर जिलाधिकारी , जनपद स्तर - प्रबन्धनकर्ता ,उपजिलाधिकारी और तहसील म्युटेशन यूजर लॉगिन कर सकते है।\nम्युटेशन यूजर को जिस ग्राम की आज्ञा होगी उसी पर वो कार्य कर पाएंगे।\nसॉफ्टवेयर मैन्युअल को ध्यान से पढ़े और उसके उपरांत ही सॉफ्टवेयर पर कार्य करे।\nसॉफ्टवेयर मैन्युअल डाउनलोड करे (click here) NEW\nलॉगिन करें\nलॉगिन",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 24,
+          "dom": 2045,
+          "load": 2201
+        }
+      ],
+      "forms": 1,
+      "inputs": 5
+    },
+    "observedSeconds": 2.69,
+    "backToServices": true
+  },
+  {
+    "id": "up-digital-maps",
+    "title": "Map Digitisation",
+    "web": {
+      "url": "https://upbhulekh.gov.in/DMap/#/",
+      "title": "राजस्व परिषद",
+      "state": "complete",
+      "text": "Loading...\n\nLoading, please wait...\n\nभू-मानचित्र डिजिटलीकरण\nलॉगिन करें\nलॉगिन",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 27,
+          "dom": 3311,
+          "load": 3436
+        }
+      ],
+      "forms": 1,
+      "inputs": 5
+    },
+    "observedSeconds": 3.7,
+    "backToServices": true
+  },
+  {
+    "id": "up-jansunwai",
+    "title": "Jansunwai",
+    "web": {
+      "url": "https://jansunwai.up.nic.in/",
+      "title": "जनसुनवाई -समाधान |उत्तर प्रदेश सरकार",
+      "state": "complete",
+      "text": " THEME CONFIGURATOR\n HEADER STYLES\n CONTAINER OPTIONS\nUTTAR PRADESH GOVERNMENT\nSKIP TO MAIN CONTENT\nLanguage\nS जनसुनवाई -समाधान\nFor grievances related to Other States/Government of India Organizations, Click  CPGRAMS\nS\nOnline Portal Compl\nजनसुनवाई-समाधान के सभी संदेश संदेस एप पर उपलब्ध कराए जा रहे हैं।\nसंदेस एप में जनसुनवाई सम्बन्धी सभी सूचनाएं प्राप्त करने हेतु IGRS एवं संदेस एप दोनों में एक ही नंबर से पंजीकरण करें\nशिकायत पंजीकरण\n\nशिकायत ऑनलाइन दर्ज करें\n\nजनसुनवाई - समाधान पोर्टल एवं मोबाइल एप्लीकेशन\n\n आमजन हेतु\n  विभागीय अधिकारियों हेतु\nसंख्यात्मक डेटा\nमहत्वपूर्ण लिंक\n\n वेबसाइट नीतियां  हमारे बारे में  पोर्टल हेतु सुझाव  संपर्क करें FAQ\n  \n\nFor any query regarding this website, Please contact the \"Web Information Manager\"\nShri Bhaskar Chandra Kandpal, Joint Secretary (Chief Minister Office, Lucknow, Uttar Pradesh),\nEmail ID: jansunwai[dash]up[at]gov[dot]in\n\nLast Updated: 25.09.2026\n\nVishnu-6\n\n© Content owned, updated by the Lok Shikayat Vibhag, Chief Minister Office Uttar Pradesh Government. Website is designed, developed, maintained and hosted by National Informatics Centre, Uttar Pradesh",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [
+        {
+          "tag": "DIV",
+          "id": "ms-configurator",
+          "cls": "ms-configurator",
+          "left": 421,
+          "right": 721,
+          "text": " THEME CONFIGURATOR\n HEADER STYLES\n CONTAINER OPTIONS"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "ms-configurator-title",
+          "left": 421,
+          "right": 721,
+          "text": " THEME CONFIGURATOR"
+        },
+        {
+          "tag": "H5",
+          "id": "",
+          "cls": "",
+          "left": 421,
+          "right": 721,
+          "text": " THEME CONFIGURATOR"
+        },
+        {
+          "tag": "EM",
+          "id": "",
+          "cls": "fa fa-gear",
+          "left": 476,
+          "right": 490,
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "ms-conf-btn withripple",
+          "left": 671,
+          "right": 721,
+          "text": ""
+        },
+        {
+          "tag": "EM",
+          "id": "",
+          "cls": "zmdi zmdi-close",
+          "left": 692,
+          "right": 701,
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "accordion_conf",
+          "cls": "panel-group",
+          "left": 421,
+          "right": 721,
+          "text": " HEADER STYLES\n CONTAINER OPTIONS"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "panel panel-default",
+          "left": 421,
+          "right": 721,
+          "text": " HEADER STYLES"
+        },
+        {
+          "tag": "DIV",
+          "id": "ms-conf-header-headers",
+          "cls": "panel-heading",
+          "left": 421,
+          "right": 721,
+          "text": " HEADER STYLES"
+        },
+        {
+          "tag": "H4",
+          "id": "",
+          "cls": "panel-title",
+          "left": 421,
+          "right": 721,
+          "text": " HEADER STYLES"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "collapsed withripple",
+          "left": 421,
+          "right": 721,
+          "text": " HEADER STYLES"
+        },
+        {
+          "tag": "EM",
+          "id": "",
+          "cls": "zmdi zmdi-view-compact",
+          "left": 436,
+          "right": 449,
+          "text": ""
+        }
+      ],
+      "navigation": [
+        {
+          "response": 709,
+          "dom": 4604,
+          "load": 7777
+        }
+      ],
+      "forms": 5,
+      "inputs": 19
+    },
+    "observedSeconds": 8.19,
+    "backToServices": true
+  },
+  {
+    "id": "up-relief",
+    "title": "Rahat · Relief & Disaster Services",
+    "web": {
+      "url": "https://rahat.up.nic.in/",
+      "title": "Office of Relief Commissioner | Uttar Pradesh | Lucknow",
+      "state": "complete",
+      "text": "उतर प्रदेश सरकार\nGOVERNMENT OF UTTAR PRADESH\n 1070\nMobile App\nराहत आयुक्त कार्यालय, उ.प्र.सरकार\nOffice of Relief Commissioner, Govt Of Uttar Pradesh\n\nPause\nDaily Flood relief operations Government of UP dated 11-07-2024 Date 11/07/2024 View More\nDaily Flood Relief Report- 13.07.2024 Date 13/07/2024 View More\nPause\nHon’ble Chief Minister\nYogi Adityanath\nAbout Office of Relief Commissioner\n\nThe office of Relief Commissioner is nodal for effective management, response & relief, rehabilitation and reconstruction in case of both natural and human induced disasters in the State. Office of Relief Commissioner is also responsible for legislation and policy making with regard to disaster management. It also plays and important role in mainstreaming disaster risk reduction in development plans of concerned departments. Office of Relief Commissioner along with Uttar State Disaster Management Authority is responsible to build a safe and disaster-resilient Uttar Pradesh by developing a, proactive, multi-disaster and technology-driven strategy for disaster management. This will be achieved through strengthening ongoing efforts in building culture of prevention, mitigation and preparedness in state through collective efforts of the government with special focus on most vulnerable communities.\n\nREAD MORE\nबोरवेल में गिरना\nअग्निकाण्ड\nओलावृष्टि\nभू-स्खलन\nमानव-सांड एवं वनरोज (नीलगाय) द्वन्द\nमानव वन",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [
+        {
+          "tag": "UL",
+          "id": "",
+          "cls": "slides",
+          "left": -411,
+          "right": 5349,
+          "text": ""
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "cls": "",
+          "left": 411,
+          "right": 823,
+          "text": ""
+        },
+        {
+          "tag": "IMG",
+          "id": "banner1",
+          "cls": "",
+          "left": 411,
+          "right": 823,
+          "text": ""
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "cls": "",
+          "left": 823,
+          "right": 1234,
+          "text": ""
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "cls": "",
+          "left": 823,
+          "right": 1234,
+          "text": ""
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "cls": "",
+          "left": 1234,
+          "right": 1646,
+          "text": ""
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "cls": "",
+          "left": 1234,
+          "right": 1646,
+          "text": ""
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "cls": "",
+          "left": 1646,
+          "right": 2057,
+          "text": ""
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "cls": "",
+          "left": 1646,
+          "right": 2057,
+          "text": ""
+        }
+      ],
+      "navigation": [
+        {
+          "response": 441,
+          "dom": 2255,
+          "load": 3337
+        }
+      ],
+      "forms": 1,
+      "inputs": 35
+    },
+    "observedSeconds": 3.62,
+    "backToServices": true
+  },
+  {
+    "id": "up-flood-management",
+    "title": "Flood Management · Officer Login",
+    "web": {
+      "url": "https://rahat.up.nic.in/flood/admin/login",
+      "title": "Flood Management",
+      "state": "complete",
+      "text": "SIGN IN\nForgot Password?\nFlood Management\n\nWelcome, please login.\n\nRemember Me\n Sign In\nDeveloped by CMP Techsseract LLP | Powered by UPDESCO\nOffice of the Relief Commissioner, Govt. Of Uttar Pradesh © 2026",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "visible",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 231,
+          "dom": 1573,
+          "load": 3261
+        }
+      ],
+      "forms": 1,
+      "inputs": 6
+    },
+    "observedSeconds": 3.56,
+    "backToServices": true
+  },
+  {
+    "id": "up-svamitva",
+    "title": "SVAMITVA · Abadi Survey",
+    "web": {
+      "url": "https://svamitva.up.gov.in/",
+      "title": "SVAMITVA",
+      "state": "complete",
+      "text": "उत्तर प्रदेश सरकार\nEmail : bhulekh-up[at]gov[dot]in, Helpline No.-7080100588 (Monday to Friday 09:30 AM-06:00 PM )\nस्वामित्व, उत्तर प्रदेश\nSVAMITVA, Uttar Pradesh\nश्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री,\nभारत सरकार\nश्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री,\nउत्तर प्रदेश\nSurvey of Villages Abadi and Mapping with Improvised Technology in Village Areas (SVAMITVA)\n\nस्वामित्व योजना का उद्देश्य, पंचायती राज मंत्रालय भारत सरकार, राज्‍य के राजस्‍व विभाग और भारतीय सर्वेक्षण विभाग के सहयोग से ड्रोन सर्वेक्षण तकनीक का उपयोग करते हुए,ग्रामीण आबादी के आवासीय अधिकार अभिलेख तैयार करना है।\n\nलक्ष्‍य : -\n\nग्रामीण भारत के नागरिकों को ऋण और अन्‍य वित्तीय लाभ प्राप्‍त करने के लिए, अपनी संपत्ति को एक वित्तीय परिसंपत्ति के रूप में प्रयोग करने में सक्षम बनाते हुए उन्‍हें वित्तीय स्थिरता प्रदान करना।\nग्रामीण नियोजन हेतु सटीक भूमि अभिलेखों और जीआईएस नक्‍शों का निर्माण।\nसंपत्ति कर का निर्धारण।\nसंपत्ति संबंधी विवादों को कम करना।\nलॉगिन\nस्वामित्व योजना (भारत सरकार डैशबोर्ड)\nस्वामित्व सर्वे प्लानिंग (उत्तर प्रदेश) डैशबोर्ड\nस्वामित्व सर्वे प्लानिंग\n(मैप संसोधन)\nआबादी सर्वेक्षण दैनिक कार्य प्रगति आख्या\nPause\n\n© इस वेबसाइट की सूचनाओं का स्वामित्व, अद्यतन एवं रखरखाव राजस्व परिषद, उत्तर प्रदेश द्वारा किया जाता है। राष्ट्रीय सूचना विज्ञान केंद्र, उत्तर प्रदेश राज्य इकाई द्वारा आवश्यकतानुसार तकनीकी परामर्श / तकनीकी सहयोग प्रदान किया जाता है।\n\nCopyright © Board Of Revenue",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "pmcm-section",
+          "left": 190,
+          "right": 505,
+          "text": "श्री नरेंद्र मोदी\nमाननीय प्रधानमंत्री,\nभारत सरकार\nश्री योगी आदित्यनाथ\n"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "pm-box",
+          "left": 360,
+          "right": 505,
+          "text": "श्री योगी आदित्यनाथ\nमाननीय मुख्यमंत्री,\nउत्तर प्रदेश"
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "cls": "",
+          "left": 388,
+          "right": 478,
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 360,
+          "right": 505,
+          "text": "श्री योगी आदित्यनाथ"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "",
+          "left": 360,
+          "right": 505,
+          "text": "माननीय मुख्यमंत्री,\nउत्तर प्रदेश"
+        }
+      ],
+      "navigation": [
+        {
+          "response": 1192,
+          "dom": 1639,
+          "load": 3886
+        }
+      ],
+      "forms": 2,
+      "inputs": 6
+    },
+    "observedSeconds": 4.09,
+    "backToServices": true
+  },
+  {
+    "id": "up-svamitva-map-correction",
+    "title": "SVAMITVA · Survey Planning Login",
+    "web": {
+      "url": "https://revenuedarms.up.gov.in/soi/",
+      "title": "Svamitva Survey Planning | Login",
+      "state": "complete",
+      "text": "उत्तर प्रदेश सरकार Government of Uttar Pradesh\n    \nSvamitva Survey Planning\n\nLog In\nLog In\nयूज़र प्रारूप\nचयन करे\nBOR\nUPDASP\nSOI\nजनपद\nतहसील\nपासवर्ड\nकैप्चा\n \nLog In\n\nड्रोन सर्वे / रि-फ्लाइंग हुए ग्रामों के मैप-1 की पीडीएफ फाइल प्राप्त करने हेतु नीचे दिए गए लिंक पर जाकर \"Login\" करें |\n\nतहसील स्तर से लॉग इन करने के लिए यूजरनेम और पासवर्ड राजस्व परिषद् द्वारा जिला सूचना विज्ञान अधिकारी (DIO) को उपलब्ध करा दिए गए हैं |\n\nड्रोन सर्वे / रि-फ्लाइंग हुए ग्रामों का मैप-1 डाउनलोड करें\nDesigned, developed and hosted by National Informatics Centre, UP State Unit, Lucknow",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 1019,
+          "dom": 1540,
+          "load": 1700
+        }
+      ],
+      "forms": 1,
+      "inputs": 13
+    },
+    "observedSeconds": 2.12,
+    "backToServices": true
+  },
+  {
+    "id": "up-encroachment-complaints",
+    "title": "Anti Bhu-Mafia · Public Complaints",
+    "web": {
+      "url": "https://jansunwai.up.nic.in/ABMP",
+      "title": "एंटी भू-माफिया पोर्टल",
+      "state": "complete",
+      "text": "Toggle navigation\nउत्तर प्रदेश सरकार\n\n\nएंटी भू-माफिया पोर्टल\nअतिक्रमण हटाने के सम्बन्ध में विवरण\n\n\n\nभू-माफियाओं द्वारा सरकारी एवं निजी सम्पत्तियों पर अवैध कब्जा करने की शिकायतें शासन एवं प्रशासन स्तर पर प्राप्त होती रहती हैं। ऐसे अतिक्रमणकर्ताओं / भूमाफियाओं को चिन्हित कर उनके विरुद्ध प्रभावी कार्यवाही किया जाना आवश्यक है, ताकि जनमानस में सुरक्षा की भावना उत्पन्न हो। सार्वजनिक एवं निजी भूमि पर भू-माफियाओं द्वारा अवैध कब्जे के प्रकरणों में जनसामान्य को अपनी शिकायत सुगमतापूर्वक दर्ज कराने, शिकायत पर कृत कार्यवाही की जानकारी प्राप्त करने, अपना फीडबैक एवं सुझाव देने व वरिष्ठ अधिकारियों द्वारा इन शिकायतों पर की गयी कार्यवाही का सतत् अनुश्रवण किये जाने के उद्देश्य से इस ‘एन्टी भू-माफिया पोर्टल’ का विकास किया गया है।\n\nभू-माफियाओं के विरुद्ध कार्यवाही के सम्बन्ध में निर्गत महत्वपूर्ण आदेश:\n\nशासनादेश संख्या-402/1-2-2017-1(सामान्य)/2017 दिनांक-01 मई 2017\nपरिषादेश संख्या-आर-1082/जी-5-01अति/2017 दिनांक - 08 मई 2017\nशिकायत पंजीकरण\nशिकायत की स्थिति\nअनुस्मारक भेजें\nआपकी प्रतिक्रिया\n\n\n© Content owned, updated by Board of Revenue, Uttar Pradesh.\nWebsite is designed, developed, maintained and hosted by National Informatics Centre, Uttar Pradesh",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 121,
+          "dom": 426,
+          "load": 444
+        }
+      ],
+      "forms": 0,
+      "inputs": 3
+    },
+    "observedSeconds": 0.92,
+    "backToServices": true
+  },
+  {
+    "id": "up-grievance-officer",
+    "title": "Jansunwai · Officer Login",
+    "web": {
+      "url": "https://jansunwai.up.nic.in/login",
+      "title": "IGRS | Log in",
+      "state": "complete",
+      "text": "अधिकारी लॉगिन\n\nअपना सत्र शुरू करने के लिए साइन इन करें\n\n Remember Me\nसाइन इन\nपासवर्ड भूल गए\n होम",
+      "width": 411,
+      "scrollWidth": 411,
+      "visualWidth": 411.4285583496094,
+      "overflowX": "hidden",
+      "wide": [],
+      "navigation": [
+        {
+          "response": 157,
+          "dom": 506,
+          "load": 956
+        }
+      ],
+      "forms": 1,
+      "inputs": 12
+    },
+    "observedSeconds": 1.8,
+    "backToServices": true
+  }
+]

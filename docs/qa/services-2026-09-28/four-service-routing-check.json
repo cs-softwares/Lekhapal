@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-28",
+  "device": "Android 15 emulator-5554",
+  "app": "com.lekhpal",
+  "webviewId": "7B2DA14D17F3B8A04F5C967FE85B0632",
+  "location": {
+    "district": "Amroha",
+    "tehsil": "Amroha",
+    "village": "Akbarpur Sakinya",
+    "villageCode": "117944"
+  },
+  "checks": [
+    {
+      "service": "Khatauni Copy",
+      "entry": "#/selection",
+      "destination": "#/khatauni_rtk",
+      "component": "KHATAUNI_RTK",
+      "controls": [
+        "गाटा संख्या",
+        "खाता संख्या",
+        "खातेदार का नाम",
+        "भूमि श्रेणी",
+        "नामांतरण दिनांक",
+        "उद्धरण देखें"
+      ]
+    },
+    {
+      "service": "Certified Khatauni Copy",
+      "destination": "#/index-login",
+      "controls": [
+        "Mobile Number",
+        "Send OTP",
+        "O.T.P.",
+        "Captcha",
+        "Login"
+      ]
+    },
+    {
+      "service": "Plot Sale Status",
+      "entry": "#/selection",
+      "destination": "#/gata_wise",
+      "component": "GATA_WISE",
+      "controls": [
+        "गाटा संख्या",
+        "विक्रय प्रस्थिति"
+      ]
+    },
+    {
+      "service": "Plot Dispute Status",
+      "entry": "#/selection",
+      "destination": "#/vaad_grasht",
+      "component": "VAAD_GRASHT",
+      "controls": [
+        "गाटा संख्या",
+        "गाटा प्रस्थिति"
+      ]
+    }
+  ],
+  "method": "Tapped each app menu item sequentially in the same retained WebView, then clicked the official location rows. Inspected actual URLs, rendered components and visible controls.",
+  "limits": "No record search, CAPTCHA submission, OTP request, authentication or payment performed."
+}

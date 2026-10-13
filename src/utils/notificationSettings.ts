@@ -12,6 +12,7 @@ import {
   UP_BHULEKH_HISTORY_STORAGE_KEY,
   UP_BHULEKH_PRESET_STORAGE_KEY,
 } from '../data/homeQuickStats';
+import { effectiveWorkspaceState } from '../config/releaseFeatures';
 import {STATE_SELECTION_STORAGE_KEY} from '../data/stateDashboardCatalog';
 import {smartWorkNotifications} from '../native/smartWorkNotifications';
 import {LanguageCode} from '../types/tool';
@@ -233,9 +234,9 @@ const loadPortalRecentSearchCount = async () => {
   }
 };
 
-const loadTotalSavedCount = async (toolIds: readonly string[]) => {
+const loadTotalSavedCount = async (toolIds: readonly string[], stateCode: string) => {
   const records = await Promise.all(
-    toolIds.map(toolId => loadWorkspaceRecords(toolId)),
+    toolIds.map(toolId => loadWorkspaceRecords(toolId, stateCode)),
   );
 
   return records.reduce(
@@ -247,6 +248,8 @@ const loadTotalSavedCount = async (toolIds: readonly string[]) => {
 
 export const buildNotificationSnapshot =
   async (): Promise<NotificationSnapshot> => {
+    const selectedState = await AsyncStorage.getItem(STATE_SELECTION_STORAGE_KEY);
+    const stateCode = effectiveWorkspaceState(selectedState);
     const [
       villageDiaryRecords,
       mutationTrackerRecords,
@@ -256,13 +259,13 @@ export const buildNotificationSnapshot =
       savedPortalPreset,
       savedStateSelection,
     ] = await Promise.all([
-      loadWorkspaceRecords('village-diary'),
-      loadWorkspaceRecords('mutation-tracker'),
-      loadTotalSavedCount(MEASUREMENT_STORAGE_TOOL_IDS),
-      loadTotalSavedCount(CALCULATOR_STORAGE_TOOL_IDS),
+      loadWorkspaceRecords('village-diary', stateCode),
+      loadWorkspaceRecords('mutation-tracker', stateCode),
+      loadTotalSavedCount(MEASUREMENT_STORAGE_TOOL_IDS, stateCode),
+      loadTotalSavedCount(CALCULATOR_STORAGE_TOOL_IDS, stateCode),
       loadPortalRecentSearchCount(),
       AsyncStorage.getItem(UP_BHULEKH_PRESET_STORAGE_KEY),
-      AsyncStorage.getItem(STATE_SELECTION_STORAGE_KEY),
+      Promise.resolve(selectedState),
     ]);
 
     const villageDiaryCount = villageDiaryRecords.length;

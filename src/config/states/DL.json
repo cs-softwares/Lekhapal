@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "2026-10-09.1",
+  "stateCode": "DL",
+  "name": {
+    "en": "Delhi",
+    "hi": "दिल्ली"
+  },
+  "languages": ["hi", "en"],
+  "stage": "next",
+  "catalog": "configured",
+  "dashboardServiceIds": ["DL-records", "DL-certificates", "DL-registration"],
+  "services": [
+    {
+      "id": "DL-records",
+      "title": {
+        "en": "Indraprastha Bhulekh · Land records",
+        "hi": "इंद्रप्रस्थ भूलेख · भूमि अभिलेख"
+      },
+      "subtitle": {
+        "en": "Delhi revenue village records; coverage is shown on the official portal.",
+        "hi": "दिल्ली के राजस्व ग्राम अभिलेख; उपलब्ध क्षेत्र आधिकारिक पोर्टल पर देखें।"
+      },
+      "category": "Land records",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Land records",
+        "Indraprastha Bhulekh · Land records",
+        "इंद्रप्रस्थ भूलेख · भूमि अभिलेख"
+      ],
+      "url": "https://dlrc.delhi.gov.in/Default.aspx",
+      "browserMode": "webview",
+      "review": {
+        "status": "source-reviewed",
+        "sourceUrl": "https://dlrc.delhi.gov.in/Default.aspx",
+        "checkedOn": "2026-10-09",
+        "note": "Official source reviewed; this is not Android entry or end-to-end workflow verification."
+      }
+    },
+    {
+      "id": "DL-certificates",
+      "title": {
+        "en": "Delhi eDistrict",
+        "hi": "दिल्ली ई-डिस्ट्रिक्ट"
+      },
+      "subtitle": {
+        "en": "Certificates and applications on Delhi eDistrict.",
+        "hi": "दिल्ली ई-डिस्ट्रिक्ट पर प्रमाणपत्र और आवेदन।"
+      },
+      "category": "Certificates",
+      "icon": "file-document-outline",
+      "searchTerms": [
+        "Certificates",
+        "Delhi eDistrict",
+        "दिल्ली ई-डिस्ट्रिक्ट"
+      ],
+      "url": "https://edistrict.delhi.gov.in/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://edistrict.delhi.gov.in/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    },
+    {
+      "id": "DL-registration",
+      "title": {
+        "en": "Delhi NGDRS · Registration",
+        "hi": "दिल्ली NGDRS · पंजीकरण"
+      },
+      "subtitle": {
+        "en": "Official property registration portal.",
+        "hi": "आधिकारिक संपत्ति पंजीकरण पोर्टल।"
+      },
+      "category": "Registration",
+      "icon": "file-sign",
+      "searchTerms": [
+        "Registration",
+        "Delhi NGDRS · Registration",
+        "दिल्ली NGDRS · पंजीकरण"
+      ],
+      "url": "https://ngdrs.delhi.gov.in/NGDRS_DL/",
+      "browserMode": "webview",
+      "review": {
+        "status": "pending",
+        "sourceUrl": "https://ngdrs.delhi.gov.in/NGDRS_DL/",
+        "note": "Retained from the existing catalog; Android entry and workflow checks are pending."
+      }
+    }
+  ]
+}

@@ -342,7 +342,7 @@ const HelpScreen = () => {
               <AppPressable
                 key={topic.id}
                 onPress={() => setActiveTopic(topic.id)}
-                pressEffect="slide"
+
                 style={[
                   styles.topicPill,
                   active && styles.topicPillActive,

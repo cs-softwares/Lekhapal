@@ -1,0 +1,19 @@
+{
+  "afterDistrict": {
+    "url": "https://upbhulekh.gov.in/#/selection",
+    "placeholder": "Search Tehsil...",
+    "buttons": [
+      "Back ",
+      " ← जनपद पर वापस जाएँ "
+    ],
+    "version": "copy-7"
+  },
+  "afterBack": {
+    "url": "https://upbhulekh.gov.in/#/selection",
+    "placeholder": "Search District...",
+    "buttons": [
+      "Back "
+    ],
+    "version": "copy-7"
+  }
+}

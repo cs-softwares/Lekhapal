@@ -43,7 +43,7 @@ const HomeScreen = () => {
           flexDirection: 'row',
         },
         dailyWorkInlineItem: {
-          borderWidth: 1,
+          borderWidth: 1.15,
           width: '100%',
         },
         dailyWorkInlineRow: {
@@ -112,7 +112,8 @@ const HomeScreen = () => {
     : filteredSections.filter(
         section =>
           section.id === 'top-access' ||
-          section.id === 'daily-work',
+          section.id === 'daily-work' ||
+          section.id === 'lekhpal-work',
       );
 
   const visibleItemCount = useMemo(
@@ -211,7 +212,7 @@ const HomeScreen = () => {
                         entry.id === 'up-home-village-diary'
                           ? {
                               cardBackground: '#FFFFFF',
-                              cardBorder: '#7DD3FC',
+                              cardBorder: '#0EA5E955',
                               iconBackground: 'transparent',
                               iconBorder: 'transparent',
                               titleColor: colors.text,
@@ -219,7 +220,7 @@ const HomeScreen = () => {
                             }
                           : {
                               cardBackground: '#FFFFFF',
-                              cardBorder: '#FDBA74',
+                              cardBorder: '#F9731655',
                               iconBackground: 'transparent',
                               iconBorder: 'transparent',
                               titleColor: colors.text,
@@ -249,7 +250,7 @@ const HomeScreen = () => {
                               language,
                             )
                           }
-                          pressEffect="slide"
+
                           pressedOpacity={0.86}
                           style={[
                             styles.dailyWorkInlineItem,

@@ -71,11 +71,11 @@ const ToolCard = ({
       onPress={onPress}
       onPressIn={() => setIsPressed(true)}
       onPressOut={() => setIsPressed(false)}
-      pressEffect="tilt"
+
       pressedOpacity={0.96}
       style={[
         styles.card,
-        {borderColor: `${tool.accentColor}20`},
+        {borderColor: `${tool.accentColor}55`},
         isPressed && [
           styles.cardPressed,
           {
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: COLORS.surface,
     borderColor: 'transparent',
-    borderWidth: 1,
+    borderWidth: 1.15,
     borderRadius: 24,
     elevation: 5,
     marginBottom: 16,

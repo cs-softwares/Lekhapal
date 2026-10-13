@@ -33,6 +33,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+android/keystore.properties
 .kotlin/
 
 # node.js
@@ -83,6 +84,9 @@ android/.gradle-user/
 .tmp/
 .tmp*
 profile-*.png
+
+# Local QA evidence and generated release packages
+/outputs/
 
 # Generated Android bundle/build assets
 android/app/src/main/assets/

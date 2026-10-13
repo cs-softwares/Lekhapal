@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "2026-10-09.1",
+  "stateCode": "UP",
+  "name": {
+    "en": "Uttar Pradesh",
+    "hi": "उत्तर प्रदेश"
+  },
+  "languages": ["hi", "en"],
+  "stage": "baseline",
+  "catalog": "up-approved",
+  "dashboardServiceIds": [
+    "up-bhulekh-services",
+    "up-khasra",
+    "up-officer-login",
+    "up-edistrict",
+    "up-bhunaksha",
+    "up-varasat"
+  ]
+}

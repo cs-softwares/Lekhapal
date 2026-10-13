@@ -1,5 +1,7 @@
-import {LocalizedText} from '../types/tool';
-import {UpBhulekhLaunchAction} from '../types/upBhulekh';
+import { LIGHT_COLORS } from '../theme/palette';
+import type { BhulekhService } from './bhulekhOptions';
+import { LocalizedText } from '../types/tool';
+import { UpBhulekhLaunchAction } from '../types/upBhulekh';
 
 const text = (en: string, hi: string): LocalizedText => ({
   en,
@@ -7,6 +9,8 @@ const text = (en: string, hi: string): LocalizedText => ({
 });
 
 type UpHomeEntryAction =
+  | { type: 'khasra-menu' }
+  | { type: 'bhulekh-menu' }
   | {
       type: 'assistant';
       launchAction: UpBhulekhLaunchAction;
@@ -15,6 +19,7 @@ type UpHomeEntryAction =
       type: 'portal';
       title: LocalizedText;
       url: string;
+      bhulekhService?: BhulekhService;
     }
   | {
       type: 'tool';
@@ -42,7 +47,7 @@ const UP_BHULEKH_HOME_URL = 'https://upbhulekh.gov.in/#/home';
 
 export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
   {
-    accentColor: '#0EA5E9',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'khasra-portal',
       type: 'assistant',
@@ -66,7 +71,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
     title: text('Khasra Portal', 'खसरा पोर्टल'),
   },
   {
-    accentColor: '#16A34A',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'real-time-khatoni-login',
       type: 'assistant',
@@ -90,7 +95,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
     title: text('RC-9 / Lekhpal Login', 'RC-9 / लेखपाल लॉगिन'),
   },
   {
-    accentColor: '#7C3AED',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'edistrict-up',
       type: 'tool',
@@ -112,7 +117,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
     title: text('eDistrict Login', 'eDistrict लॉगिन'),
   },
   {
-    accentColor: '#0891B2',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'up-bhunaksha',
       type: 'tool',
@@ -134,7 +139,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
     title: text('Bhu Naksha', 'भू नक्शा'),
   },
   {
-    accentColor: '#F97316',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'varasat-login',
       type: 'assistant',
@@ -156,7 +161,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
     title: text('Varasat Aavedan', 'वरासत आवेदन'),
   },
   {
-    accentColor: '#DC2626',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'khatoni-copy',
       type: 'assistant',
@@ -183,7 +188,7 @@ export const TOP_UP_ACCESS_ENTRIES: UpHomeEntry[] = [
 
 export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
   {
-    accentColor: '#2563EB',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'khatoni-login',
       type: 'assistant',
@@ -204,7 +209,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Khatoni Login', 'खतौनी लॉगिन'),
   },
   {
-    accentColor: '#D97706',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'khatoni-online-payment',
       type: 'assistant',
@@ -225,7 +230,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Online Payment Copy', 'ऑनलाइन पेमेंट प्रति'),
   },
   {
-    accentColor: '#DC2626',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'bhukhand-sale-status',
       type: 'assistant',
@@ -248,7 +253,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Bhukhand Vikray Sthiti', 'भूखंड विक्रय स्थिति'),
   },
   {
-    accentColor: '#7C3AED',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'bhukhand-grast-status',
       type: 'assistant',
@@ -270,7 +275,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Bhukhand Grast Sthiti', 'भूखंड ग्रस्त स्थिति'),
   },
   {
-    accentColor: '#0F766E',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'rajasva-gram-code',
       type: 'assistant',
@@ -291,7 +296,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Gram Code / Unique Code', 'ग्राम कोड / यूनिक कोड'),
   },
   {
-    accentColor: '#2563EB',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'district-directory',
       type: 'assistant',
@@ -306,7 +311,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Jila Directory', 'जिला सूची'),
   },
   {
-    accentColor: '#16A34A',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'tehsil-directory',
       type: 'assistant',
@@ -321,7 +326,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Tehsil Directory', 'तहसील सूची'),
   },
   {
-    accentColor: '#9333EA',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'pargana-directory',
       type: 'assistant',
@@ -336,7 +341,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Pargana Directory', 'परगना सूची'),
   },
   {
-    accentColor: '#F97316',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'bhumi-prakar',
       type: 'assistant',
@@ -351,7 +356,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Bhumi Prakar Suchi', 'भूमि प्रकार सूची'),
   },
   {
-    accentColor: '#B91C1C',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'sarkari-bhumi',
       type: 'assistant',
@@ -366,7 +371,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
     title: text('Sarkari Bhumi Khoje', 'सरकारी भूमि खोजें'),
   },
   {
-    accentColor: '#0891B2',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       launchAction: 'cyber-guidelines',
       type: 'assistant',
@@ -384,7 +389,7 @@ export const UP_BHULEKH_SERVICE_ENTRIES: UpHomeEntry[] = [
 
 export const UP_DAILY_WORK_ENTRIES: UpHomeEntry[] = [
   {
-    accentColor: '#EF4444',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'village-diary',
       type: 'tool',
@@ -408,7 +413,7 @@ export const UP_DAILY_WORK_ENTRIES: UpHomeEntry[] = [
     title: text('Village Diary', 'ग्राम डायरी'),
   },
   {
-    accentColor: '#F97316',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'mutation-tracker',
       type: 'tool',
@@ -433,9 +438,97 @@ export const UP_DAILY_WORK_ENTRIES: UpHomeEntry[] = [
   },
 ];
 
+export const LEKHPAL_WORK_ENTRIES: UpHomeEntry[] = [
+  {
+    accentColor: LIGHT_COLORS.primary,
+    action: { toolId: 'crop-girdawari', type: 'tool' },
+    icon: 'sprout-outline',
+    id: 'up-home-crop-girdawari',
+    searchTerms: [
+      'girdawari',
+      'crop',
+      'rabi',
+      'kharif',
+      'zaid',
+      'गिरदावरी',
+      'फसल',
+    ],
+    subtitle: text(
+      'Prepare and export seasonal crop observations.',
+      'मौसमी फसल निरीक्षण तैयार और एक्सपोर्ट करें।',
+    ),
+    title: text('Crop Girdawari', 'फसल गिरदावरी'),
+  },
+  {
+    accentColor: LIGHT_COLORS.primary,
+    action: { toolId: 'government-land-inspection', type: 'tool' },
+    icon: 'shield-home-outline',
+    id: 'up-home-government-land',
+    searchTerms: [
+      'government land',
+      'pond',
+      'public land',
+      'सरकारी भूमि',
+      'तालाब',
+    ],
+    subtitle: text(
+      'Record public land, ponds, boundaries, and required action.',
+      'सार्वजनिक भूमि, तालाब, सीमा और कार्रवाई दर्ज करें।',
+    ),
+    title: text('Government Land Inspection', 'सरकारी भूमि निरीक्षण'),
+  },
+  {
+    accentColor: LIGHT_COLORS.primary,
+    action: { toolId: 'encroachment-report', type: 'tool' },
+    icon: 'alert-decagram-outline',
+    id: 'up-home-encroachment',
+    searchTerms: ['encroachment', 'atikraman', 'अतिक्रमण'],
+    subtitle: text(
+      'Prepare an evidence-ready encroachment report.',
+      'साक्ष्य-तैयार अतिक्रमण रिपोर्ट बनाएं।',
+    ),
+    title: text('Encroachment Report', 'अतिक्रमण रिपोर्ट'),
+  },
+  {
+    accentColor: LIGHT_COLORS.primary,
+    action: {
+      title: text(
+        'UP Lekhpal Department Dashboard',
+        'UP लेखपाल विभागीय डैशबोर्ड',
+      ),
+      type: 'portal',
+      url: 'https://bor.up.gov.in/revenuesoft/login.aspx',
+    },
+    icon: 'account-tie-outline',
+    id: 'up-home-visible-dashboard',
+    searchTerms: ['dashboard', 'department login', 'लेखपाल डैशबोर्ड'],
+    subtitle: text(
+      'Open the official authenticated department dashboard.',
+      'आधिकारिक प्रमाणित विभागीय डैशबोर्ड खोलें।',
+    ),
+    title: text('Lekhpal Dashboard', 'लेखपाल डैशबोर्ड'),
+  },
+  {
+    accentColor: LIGHT_COLORS.primary,
+    action: {
+      title: text('RCMS Mutation and Varasat', 'RCMS नामांतरण और वरासत'),
+      type: 'portal',
+      url: 'https://rccms.up.gov.in/dashboard/login/',
+    },
+    icon: 'file-sync-outline',
+    id: 'up-home-visible-rcms',
+    searchTerms: ['rcms', 'mutation', 'varasat', 'नामांतरण', 'वरासत'],
+    subtitle: text(
+      'Submit and track mutation, Varasat, and official orders.',
+      'नामांतरण, वरासत और आधिकारिक आदेश सबमिट और ट्रैक करें।',
+    ),
+    title: text('Mutation / Varasat Portal', 'नामांतरण / वरासत पोर्टल'),
+  },
+];
+
 export const OTHER_UP_PORTAL_ENTRIES: UpHomeEntry[] = [
   {
-    accentColor: '#1D4ED8',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       title: text('UP Bhulekh Main Portal', 'UP भूलेख मुख्य पोर्टल'),
       type: 'portal',
@@ -457,7 +550,7 @@ export const OTHER_UP_PORTAL_ENTRIES: UpHomeEntry[] = [
     title: text('UP Bhulekh Main Portal', 'UP भूलेख मुख्य पोर्टल'),
   },
   {
-    accentColor: '#EA580C',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'igrs-registry',
       type: 'tool',
@@ -479,7 +572,7 @@ export const OTHER_UP_PORTAL_ENTRIES: UpHomeEntry[] = [
     title: text('IGRS Registry', 'IGRS रजिस्ट्री'),
   },
   {
-    accentColor: '#6D28D9',
+    accentColor: LIGHT_COLORS.primary,
     action: {
       toolId: 'revenue-court',
       type: 'tool',
@@ -519,6 +612,15 @@ export const UP_HOME_SECTIONS: UpHomeSection[] = [
       'होम स्क्रीन से ही दैनिक फॉलो-अप रिकॉर्ड तैयार रखें।',
     ),
     title: text('Daily Work', 'डेली वर्क'),
+  },
+  {
+    entries: LEKHPAL_WORK_ENTRIES,
+    id: 'lekhpal-work',
+    subtitle: text(
+      'Field records and official submission routes for lekhpal work.',
+      'लेखपाल कार्य के फील्ड रिकॉर्ड और आधिकारिक सबमिशन रूट।',
+    ),
+    title: text('Lekhpal Work', 'लेखपाल कार्य'),
   },
   {
     entries: UP_BHULEKH_SERVICE_ENTRIES,

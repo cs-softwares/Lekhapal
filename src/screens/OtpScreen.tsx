@@ -1,3 +1,4 @@
+import { postAuthDestination } from '../config/releaseFeatures';
 import React, {useState} from 'react';
 import {
   Alert,
@@ -20,18 +21,20 @@ import {RootStackParamList} from '../types/navigation';
 type Props = NativeStackScreenProps<RootStackParamList, 'Otp'>;
 
 const OtpScreen = ({navigation, route}: Props) => {
-  const {language, strings} = useLanguage();
-  const {signInWithOtp} = useAuthSession();
+  const {strings} = useLanguage();
+  const {sendOtp, verifyOtp} = useAuthSession();
   const metrics = useResponsiveMetrics();
   const [otp, setOtp] = useState('');
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [isResending, setIsResending] = useState(false);
 
   const helperText =
-    language === 'hi'
-      ? `OTP verify karke ${route.params.displayName} ka premium account khol dein.`
-      : `Verify OTP to open the premium account for ${route.params.displayName}.`;
+    route.params.channel === 'phone'
+      ? `Enter the 6-digit code sent to +91 ${route.params.phoneNumber}.`
+      : `Enter the 6-digit code sent to ${route.params.email}.`;
 
   const handleVerify = async () => {
-    if (otp.trim().length < 4) {
+    if (otp.trim().length !== 6) {
       Alert.alert(
         strings.invalidOtpTitle,
         strings.invalidOtpBody,
@@ -39,15 +42,46 @@ const OtpScreen = ({navigation, route}: Props) => {
       return;
     }
 
-    await signInWithOtp({
-      displayName: route.params.displayName,
-      phoneNumber: route.params.phoneNumber,
-    });
+    try {
+      setIsVerifying(true);
+      await verifyOtp({
+        displayName: route.params.displayName,
+        otp: otp.trim(),
+        phoneNumber: route.params.phoneNumber,
+      });
+      navigation.reset({
+        index: 0,
+        routes: [{name: postAuthDestination()}],
+      });
+    } catch (error) {
+      Alert.alert(
+        strings.invalidOtpTitle,
+        error instanceof Error
+          ? error.message
+          : strings.invalidOtpBody,
+      );
+    } finally {
+      setIsVerifying(false);
+    }
+  };
 
-    navigation.reset({
-      index: 0,
-      routes: [{name: 'MainDrawer'}],
-    });
+  const handleResend = async () => {
+    try {
+      setIsResending(true);
+      await sendOtp({
+        displayName: route.params.displayName,
+        email: route.params.email,
+        phoneNumber: route.params.phoneNumber,
+      });
+      Alert.alert('OTP sent', 'A new OTP has been sent to your phone.');
+    } catch (error) {
+      Alert.alert(
+        'Could not resend OTP',
+        error instanceof Error ? error.message : 'Please try again.',
+      );
+    } finally {
+      setIsResending(false);
+    }
   };
 
   return (
@@ -133,9 +167,12 @@ const OtpScreen = ({navigation, route}: Props) => {
             {strings.otpLabel}
           </Text>
           <TextInput
+            autoComplete="one-time-code"
             keyboardType="number-pad"
             maxLength={6}
-            onChangeText={setOtp}
+            onChangeText={value =>
+              setOtp(value.replace(/\D/g, '').slice(0, 6))
+            }
             placeholder={strings.enterOtp}
             placeholderTextColor={COLORS.textSoft}
             style={[
@@ -167,6 +204,7 @@ const OtpScreen = ({navigation, route}: Props) => {
           />
 
           <AppPressable
+            disabled={isVerifying}
             onPress={handleVerify}
             style={[
               styles.primaryButton,
@@ -195,7 +233,16 @@ const OtpScreen = ({navigation, route}: Props) => {
                   }),
                 },
               ]}>
-              {strings.verifyOtp}
+              {isVerifying ? 'Verifying...' : strings.verifyOtp}
+            </Text>
+          </AppPressable>
+
+          <AppPressable
+            disabled={isResending}
+            onPress={handleResend}
+            style={styles.resendButton}>
+            <Text style={styles.resendButtonText}>
+              {isResending ? 'Sending...' : 'Resend OTP'}
             </Text>
           </AppPressable>
         </View>
@@ -233,6 +280,14 @@ const styles = StyleSheet.create({
   primaryButtonText: {
     color: COLORS.white,
     fontWeight: '800',
+  },
+  resendButton: {
+    alignItems: 'center',
+    paddingVertical: 16,
+  },
+  resendButtonText: {
+    color: COLORS.primary,
+    fontWeight: '700',
   },
 });
 

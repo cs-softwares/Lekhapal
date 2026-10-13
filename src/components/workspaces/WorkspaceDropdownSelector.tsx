@@ -110,7 +110,7 @@ const WorkspaceDropdownSelector = ({
 
       <AppPressable
         onPress={openModal}
-        pressEffect="none"
+
         pressedOpacity={0.9}
         style={[
           styles.trigger,
@@ -167,7 +167,7 @@ const WorkspaceDropdownSelector = ({
           <View style={styles.modalRoot}>
             <AppPressable
               onPress={closeModal}
-              pressEffect="none"
+
               style={styles.backdropPressable}>
               <Animated.View
                 style={[
@@ -204,7 +204,7 @@ const WorkspaceDropdownSelector = ({
                         onSelect(option.value);
                         closeModal();
                       }}
-                      pressEffect="none"
+
                       pressedOpacity={0.88}
                       style={[
                         styles.optionCard,

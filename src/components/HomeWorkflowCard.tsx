@@ -33,11 +33,11 @@ const HomeWorkflowCard = ({
       onPress={onPress}
       onPressIn={() => setIsPressed(true)}
       onPressOut={() => setIsPressed(false)}
-      pressEffect="tilt"
+
       pressedOpacity={0.96}
       style={[
         styles.card,
-        {borderColor: `${accentColor}22`},
+        {borderColor: `${accentColor}55`},
         isPressed && [
           styles.cardPressed,
           {
@@ -129,7 +129,7 @@ const HomeWorkflowCard = ({
 const styles = StyleSheet.create({
   card: {
     backgroundColor: COLORS.surface,
-    borderWidth: 1,
+    borderWidth: 1.15,
     borderRadius: 24,
     marginBottom: 14,
     overflow: 'hidden',
